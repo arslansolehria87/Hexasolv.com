@@ -1497,20 +1497,25 @@
     <script src="js/main.js?v=2"></script>
 <script src="js/chatbot.js"></script>
 <style>
-  /* Footer ke neeche ki white space khatam karne ke liye */
+  /* Extra scroll aur unwanted space khatam karne ke liye */
+  html, body {
+    overflow-x: hidden !important;
+  }
+  
+  /* Footer aur uske contents ke extra margins clear karne ke liye */
   footer {
     margin-bottom: 0 !important;
-    position: relative !important;
+    padding-bottom: 1.5rem !important;
   }
-  footer::after {
-    content: "" !important;
-    position: absolute !important;
-    top: 100% !important;
-    left: 0 !important;
-    right: 0 !important;
-    height: 100vh !important;
-    background-color: #07030f !important;
-    z-index: -1 !important;
+  
+  footer * {
+    margin-bottom: 0;
+  }
+  
+  /* Footer ke aakhri copyright block ka margin fix */
+  footer > div:last-child {
+    margin-bottom: 0 !important;
+    padding-bottom: 1rem !important;
   }
 </style>
 </body>
