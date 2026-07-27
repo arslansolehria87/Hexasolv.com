@@ -2081,6 +2081,22 @@
   box-shadow: 0 15px 35px rgba(124, 58, 237, 0.12);
 }
 
+.service-card.service-card-featured {
+  background: linear-gradient(135deg, #0A1E42 0%, #1a3a7a 100%) !important;
+  border-color: transparent !important;
+}
+
+.service-card.service-card-featured .service-card-title,
+.service-card.service-card-featured .service-title,
+.service-card.service-card-featured .service-card-desc,
+.service-card.service-card-featured .service-desc {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.service-card.service-card-featured .service-card-cta {
+  color: #00B4D8 !important;
+}
+
 .service-icon {
   width: 56px;
   height: 56px;

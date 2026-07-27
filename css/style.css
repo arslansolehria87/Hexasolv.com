@@ -2701,15 +2701,25 @@ select.form-control {
     transition: opacity 0.35s;
 }
 .service-card:hover .service-card-glow { opacity: 1; }
+.service-card.service-card-featured,
 .service-card-featured {
-    background: linear-gradient(135deg, var(--navy) 0%, #1a3a7a 100%);
-    border-color: transparent;
-    color: #fff;
+    background: linear-gradient(135deg, #0A1E42 0%, #1a3a7a 100%) !important;
+    border-color: transparent !important;
+    color: #ffffff !important;
     grid-column: span 1;
 }
-.service-card-featured h3, .service-card-featured p { color: rgba(255,255,255,0.9); }
-.service-card-featured .service-meta-item { color: rgba(255,255,255,0.7); }
-.service-card-featured .service-card-cta { color: var(--cyan); }
+.service-card-featured h3,
+.service-card-featured p,
+.service-card-featured .service-card-title,
+.service-card-featured .service-card-desc {
+    color: rgba(255, 255, 255, 0.95) !important;
+}
+.service-card-featured .service-meta-item {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+.service-card-featured .service-card-cta {
+    color: #00B4D8 !important;
+}
 .service-card-icon {
     width: 56px; height: 56px;
     border-radius: var(--radius-lg);
@@ -4967,7 +4977,7 @@ html.dark .nav-mega-col a:hover {
     color: var(--accent-1, #7c3aed);
 }
 html.dark .services-overview {
-    background: var(--off-white) !important;
+    background: #0a0616 !important;
 }
 html.dark .service-card {
     background: rgba(255,255,255,0.02);
