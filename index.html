@@ -1,0 +1,1477 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+  <script>
+    // Apply theme from localStorage before render
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark');
+    }
+  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- ---- Primary Meta ---- -->
+    <title>Custom Software Development | Web, Mobile & AI Solutions | Hexasolv</title>
+    <meta name="description" content="Hexasolv delivers expert custom software development, Laravel web applications, MERN stack solutions, mobile apps, POS software, and AI solutions. Get a free consultation today.">
+    <meta name="keywords" content="hexasolv, custom software development, laravel development, mern stack, flutter mobile apps, pos software, ai web development, sargodha software house">
+    <meta name="author" content="Hexasolv">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://hexasolv.com">
+
+    <!-- ---- Open Graph ---- -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Custom Software Development | Web, Mobile & AI Solutions | Hexasolv">
+    <meta property="og:description" content="Hexasolv delivers expert custom software development, Laravel web apps, MERN platforms, mobile solutions, POS software, and AI transformation.">
+    <meta property="og:url" content="https://hexasolv.com">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:site_name" content="Hexasolv">
+    <meta property="og:locale" content="en_US">
+
+    <!-- ---- Favicon ---- -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- ---- Preconnects ---- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- ---- Fonts ---- -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ---- AOS Animation CSS ---- -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- ---- Icons ---- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css" crossorigin="anonymous">
+
+    <!-- ---- Bootstrap 5 ---- -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+
+    <!-- ---- Main Stylesheet ---- -->
+    <link rel="stylesheet" href="css/style.css?v=2">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/estimator.css">
+    <link rel="stylesheet" href="css/agency-upgrades.css">
+
+    <!-- ---- Schema Markup ---- -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "@id": "https://hexasolv.com/#organization",
+      "name": "Hexasolv",
+      "legalName": "Hexasolv",
+      "url": "https://hexasolv.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://hexasolv.com/images/logo.png"
+      },
+      "image": "https://hexasolv.com/images/logo.png",
+      "description": "Premium full-stack software development agency specializing in custom Laravel dashboards, MERN stack web apps, mobile Flutter apps, ERP Citrus systems, and CRM integrations. Serving global businesses remotely.",
+      "foundingDate": "2025",
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": "3"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "United States"
+        },
+        {
+          "@type": "Country",
+          "name": "United Kingdom"
+        },
+        {
+          "@type": "Country",
+          "name": "France"
+        },
+        {
+          "@type": "Country",
+          "name": "United Arab Emirates"
+        },
+        {
+          "@type": "Country",
+          "name": "Pakistan"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Software Development & Growth Marketing Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom Software Development (Laravel, MERN Stack)"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Mobile Application Development (Flutter)"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Enterprise ERP & POS Systems"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Shopify & WordPress E-Commerce Development"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI Automation & Chatbot Solutions"
+            }
+          }
+        ]
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+92-321-4530103",
+          "contactType": "customer service",
+          "areaServed": "Global",
+          "availableLanguage": ["English", "Urdu"]
+        }
+      ],
+      "sameAs": [
+        "https://linkedin.com/in/arslan-ali-59b750338",
+        "https://github.com/arslansolehria87"
+      ],
+      "knowsAbout": [
+        "Custom Software Development",
+        "Laravel & PHP",
+        "MERN Stack Web Applications",
+        "Mobile App Development",
+        "AI Chatbot integrations",
+        "n8n workflow automation",
+        "CRM & ERP Business Dashboards"
+      ]
+    }
+    </script>
+
+    <style>
+        /* Preloader Animations */
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.05); }
+        }
+        @keyframes loaderMove {
+            0% { left: -50%; width: 50%; }
+            50% { left: 25%; width: 75%; }
+            100% { left: 100%; width: 50%; }
+        }
+
+        /* Hero Carousel Animations */
+        .hero-slide {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.6s ease-in-out;
+        }
+        .hero-slide.active {
+            display: block;
+            opacity: 1;
+        }
+        .hero-slide.active .hero-headline {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        .hero-slide.active .hero-sub {
+            animation: fadeInUp 0.9s ease forwards;
+        }
+        .hero-slide.active .hero-tags {
+            animation: fadeInUp 1s ease forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Carousel Nav Controls */
+        .hero-slider-nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+        .slider-arrow {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .slider-arrow:hover {
+            background: #7c3aed;
+            border-color: #7c3aed;
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(124,58,237,0.5);
+        }
+        .slider-dots {
+            display: flex;
+            gap: 0.6rem;
+            align-items: center;
+        }
+        .slider-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.25);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .slider-dot.active {
+            width: 32px;
+            border-radius: 20px;
+            background: linear-gradient(90deg, #7c3aed, #06b6d4);
+        }
+
+        .logo-text-fallback {
+            display: inline-flex;
+            align-items: center;
+            font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            text-decoration: none;
+            background: linear-gradient(135deg, #7c3aed, #a855f7, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .portfolio-project-card {
+            background: #fff;
+            border: 1px solid rgba(124,58,237,0.12);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+        }
+        .portfolio-project-card:hover {
+            transform: translateY(-8px);
+            border-color: #7c3aed;
+            box-shadow: 0 20px 45px rgba(124,58,237,0.15);
+        }
+        .portfolio-card-img {
+            height: 220px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .portfolio-card-body {
+            padding: 1.8rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .tag-pill {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 50px;
+            background: rgba(124,58,237,0.1);
+            color: #7c3aed;
+            margin-right: 6px;
+            margin-bottom: 6px;
+        }
+        .floating-wa-btn-Hexasolv {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 58px;
+            height: 58px;
+            background: #25D366;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 10px 30px rgba(37,211,102,0.4);
+            z-index: 99999;
+            text-decoration: none;
+        }
+        .floating-wa-btn-Hexasolv:hover {
+            color: #fff;
+            transform: scale(1.05);
+        }
+        .nav-item-mega { position: relative; }
+    .nav-mega-trigger { cursor: pointer; }
+    .nav-mega-panel {
+      display: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: calc(100% + 20px);
+      width: min(920px, 92vw);
+      background: #fff;
+      border: 1px solid var(--border, rgba(124,58,237,0.12));
+      border-radius: 16px;
+      box-shadow: 0 25px 60px rgba(20,10,50,0.18);
+      padding: 2rem;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 1.8rem;
+      z-index: 1001;
+    }
+    .nav-item-mega:hover .nav-mega-panel { display: grid; }
+    .nav-mega-col h4 { font-family: var(--font-main, 'Outfit', sans-serif); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: var(--accent-1, #7c3aed); margin-bottom: 0.9rem; display: flex; align-items: center; gap: 0.5rem; }
+    .nav-mega-col a { display: block; font-size: 0.87rem; color: var(--text-secondary, #4b5563); text-decoration: none; padding: 0.4rem 0; }
+    .nav-mega-col a:hover { color: var(--accent-1, #7c3aed); }
+    .nav-mega-cta { background: linear-gradient(135deg, rgba(124,58,237,0.06), rgba(6,182,212,0.06)); border-radius: 12px; padding: 1.2rem; }
+    .nav-mega-cta p { font-size: 0.8rem; color: var(--text-secondary, #4b5563); margin-bottom: 1rem; }
+    .nav-mega-cta-btn { display: block; text-align: center; background: linear-gradient(135deg,#7c3aed,#a855f7); color: #fff !important; padding: 0.65rem; border-radius: 8px; font-weight: 700; font-size: 0.82rem; margin-bottom: 0.7rem; }
+    .nav-mega-view-all { font-size: 0.8rem; font-weight: 700; text-align: center; }
+</style>
+  <link rel="stylesheet" href="css/chatbot.css">
+</head>
+
+<body>
+
+    <!-- PAGE ENTRANCE PRELOADER -->
+    <div id="pagePreloader" style="position:fixed; inset:0; background:#07030f; z-index:999999; display:flex; flex-direction:column; align-items:center; justify-content:center; transition:opacity 0.6s ease, visibility 0.6s ease;">
+        <div style="font-family:'Outfit',sans-serif; font-size:32px; font-weight:900; color:#fff; letter-spacing:-0.5px; margin-bottom:1.5rem; animation: pulseGlow 1.5s infinite ease-in-out;">HEXA<span style="color:#7c3aed;">SOLV</span></div>
+        <div style="width:180px; height:4px; background:rgba(255,255,255,0.1); border-radius:10px; overflow:hidden; position:relative;">
+            <div style="position:absolute; top:0; left:0; height:100%; width:50%; background:linear-gradient(90deg, #7c3aed, #06b6d4); border-radius:10px; animation: loaderMove 1.2s infinite ease-in-out;"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header" id="siteHeader">
+        <div class="header-inner">
+            <div class="container">
+                <div class="header-content">
+
+                    <!-- Logo -->
+                    <a href="index.html" class="site-logo" aria-label="Hexasolv Home" style="display:flex; align-items:center; gap:0.5rem;">
+                        <svg width="30" height="30" viewBox="0 0 100 100" style="flex-shrink:0;"><polygon points="50,3 95,25 95,75 50,97 5,75 5,25" fill="url(#headerHexGrad)"/><defs><linearGradient id="headerHexGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient></defs><text x="50" y="63" font-family="Outfit, sans-serif" font-size="46" font-weight="800" fill="#fff" text-anchor="middle">H</text></svg>
+                        <span class="logo-text-fallback">Hexasolv</span>
+                    </a>
+
+                    <!-- Desktop Navigation -->
+                    <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+                        <div class="nav-item">
+                            <a href="index.html" class="nav-link active">Home</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="about.html" class="nav-link">About Us</a>
+                        </div>
+                        <div class="nav-item nav-item-mega">
+                            <a href="services.html" class="nav-link nav-mega-trigger">Services <i class="fas fa-chevron-down" style="font-size:0.65rem; margin-left:3px;"></i></a>
+                            <div class="nav-mega-panel">
+                                <div class="nav-mega-col">
+                                    <h4><i class="fas fa-chart-line"></i> Growth &amp; Marketing</h4>
+                                    <a href="services/growth-systems.html">Business Growth Systems</a>
+                                    <a href="services/lead-nurturing.html">Lead Nurturing Systems</a>
+                                    <a href="services/ai-automation.html">AI &amp; n8n Automation</a>
+                                    <a href="services/personal-branding.html">Personal Brand Positioning</a>
+                                </div>
+                                <div class="nav-mega-col">
+                                    <h4><i class="fas fa-bag-shopping"></i> E-Commerce &amp; Ads</h4>
+                                    <a href="services/shopify-development.html">Shopify Store Development</a>
+                                    <a href="services/ecommerce-management.html">E-Commerce Management</a>
+                                    <a href="services/paid-ads.html">Performance Paid Ads</a>
+                                </div>
+                                <div class="nav-mega-col">
+                                    <h4><i class="fas fa-code"></i> Tech &amp; Development</h4>
+                                    <a href="services/laravel-development.html">Laravel Development</a>
+                                    <a href="services/mern-stack.html">MERN Stack Development</a>
+                                    <a href="services/saas-development.html">SaaS &amp; ERP Solutions</a>
+                                    <a href="services/pos-billing.html">POS &amp; CRM Systems</a>
+                                    <a href="services/ai-web-apps.html">AI Web Apps</a>
+                                    <a href="services/flutter-development.html">Flutter App Development</a>
+                                </div>
+                                <div class="nav-mega-col nav-mega-cta">
+                                    <h4>Not Sure Where to Start?</h4>
+                                    <p>Tell us your goal and we'll map the right service mix for you.</p>
+                                    <a href="contact.html" class="nav-mega-cta-btn">Book a Strategy Call</a>
+                                    <a href="services.html" class="nav-mega-view-all">View All Services →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-item">
+                            <a href="portfolio.html" class="nav-link">Portfolio</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </div>
+                    </nav>
+
+                    <!-- Desktop CTAs -->
+                    <div class="header-ctas">
+                        <button class="theme-toggle-btn" onclick="toggleTheme()" title="Toggle Dark/Light Mode" style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); border-radius:50px; padding:0.4rem 0.8rem; cursor:pointer; font-size:1rem; color:#fff; display:flex; align-items:center; justify-content:center; width:40px; height:40px; outline:none;">
+                            <span id="themeToggleIcon">🌙</span>
+                        </button>
+                        <a href="https://wa.me/923214530103" target="_blank" class="btn-header-outline"><i class="fab fa-whatsapp"></i> WhatsApp Chat</a>
+                        <a href="contact.html" class="btn-header-primary" style="background: linear-gradient(135deg,#7c3aed,#a855f7);">Book a Strategy Call <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Hamburger -->
+                    <button class="hamburger-btn" id="hamburger" aria-label="Open menu">
+                        <span class="ham-line"></span>
+                        <span class="ham-line"></span>
+                        <span class="ham-line"></span>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mob-overlay" id="menuOverlay"></div>
+        <div class="mob-menu" id="mobileMenu">
+            <div class="mob-menu-head">
+                <a href="index.html" class="mob-logo">
+                    <span style="font-size: 22px; font-weight: 900; color: #0A1E42;">HEXA<span style="color:#7c3aed;">SOLV</span></span>
+                </a>
+                <button class="mob-close" id="mobClose" aria-label="Close menu"><i class="fas fa-times"></i></button>
+            </div>
+            <nav class="mob-nav">
+                <a href="index.html" class="mob-link mob-active"><i class="fas fa-home mob-icon"></i> Home</a>
+                <a href="about.html" class="mob-link"><i class="fas fa-info-circle mob-icon"></i> About Us</a>
+                <a href="services.html" class="mob-link"><i class="fas fa-th-large mob-icon"></i> Services</a>
+                <a href="portfolio.html" class="mob-link"><i class="fas fa-briefcase mob-icon"></i> Portfolio</a>
+                <a href="blog.html" class="mob-link"><i class="fas fa-blog mob-icon"></i> Blog</a>
+                <a href="contact.html" class="mob-link"><i class="fas fa-envelope mob-icon"></i> Contact</a>
+            </nav>
+            <div class="mob-menu-foot">
+                <div style="font-size:13px;color:#94a3b8;"><i class="fas fa-phone" style="color:#7c3aed;margin-right:6px;"></i>+92 321 453 0103</div>
+                <div style="font-size:13px;color:#94a3b8;"><i class="fas fa-envelope" style="color:#7c3aed;margin-right:6px;"></i>contact@hexasolv.com</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO MULTI-SLIDE CAROUSEL -->
+    <section class="hero" id="hero" aria-label="Hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <canvas id="particleCanvas" style="position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:1; opacity:0.8;"></canvas>
+            <div class="hero-orb hero-orb-1" style="background: radial-gradient(circle, rgba(124,58,237,0.35) 0%, transparent 70%);"></div>
+            <div class="hero-orb hero-orb-2" style="background: radial-gradient(circle, rgba(6,182,212,0.25) 0%, transparent 70%);"></div>
+        </div>
+
+        <div class="container hero-container">
+            
+            <div class="hero-proof-strip reveal">
+                <div class="proof-avatars">
+                    <div class="proof-avatar" style="background:#7c3aed;">MA</div>
+                    <div class="proof-avatar" style="background:#a855f7;">SC</div>
+                    <div class="proof-avatar" style="background:#06b6d4;">HM</div>
+                </div>
+                <div class="proof-stars">★★★★★</div>
+                <div class="proof-text"><strong>30+ satisfied corporate clients</strong> — rated 4.9/5 globally</div>
+            </div>
+
+            <!-- SLIDE 1 -->
+            <div class="hero-slide active" id="slide-1">
+                <div class="hero-badge reveal delay-1">
+                    <span class="badge-dot" style="background:#7c3aed;"></span>
+                    🚀 Systems-Driven Growth Agency — Available for New Projects
+                </div>
+                <h1 class="hero-headline reveal delay-2">
+                    We Build Growth Systems That
+                    <span class="hero-headline-gradient" style="background: linear-gradient(135deg, #7c3aed, #a855f7, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Convert Leads Into Clients</span>
+                </h1>
+                <p class="hero-sub reveal delay-3">
+                    <strong>Hexasolv</strong> builds end-to-end growth ecosystems — lead generation, automated nurturing, and paid ad funnels — backed by custom software (Laravel, MERN, Flutter, AI web apps) when your growth needs it.
+                </p>
+                <div class="hero-tags reveal delay-4">
+                    <span class="hero-tag"><i class="fas fa-chart-line"></i> Growth Systems</span>
+                    <span class="hero-tag"><i class="fas fa-arrows-spin"></i> Lead Nurturing</span>
+                    <span class="hero-tag"><i class="fas fa-gears"></i> AI Automation</span>
+                    <span class="hero-tag"><i class="fas fa-bullhorn"></i> Paid Ads</span>
+                    <span class="hero-tag"><i class="fas fa-code"></i> Custom Software</span>
+                </div>
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div class="hero-slide" id="slide-2">
+                <div class="hero-badge">
+                    <span class="badge-dot" style="background:#06b6d4;"></span>
+                    ⚙️ AI Automation & Intelligent Follow-Ups
+                </div>
+                <h1 class="hero-headline">
+                    Scale Operations Without
+                    <span class="hero-headline-gradient" style="background: linear-gradient(135deg, #06b6d4, #3b82f6, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Increasing Headcount</span>
+                </h1>
+                <p class="hero-sub">
+                    Custom AI automation workflows that auto-pilot client onboarding, instant auto-responders, CRM follow-ups, and personal brand positioning — so no opportunity slips through.
+                </p>
+                <div class="hero-tags">
+                    <span class="hero-tag"><i class="fas fa-robot"></i> AI Automation</span>
+                    <span class="hero-tag"><i class="fas fa-headset"></i> CRM Follow-Ups</span>
+                    <span class="hero-tag"><i class="fas fa-trophy"></i> Brand Positioning</span>
+                    <span class="hero-tag"><i class="fas fa-bolt"></i> Auto-Responders</span>
+                </div>
+            </div>
+
+            <!-- SLIDE 3 -->
+            <div class="hero-slide" id="slide-3">
+                <div class="hero-badge">
+                    <span class="badge-dot" style="background:#ec4899;"></span>
+                    📣 Performance Ads & E-Commerce Growth
+                </div>
+                <h1 class="hero-headline">
+                    Data-Driven Ads &
+                    <span class="hero-headline-gradient" style="background: linear-gradient(135deg, #ec4899, #8b5cf6, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">High-Converting Stores</span>
+                </h1>
+                <p class="hero-sub">
+                    Meta, TikTok &amp; Google ad campaigns engineered for maximum ROAS, paired with high-converting Shopify stores and end-to-end e-commerce management.
+                </p>
+                <div class="hero-tags">
+                    <span class="hero-tag"><i class="fab fa-meta"></i> Meta Ads</span>
+                    <span class="hero-tag"><i class="fab fa-tiktok"></i> TikTok Ads</span>
+                    <span class="hero-tag"><i class="fab fa-google"></i> Google Ads</span>
+                    <span class="hero-tag"><i class="fas fa-bag-shopping"></i> Shopify</span>
+                </div>
+            </div>
+
+            <!-- HERO CTAS -->
+            <div class="hero-ctas reveal delay-5" style="margin-top:2rem;">
+                <a href="contact.html" class="btn btn-primary btn-lg" style="background: linear-gradient(135deg,#7c3aed,#a855f7);">
+                    Book a Strategy Call
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+                </a>
+                <a href="https://wa.me/923214530103" target="_blank" class="btn btn-outline-white btn-lg">
+                    <i class="fab fa-whatsapp" style="font-size:18px;"></i>
+                    Chat on WhatsApp
+                </a>
+            </div>
+
+            <!-- CAROUSEL NAV CONTROLS -->
+            <div class="hero-slider-nav">
+                <button class="slider-arrow" id="heroPrevBtn" aria-label="Previous Slide"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-dots">
+                    <span class="slider-dot active" data-slide="0"></span>
+                    <span class="slider-dot" data-slide="1"></span>
+                    <span class="slider-dot" data-slide="2"></span>
+                </div>
+                <button class="slider-arrow" id="heroNextBtn" aria-label="Next Slide"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TRUST ACCREDITATION BADGES -->
+    <section class="trust-badges-strip">
+        <div class="container">
+            <div class="trust-badges-grid">
+                <div class="trust-badge-card reveal">
+                    <i class="fas fa-certificate trust-badge-icon"></i>
+                    <div class="trust-badge-info">
+                        <span class="trust-badge-title">Upwork Verified</span>
+                        <span class="trust-badge-desc">Top Rated Plus Partner</span>
+                    </div>
+                </div>
+                <div class="trust-badge-card reveal delay-1">
+                    <i class="fas fa-medal trust-badge-icon"></i>
+                    <div class="trust-badge-info">
+                        <span class="trust-badge-title">Clutch Top Firm</span>
+                        <span class="trust-badge-desc">Top Developers 2026</span>
+                    </div>
+                </div>
+                <div class="trust-badge-card reveal delay-2">
+                    <i class="fas fa-trophy trust-badge-icon"></i>
+                    <div class="trust-badge-info">
+                        <span class="trust-badge-title">G2 Category Leader</span>
+                        <span class="trust-badge-desc">Rated 4.9/5 Stars</span>
+                    </div>
+                </div>
+                <div class="trust-badge-card reveal delay-3">
+                    <i class="fab fa-google trust-badge-icon"></i>
+                    <div class="trust-badge-info">
+                        <span class="trust-badge-title">Google Partner</span>
+                        <span class="trust-badge-desc">Ads Certified Experts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="trust-bar" aria-label="Technologies We Master">
+        <div class="container reveal">
+            <p class="trust-bar-label">Technologies We Master & Deliver</p>
+            <div class="trust-logos">
+                <div class="trust-logo">LARAVEL</div>
+                <div class="trust-logo">.NET 8</div>
+                <div class="trust-logo">FLUTTER</div>
+                <div class="trust-logo">MERN <span>STACK</span></div>
+                <div class="trust-logo">WORDPRESS</div>
+                <div class="trust-logo">SHOPIFY</div>
+            </div>
+            <p class="trust-bar-label" style="margin-top:2rem;">Growth &amp; Marketing Capabilities</p>
+            <div class="trust-logos">
+                <div class="trust-logo">LEAD SYSTEMS</div>
+                <div class="trust-logo">AI AUTOMATION</div>
+                <div class="trust-logo">META ADS</div>
+                <div class="trust-logo">TIKTOK ADS</div>
+                <div class="trust-logo">GOOGLE ADS</div>
+                <div class="trust-logo">BRAND POSITIONING</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GROWTH & MARKETING SYSTEMS OVERVIEW -->
+    <section class="section services-overview" id="growth-systems" style="background:#f8f7ff;">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge" style="background:rgba(6,182,212,0.12); color:#06b6d4;">Growth &amp; Marketing</div>
+                <h2 class="section-title">Not Just Built. <br><span class="text-gradient" style="background: linear-gradient(135deg, #06b6d4, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Engineered to Grow.</span></h2>
+                <p class="section-sub">We don't just hand you a website — we build the lead systems, automation, and ad engines that drive it.</p>
+            </div>
+
+            <div class="services-grid">
+                <a href="services.html" class="service-card service-card-featured reveal">
+                    <div class="service-card-icon" style="width:58px; height:58px; border-radius:16px; display:flex; align-items:center; justify-content:center; color:#ffffff; font-size:1.6rem; background:linear-gradient(135deg,#06b6d4,#7c3aed); box-shadow:0 8px 20px rgba(6,182,212,0.3); margin-bottom:1.2rem;">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-card-title">Business Growth Systems</h3>
+                    <p class="service-card-desc">End-to-end growth ecosystems that capture, track, and convert prospective leads into high-paying clients.</p>
+                    <div class="service-card-cta">Explore Growth Systems <i class="fas fa-arrow-right"></i></div>
+                </a>
+
+                <a href="services.html" class="service-card reveal delay-1">
+                    <div class="service-card-icon" style="width:58px; height:58px; border-radius:16px; display:flex; align-items:center; justify-content:center; color:#ffffff; font-size:1.6rem; background:linear-gradient(135deg,#7c3aed,#a855f7); box-shadow:0 8px 20px rgba(124,58,237,0.3); margin-bottom:1.2rem;">
+                        <i class="fas fa-arrows-spin"></i>
+                    </div>
+                    <h3 class="service-card-title">Lead Nurturing Systems</h3>
+                    <p class="service-card-desc">Automated multi-channel frameworks that deliver consistent, pre-qualified leads to your pipeline.</p>
+                    <div class="service-card-cta">Explore Lead Nurturing <i class="fas fa-arrow-right"></i></div>
+                </a>
+
+                <a href="services.html" class="service-card reveal delay-2">
+                    <div class="service-card-icon" style="width:58px; height:58px; border-radius:16px; display:flex; align-items:center; justify-content:center; color:#ffffff; font-size:1.6rem; background:linear-gradient(135deg,#8b5cf6,#ec4899); box-shadow:0 8px 20px rgba(236,72,153,0.3); margin-bottom:1.2rem;">
+                        <i class="fas fa-gears"></i>
+                    </div>
+                    <h3 class="service-card-title">AI Automation Solutions</h3>
+                    <p class="service-card-desc">Custom AI workflows that auto-pilot onboarding, follow-ups, and CRM tasks — zero missed opportunities.</p>
+                    <div class="service-card-cta">Explore AI Automation <i class="fas fa-arrow-right"></i></div>
+                </a>
+
+                <a href="services.html" class="service-card reveal delay-3">
+                    <div class="service-card-icon" style="width:58px; height:58px; border-radius:16px; display:flex; align-items:center; justify-content:center; color:#ffffff; font-size:1.6rem; background:linear-gradient(135deg,#f59e0b,#ef4444); box-shadow:0 8px 20px rgba(245,158,11,0.3); margin-bottom:1.2rem;">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="service-card-title">Personal Brand Positioning</h3>
+                    <p class="service-card-desc">Positioning strategies that build trust and establish you as the premium authority in your niche.</p>
+                    <div class="service-card-cta">Explore Brand Positioning <i class="fas fa-arrow-right"></i></div>
+                </a>
+
+                <a href="services.html" class="service-card reveal delay-4">
+                    <div class="service-card-icon" style="width:58px; height:58px; border-radius:16px; display:flex; align-items:center; justify-content:center; color:#ffffff; font-size:1.6rem; background:linear-gradient(135deg,#10b981,#059669); box-shadow:0 8px 20px rgba(16,185,129,0.3); margin-bottom:1.2rem;">
+                        <i class="fas fa-bag-shopping"></i>
+                    </div>
+                    <h3 class="service-card-title">Shopify &amp; E-Commerce</h3>
+                    <p class="service-card-desc">High-converting Shopify builds plus full operational management — listings to fulfillment.</p>
+                    <div class="service-card-cta">Explore E-Commerce <i class="fas fa-arrow-right"></i></div>
+                </a>
+
+                <a href="services.html" class="service-card reveal delay-5">
+                    <div class="service-card-icon" style="width:58px; height:58px; border-radius:16px; display:flex; align-items:center; justify-content:center; color:#ffffff; font-size:1.6rem; background:linear-gradient(135deg,#0a1e42,#1e5aa8); box-shadow:0 8px 20px rgba(30,90,168,0.3); margin-bottom:1.2rem;">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="service-card-title">Performance Paid Ads</h3>
+                    <p class="service-card-desc">Data-driven Meta, TikTok &amp; Google ad campaigns engineered for maximum ROAS.</p>
+                    <div class="service-card-cta">Explore Paid Ads <i class="fas fa-arrow-right"></i></div>
+                </a>
+            </div>
+
+            <div class="section-cta-center" style="margin-top:40px;">
+                <a href="services.html" class="btn btn-primary btn-lg" style="background:linear-gradient(135deg,#06b6d4,#7c3aed);">View All Growth Services <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES OVERVIEW -->
+    <section class="section services-overview" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge" style="background:rgba(124,58,237,0.1); color:#7c3aed;">Also Available</div>
+                <h2 class="section-title">Backed by Real<br><span class="text-gradient" style="background: linear-gradient(135deg, #7c3aed, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Engineering Capability</span></h2>
+                <p class="section-sub">When growth systems need custom software underneath them, we build that too.</p>
+            </div>
+
+            <div class="services-grid">
+
+                <!-- 1: Web Dev -->
+                <a href="services.html" class="service-card service-card-featured reveal">
+                    <div class="service-card-icon" style="width:58px; height:58px; border-radius:16px; display:flex; align-items:center; justify-content:center; color:#ffffff; font-size:1.6rem; background:linear-gradient(135deg,#7c3aed,#a855f7); box-shadow:0 8px 20px rgba(124,58,237,0.3); margin-bottom:1.2rem;">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="service-card-badge" style="background:rgba(124,58,237,0.15); color:#7c3aed;">Core Expertise</div>
+                    <h3 class="service-card-title">Web Development (Laravel/PHP)</h3>
+                    <p class="service-card-desc">Fast, secure, scalable web systems built with Laravel & PHP. Clean modular architecture for enterprise performance.</p>
+                    <div class="service-card-cta">Explore Web Dev <i class="fas fa-arrow-right"></i></div>
+                </a>
+
+                <!-- 2: MERN Stack -->
+                <a href="services.html" class="service-card reveal delay-1">
+                    <div class="service-card-icon" style="width:58px; height:58px; border-radius:16px; display:flex; align-items:center; justify-content:center; color:#ffffff; font-size:1.6rem; background:linear-gradient(135deg,#06b6d4,#3b82f6); box-shadow:0 8px 20px rgba(6,182,212,0.3); margin-bottom:1.2rem;">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="service-card-title">MERN Stack Applications</h3>
+                    <p class="service-card-desc">Full-stack JavaScript applications powered by MongoDB, Express, React, and Node.js for modern SPAs.</p>
+                    <div class="service-card-cta">Explore MERN Stack <i class="fas fa-arrow-right"></i></div>
+                </a>
+
+                <!-- 3: AI Web Dev -->
+                <a href="services.html" class="service-card reveal delay-2">
+                    <div class="service-card-icon" style="width:58px; height:58px; border-radius:16px; display:flex; align-items:center; justify-content:center; color:#ffffff; font-size:1.6rem; background:linear-gradient(135deg,#8b5cf6,#ec4899); box-shadow:0 8px 20px rgba(236,72,153,0.3); margin-bottom:1.2rem;">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="service-card-badge" style="background:rgba(236,72,153,0.15); color:#ec4899;">Trending</div>
+                    <h3 class="service-card-title">AI Web Development</h3>
+                    <p class="service-card-desc">Smart web apps integrated with ChatGPT OpenAI APIs, automated customer support, and lead qualification engines.</p>
+                    <div class="service-card-cta">Explore AI Services <i class="fas fa-arrow-right"></i></div>
+                </a>
+
+                <!-- 4: WordPress -->
+                <a href="services.html" class="service-card reveal delay-3">
+                    <div class="service-card-icon" style="width:58px; height:58px; border-radius:16px; display:flex; align-items:center; justify-content:center; color:#ffffff; font-size:1.6rem; background:linear-gradient(135deg,#21759b,#00a0d2); box-shadow:0 8px 20px rgba(33,117,155,0.3); margin-bottom:1.2rem;">
+                        <i class="fab fa-wordpress"></i>
+                    </div>
+                    <h3 class="service-card-title">WordPress & CMS</h3>
+                    <p class="service-card-desc">Custom WordPress themes, WooCommerce online stores, and plugins optimized for high conversion and speed.</p>
+                    <div class="service-card-cta">Explore WordPress <i class="fas fa-arrow-right"></i></div>
+                </a>
+
+                <!-- 5: Mobile Apps -->
+                <a href="services.html" class="service-card reveal delay-4">
+                    <div class="service-card-icon" style="width:58px; height:58px; border-radius:16px; display:flex; align-items:center; justify-content:center; color:#ffffff; font-size:1.6rem; background:linear-gradient(135deg,#10b981,#059669); box-shadow:0 8px 20px rgba(16,185,129,0.3); margin-bottom:1.2rem;">
+                        <i class="fas fa-mobile-screen-button"></i>
+                    </div>
+                    <h3 class="service-card-title">Mobile App Development</h3>
+                    <p class="service-card-desc">Cross-platform mobile apps for Android and iOS built using Flutter and Kotlin with smooth UX.</p>
+                    <div class="service-card-cta">Explore Mobile Apps <i class="fas fa-arrow-right"></i></div>
+                </a>
+
+                <!-- 6: POS & Desktop -->
+                <a href="services.html" class="service-card reveal delay-5">
+                    <div class="service-card-icon" style="width:58px; height:58px; border-radius:16px; display:flex; align-items:center; justify-content:center; color:#ffffff; font-size:1.6rem; background:linear-gradient(135deg,#0a1e42,#1e5aa8); box-shadow:0 8px 20px rgba(30,90,168,0.3); margin-bottom:1.2rem;">
+                        <i class="fas fa-cash-register"></i>
+                    </div>
+                    <h3 class="service-card-title">Desktop & POS Software</h3>
+                    <p class="service-card-desc">Custom Point-of-Sale (POS) systems and WPF desktop software for retail, factory ledgers, and inventory management.</p>
+                    <div class="service-card-cta">Explore POS Systems <i class="fas fa-arrow-right"></i></div>
+                </a>
+            </div>
+
+            <div class="section-cta-center" style="margin-top:40px;">
+                <a href="services.html" class="btn btn-primary btn-lg" style="background:linear-gradient(135deg,#7c3aed,#a855f7);">View All Dev Services <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section class="section section-light" id="portfolio" style="padding-top:5rem; padding-bottom:5rem; background:#f8f7ff;">
+        <div class="container">
+            <div class="section-header reveal" style="text-align:center; max-width:650px; margin:0 auto 3.5rem;">
+                <div class="section-badge" style="background:rgba(124,58,237,0.1); color:#7c3aed; font-family:'Outfit'; font-weight:700; text-transform:uppercase; letter-spacing:2px; font-size:0.75rem; padding:0.4rem 1rem; border-radius:50px; display:inline-block; margin-bottom:1rem;">Our Proven Work</div>
+                <h2 class="section-title" style="font-family:'Outfit'; font-size:2.8rem; font-weight:800; line-height:1.2; margin-bottom:1rem;">Production Systems &<br><span class="text-gradient" style="background: linear-gradient(135deg, #7c3aed, #a855f7, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Client Projects</span></h2>
+                <p class="section-sub" style="color:#64748b; font-size:1rem; line-height:1.7;">Explore production applications and systems engineered by Hexasolv.</p>
+            </div>
+
+            <!-- Custom 3-Column Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2rem;" id="featuredPortfolioContainer">
+                <!-- Injected dynamically by portfolio-renderer.js -->
+            </div>
+
+            <div class="section-cta-center" style="margin-top:3.5rem; text-align:center;">
+                <a href="portfolio.html" class="btn btn-primary btn-lg" style="background:linear-gradient(135deg,#7c3aed,#a855f7); border:none; padding:1rem 2.5rem; border-radius:50px; font-family:'Outfit'; font-weight:700;">View All 8 Projects & Case Studies <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="section stats-section" style="padding:4rem 0; background:linear-gradient(135deg, #07030f, #130a2a, #07030f); border-top:1px solid rgba(124,58,237,0.2); border-bottom:1px solid rgba(124,58,237,0.2);">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+
+                 <!-- 1 -->
+                <div class="col-6 col-lg-3 reveal">
+                    <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(124,58,237,0.2); border-radius:20px; padding:2rem 1.5rem; text-align:center; transition:transform 0.3s ease;" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform='none'">
+                        <div style="font-size:2.5rem; font-weight:900; background:linear-gradient(135deg, #7c3aed, #a855f7); -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-family:'Outfit';">50+</div>
+                        <div style="font-size:0.9rem; font-weight:700; color:#ffffff; margin-top:0.4rem; font-family:'Outfit';">Projects Delivered</div>
+                        <div style="font-size:0.75rem; color:#94a3b8; margin-top:0.2rem;">Web, Mobile & POS Apps</div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="col-6 col-lg-3 reveal delay-1">
+                    <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(6,182,212,0.2); border-radius:20px; padding:2rem 1.5rem; text-align:center; transition:transform 0.3s ease;" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform='none'">
+                        <div style="font-size:2.5rem; font-weight:900; background:linear-gradient(135deg, #06b6d4, #3b82f6); -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-family:'Outfit';">30+</div>
+                        <div style="font-size:0.9rem; font-weight:700; color:#ffffff; margin-top:0.4rem; font-family:'Outfit';">Corporate Clients</div>
+                        <div style="font-size:0.75rem; color:#94a3b8; margin-top:0.2rem;">Worldwide & Local</div>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="col-6 col-lg-3 reveal delay-2">
+                    <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(236,72,153,0.2); border-radius:20px; padding:2rem 1.5rem; text-align:center; transition:transform 0.3s ease;" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform='none'">
+                        <div style="font-size:2.5rem; font-weight:900; background:linear-gradient(135deg, #ec4899, #8b5cf6); -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-family:'Outfit';">100%</div>
+                        <div style="font-size:0.9rem; font-weight:700; color:#ffffff; margin-top:0.4rem; font-family:'Outfit';">Code Ownership</div>
+                        <div style="font-size:0.75rem; color:#94a3b8; margin-top:0.2rem;">Full Source Code Rights</div>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="col-6 col-lg-3 reveal delay-3">
+                    <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(16,185,129,0.2); border-radius:20px; padding:2rem 1.5rem; text-align:center; transition:transform 0.3s ease;" onmouseover="this.style.transform='translateY(-6px)'" onmouseout="this.style.transform='none'">
+                        <div style="font-size:2.5rem; font-weight:900; background:linear-gradient(135deg, #10b981, #059669); -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-family:'Outfit';">90 Days</div>
+                        <div style="font-size:0.9rem; font-weight:700; color:#ffffff; margin-top:0.4rem; font-family:'Outfit';">Free Warranty</div>
+                        <div style="font-size:0.75rem; color:#94a3b8; margin-top:0.2rem;">Post-Launch Tech Support</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SDLC WORKFLOW SECTION -->
+    <section class="sdlc-section" id="how-we-work">
+        <div class="container">
+            <div class="section-header reveal" style="text-align:center; max-width:650px; margin:0 auto 3.5rem;">
+                <div class="section-badge" style="background:rgba(124,58,237,0.1); color:#7c3aed;">Our Process</div>
+                <h2 class="section-title">How We Build Your Product</h2>
+                <p class="section-sub" style="color:#64748b; font-size:1rem; line-height:1.7;">A structured, transparent engineering lifecycle designed to ensure high quality and zero surprises.</p>
+            </div>
+
+            <div class="sdlc-grid">
+                <!-- Step 1 -->
+                <div class="sdlc-card reveal" data-step="01">
+                    <i class="fas fa-lightbulb sdlc-icon"></i>
+                    <h3 class="sdlc-title">Discovery &amp; Strategy</h3>
+                    <p class="sdlc-desc">We deep-dive into your business goals, scoping functional specifications, API requirements, and technical workflows before writing code.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="sdlc-card reveal delay-1" data-step="02">
+                    <i class="fas fa-palette sdlc-icon"></i>
+                    <h3 class="sdlc-title">Architecture &amp; UI/UX</h3>
+                    <p class="sdlc-desc">We design high-fidelity interactive wireframes, custom system architecture diagrams, and database relationships for your approval.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="sdlc-card reveal delay-2" data-step="03">
+                    <i class="fas fa-laptop-code sdlc-icon"></i>
+                    <h3 class="sdlc-title">Agile Development</h3>
+                    <p class="sdlc-desc">Our developers code in two-week sprint cycles. We deploy staging sandbox builds weekly so you can track live features incrementally.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="sdlc-card reveal">
+                    <i class="fas fa-shield-halved sdlc-icon"></i>
+                    <h3 class="sdlc-title">Quality &amp; Testing</h3>
+                    <p class="sdlc-desc">We perform rigorous QA runs — automated unit testing, database validation, cross-device responsiveness, and page-speed optimizations.</p>
+                </div>
+                <!-- Step 5 -->
+                <div class="sdlc-card reveal delay-1" data-step="05">
+                    <i class="fas fa-cloud-arrow-up sdlc-icon"></i>
+                    <h3 class="sdlc-title">Launch &amp; Handover</h3>
+                    <p class="sdlc-desc">We deploy your project to production cloud servers, configure security layers, and transfer 100% intellectual property &amp; Git repository rights.</p>
+                </div>
+            </div>
+        </div>
+    <!-- DIRECT ENGINEER COLLABORATION TRUST BANNER -->
+    <section class="trust-banner-section reveal" style="padding: 2rem 0 4rem;">
+        <div class="container">
+            <div style="background: linear-gradient(135deg, rgba(124,58,237,0.06), rgba(6,182,212,0.06)); border: 1px solid rgba(124,58,237,0.15); border-radius: 24px; padding: 2.5rem 3rem; display: flex; align-items: center; justify-content: space-between; gap: 2.5rem; flex-wrap: wrap;">
+                <div style="max-width: 750px;">
+                    <div class="section-badge" style="background:rgba(124,58,237,0.1); color:#7c3aed; font-family:'Outfit'; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:0.7rem; padding:0.3rem 0.8rem; border-radius:50px; display:inline-block; margin-bottom:0.8rem;">Direct Collaboration</div>
+                    <h3 style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Cut the Noise. Talk Directly to the Engineers.</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; margin: 0;">We have a strict <strong>zero-sales-rep policy</strong>. When you build with Hexasolv, you collaborate directly with Muhammad Arslan and our partner developers. Fast sprint iterations, accurate scoping, and absolutely zero communication lag.</p>
+                </div>
+                <div>
+                    <a href="contact.html" class="btn btn-primary" style="background: linear-gradient(135deg, #7c3aed, #06b6d4); border: none; padding: 0.9rem 2.2rem; border-radius: 50px; font-family: 'Outfit'; font-weight: 700; font-size: 0.92rem; white-space: nowrap; color: #fff; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">Book Partner Consultation <i class="fas fa-calendar-check"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE ESTIMATOR SECTION -->
+    <section class="estimator-section" id="estimator-tool">
+        <div class="container">
+            <div class="section-header reveal" style="text-align:center; max-width:650px; margin:0 auto 3rem;">
+                <div class="section-badge" style="background:rgba(6,182,212,0.1); color:#06b6d4;">Cost Calculator</div>
+                <h2 class="section-title">Estimate Your Project Cost Instantly</h2>
+                <p class="section-sub">Select your project parameters to calculate a ballpark budget range and expected delivery timeline.</p>
+            </div>
+
+            <div class="estimator-card reveal">
+                <!-- SUCCESS VIEW -->
+                <div class="estimator-success-view" id="estSuccessView" style="display:none;">
+                    <div class="estimator-success-icon">🎉</div>
+                    <h3 class="estimator-success-title">Your Project Estimate</h3>
+                    <p class="estimator-success-desc">We have calculated a customized ballpark quote based on your choices. Apply this scope directly to the contact form to lock in your consultation!</p>
+                    
+                    <div style="display:flex; justify-content:center; gap:2.5rem; margin-bottom:2.5rem; flex-wrap:wrap;">
+                        <div style="background:rgba(124,58,237,0.05); padding:1.5rem 2.5rem; border-radius:20px; border:1px solid rgba(124,58,237,0.15); min-width:200px;">
+                            <div style="font-size:0.8rem; text-transform:uppercase; color:var(--text-muted); font-weight:700; letter-spacing:1px; margin-bottom:0.4rem;">Ballpark Budget</div>
+                            <div id="finalBudgetVal" style="font-family:'Outfit',sans-serif; font-size:2rem; font-weight:900; color:#7c3aed;">$0</div>
+                        </div>
+                        <div style="background:rgba(6,182,212,0.05); padding:1.5rem 2.5rem; border-radius:20px; border:1px solid rgba(6,182,212,0.15); min-width:200px;">
+                            <div style="font-size:0.8rem; text-transform:uppercase; color:var(--text-muted); font-weight:700; letter-spacing:1px; margin-bottom:0.4rem;">Expected Delivery</div>
+                            <div id="finalTimelineVal" style="font-family:'Outfit',sans-serif; font-size:2rem; font-weight:900; color:#06b6d4;">-</div>
+                        </div>
+                    </div>
+
+                    <div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap;">
+                        <button class="btn-estimator btn-estimator-primary" id="estApplyBtn">
+                            Apply Scope to Contact Form <i class="fas fa-arrow-down"></i>
+                        </button>
+                        <button class="btn-estimator btn-estimator-outline" id="estResetBtn">
+                            Recalculate <i class="fas fa-undo"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ESTIMATOR BODY -->
+                <div id="estBody">
+                    <!-- PROGRESS BAR -->
+                    <div class="estimator-progress-wrapper">
+                        <div class="estimator-progress-text">
+                            <span id="estProgressText">Step 1 of 4</span>
+                            <span>Estimate Progress</span>
+                        </div>
+                        <div class="estimator-progress-bar-bg">
+                            <div class="estimator-progress-bar-fill" id="estProgressFill"></div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 1: PLATFORM -->
+                    <div class="estimator-step active" data-step="1">
+                        <h3 class="estimator-step-title">Select Your Project Platform</h3>
+                        <p class="estimator-step-sub">What core technology foundation does your product require?</p>
+                        
+                        <div class="estimator-options-grid">
+                            <div class="estimator-option-card" data-value="web_laravel">
+                                <div class="estimator-option-icon">🚀</div>
+                                <div class="estimator-option-title">Laravel / PHP</div>
+                                <div class="estimator-option-desc">Scalable corporate portals & backends</div>
+                            </div>
+                            <div class="estimator-option-card" data-value="web_mern">
+                                <div class="estimator-option-icon">⚛️</div>
+                                <div class="estimator-option-title">MERN Stack</div>
+                                <div class="estimator-option-desc">React-based fullstack web apps</div>
+                            </div>
+                            <div class="estimator-option-card" data-value="mobile_flutter">
+                                <div class="estimator-option-icon">📱</div>
+                                <div class="estimator-option-title">Flutter Mobile</div>
+                                <div class="estimator-option-desc">Android & iOS crossplatform builds</div>
+                            </div>
+                            <div class="estimator-option-card" data-value="cms_wordpress">
+                                <div class="estimator-option-icon">📝</div>
+                                <div class="estimator-option-title">WordPress</div>
+                                <div class="estimator-option-desc">CMS content hubs & business portals</div>
+                            </div>
+                            <div class="estimator-option-card" data-value="shopify">
+                                <div class="estimator-option-icon">🛍️</div>
+                                <div class="estimator-option-title">Shopify</div>
+                                <div class="estimator-option-desc">High-converting e-commerce sites</div>
+                            </div>
+                            <div class="estimator-option-card" data-value="pos_desktop">
+                                <div class="estimator-option-icon">💻</div>
+                                <div class="estimator-option-title">POS / Desktop</div>
+                                <div class="estimator-option-desc">Custom point-of-sale WPF tools</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 2: SIZE -->
+                    <div class="estimator-step" data-step="2">
+                        <h3 class="estimator-step-title">Select Application Scale</h3>
+                        <p class="estimator-step-sub">How complex are the architecture, screens, and database structures?</p>
+                        
+                        <div class="estimator-options-grid">
+                            <div class="estimator-option-card selected" data-value="size_small">
+                                <div class="estimator-option-icon">📄</div>
+                                <div class="estimator-option-title">Small / Basic</div>
+                                <div class="estimator-option-desc">Simple landing, brochure page, clear scope</div>
+                            </div>
+                            <div class="estimator-option-card" data-value="size_medium">
+                                <div class="estimator-option-icon">🗄️</div>
+                                <div class="estimator-option-title">Medium / Panel</div>
+                                <div class="estimator-option-desc">Admin dashboards, auth control, custom databases</div>
+                            </div>
+                            <div class="estimator-option-card" data-value="size_large">
+                                <div class="estimator-option-icon">🏢</div>
+                                <div class="estimator-option-title">Large / SaaS</div>
+                                <div class="estimator-option-desc">Enterprise SaaS, multi-tenant billing, integrations</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 3: INTEGRATIONS -->
+                    <div class="estimator-step" data-step="3">
+                        <h3 class="estimator-step-title">Add Advanced Capabilities (Optional)</h3>
+                        <p class="estimator-step-sub">Select multiple integrations to supercharge your business product.</p>
+                        
+                        <div class="estimator-options-grid">
+                            <div class="estimator-option-card" data-value="add_crm">
+                                <div class="estimator-option-icon">⚙️</div>
+                                <div class="estimator-option-title">CRM & Auto-Responders</div>
+                                <div class="estimator-option-desc">HubSpot/Salesforce API nurturing setups</div>
+                            </div>
+                            <div class="estimator-option-card" data-value="add_chat">
+                                <div class="estimator-option-icon">🤖</div>
+                                <div class="estimator-option-title">AI Chatbot Integrations</div>
+                                <div class="estimator-option-desc">OpenAI API customized answering tools</div>
+                            </div>
+                            <div class="estimator-option-card" data-value="add_payments">
+                                <div class="estimator-option-icon">💳</div>
+                                <div class="estimator-option-title">Payment Gateways</div>
+                                <div class="estimator-option-desc">Secure Stripe, PayPal, or localized merchant logic</div>
+                            </div>
+                            <div class="estimator-option-card" data-value="add_ads">
+                                <div class="estimator-option-icon">📣</div>
+                                <div class="estimator-option-title">Paid Ads Campaigns</div>
+                                <div class="estimator-option-desc">Meta & Google ad campaign mapping setup</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 4: SPEED -->
+                    <div class="estimator-step" data-step="4">
+                        <h3 class="estimator-step-title">Select Launch Timeline</h3>
+                        <p class="estimator-step-sub">Choose your delivery speeds depending on market urgency.</p>
+                        
+                        <div class="estimator-options-grid">
+                            <div class="estimator-option-card selected" data-value="speed_normal">
+                                <div class="estimator-option-icon">📅</div>
+                                <div class="estimator-option-title">Standard Execution</div>
+                                <div class="estimator-option-desc">Standard milestones (4-8 weeks delivery flow)</div>
+                            </div>
+                            <div class="estimator-option-card" data-value="speed_rush">
+                                <div class="estimator-option-icon">⚡</div>
+                                <div class="estimator-option-title">Rush Delivery</div>
+                                <div class="estimator-option-desc">Express delivery (2-3 weeks, developer overtime)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TALLY BAR -->
+                <div class="estimator-tally-bar" id="estTallyBar">
+                    <div class="estimator-results-summary">
+                        <div class="estimator-result-item">
+                            <span class="estimator-result-label">Ballpark Range</span>
+                            <span class="estimator-result-val" id="estBudgetVal">$0</span>
+                        </div>
+                        <div class="estimator-result-item">
+                            <span class="estimator-result-label">Est. Timeline</span>
+                            <span class="estimator-result-val" id="estTimelineVal">-</span>
+                        </div>
+                    </div>
+
+                    <div class="estimator-nav-btns">
+                        <button class="btn-estimator btn-estimator-outline" id="estPrevBtn" style="visibility: hidden;">
+                            <i class="fas fa-chevron-left"></i> Previous
+                        </button>
+                        <button class="btn-estimator btn-estimator-primary" id="estNextBtn">
+                            Next Step <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOUNDER & TEAM SECTION -->
+    <section class="section section-light" id="team">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge" style="background:rgba(124,58,237,0.1); color:#7c3aed;">Leadership</div>
+                <h2 class="section-title">Meet the Minds<br><span class="text-gradient" style="background: linear-gradient(135deg, #7c3aed, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Behind Hexasolv</span></h2>
+                <p class="section-sub">Engineers and architects committed to technical excellence and client growth.</p>
+            </div>
+
+            <div class="row justify-content-center g-4">
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div style="background:#fff; border:1px solid rgba(124,58,237,0.2); border-radius:24px; padding:2.5rem 2rem; text-align:center; box-shadow:0 15px 35px rgba(124,58,237,0.08);">
+                        <div style="width:110px; height:110px; border-radius:50%; margin:0 auto 1.2rem; border:3px solid #7c3aed; background:linear-gradient(135deg,#7c3aed,#a855f7); display:flex; align-items:center; justify-content:center; color:#fff; font-family:'Outfit'; font-size:2rem; font-weight:800;">MA</div>
+                        <h3 style="font-family:'Outfit'; font-size:1.3rem; font-weight:800; margin-bottom:0.2rem;">Muhammad Arslan</h3>
+                        <div style="font-size:0.8rem; font-weight:700; color:#7c3aed; text-transform:uppercase; letter-spacing:1px; margin-bottom:1rem;">Partner &amp; Lead Full-Stack Developer</div>
+                        <p style="font-size:0.88rem; color:#4b5563; line-height:1.6; margin-bottom:1.5rem;">Production engineer skilled in Laravel, .NET 8, MERN Stack, Flutter, and POS architecture.</p>
+                        <div style="display:flex; justify-content:center; gap:0.8rem;">
+                            <a href="https://github.com/arslansolehria87" target="_blank" style="width:36px; height:36px; background:rgba(124,58,237,0.1); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#7c3aed;"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/arslan-ali-59b750338" target="_blank" style="width:36px; height:36px; background:rgba(124,58,237,0.1); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#7c3aed;"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://wa.me/923214530103" target="_blank" style="width:36px; height:36px; background:rgba(37,211,102,0.1); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#25D366;"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TODO: replace placeholder name/role/bio with real partner details -->
+                <div class="col-md-6 col-lg-4 reveal delay-1">
+                    <div style="background:#fff; border:1px solid rgba(124,58,237,0.2); border-radius:24px; padding:2.5rem 2rem; text-align:center; box-shadow:0 15px 35px rgba(124,58,237,0.08);">
+                        <div style="width:110px; height:110px; border-radius:50%; margin:0 auto 1.2rem; border:3px solid #06b6d4; background:linear-gradient(135deg,#06b6d4,#3b82f6); display:flex; align-items:center; justify-content:center; color:#fff; font-family:'Outfit'; font-size:2rem; font-weight:800;">P2</div>
+                        <h3 style="font-family:'Outfit'; font-size:1.3rem; font-weight:800; margin-bottom:0.2rem;">Partner Name</h3>
+                        <div style="font-size:0.8rem; font-weight:700; color:#06b6d4; text-transform:uppercase; letter-spacing:1px; margin-bottom:1rem;">Partner &amp; [Role]</div>
+                        <p style="font-size:0.88rem; color:#4b5563; line-height:1.6; margin-bottom:1.5rem;">Short bio to be added — expertise and focus area at Hexasolv.</p>
+                        <div style="display:flex; justify-content:center; gap:0.8rem;">
+                            <a href="#" style="width:36px; height:36px; background:rgba(6,182,212,0.1); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#06b6d4;"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" style="width:36px; height:36px; background:rgba(6,182,212,0.1); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#06b6d4;"><i class="fab fa-github"></i></a>
+                            <a href="#" style="width:36px; height:36px; background:rgba(37,211,102,0.1); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#25D366;"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TODO: replace placeholder name/role/bio with real partner details -->
+                <div class="col-md-6 col-lg-4 reveal delay-2">
+                    <div style="background:#fff; border:1px solid rgba(124,58,237,0.2); border-radius:24px; padding:2.5rem 2rem; text-align:center; box-shadow:0 15px 35px rgba(124,58,237,0.08);">
+                        <div style="width:110px; height:110px; border-radius:50%; margin:0 auto 1.2rem; border:3px solid #a855f7; background:linear-gradient(135deg,#a855f7,#ec4899); display:flex; align-items:center; justify-content:center; color:#fff; font-family:'Outfit'; font-size:2rem; font-weight:800;">P3</div>
+                        <h3 style="font-family:'Outfit'; font-size:1.3rem; font-weight:800; margin-bottom:0.2rem;">Partner Name</h3>
+                        <div style="font-size:0.8rem; font-weight:700; color:#a855f7; text-transform:uppercase; letter-spacing:1px; margin-bottom:1rem;">Partner &amp; [Role]</div>
+                        <p style="font-size:0.88rem; color:#4b5563; line-height:1.6; margin-bottom:1.5rem;">Short bio to be added — expertise and focus area at Hexasolv.</p>
+                        <div style="display:flex; justify-content:center; gap:0.8rem;">
+                            <a href="#" style="width:36px; height:36px; background:rgba(168,85,247,0.1); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#a855f7;"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" style="width:36px; height:36px; background:rgba(168,85,247,0.1); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#a855f7;"><i class="fab fa-github"></i></a>
+                            <a href="#" style="width:36px; height:36px; background:rgba(37,211,102,0.1); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#25D366;"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VERIFIED CLIENT REVIEWS SECTION -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <div class="section-header reveal" style="text-align:center; max-width:650px; margin:0 auto 3rem;">
+                <div class="section-badge" style="background:rgba(16,185,129,0.1); color:#10b981;">Client Feedback</div>
+                <h2 class="section-title">Verified Reviews From Around the Globe</h2>
+                <p class="section-sub" style="color:#64748b; font-size:1rem; line-height:1.7;">Authentic feedback from production systems and platforms developed by Hexasolv.</p>
+            </div>
+
+            <div class="reviews-carousel-wrapper reveal">
+                <div class="reviews-carousel-track">
+                    
+                    <!-- Slide 1 -->
+                    <div class="review-slide-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-quote">"Hexasolv delivered our custom retail POS billing engine. Barcode scanning speed was reduced by 65%, automated invoice generation has been seamless, and operational downtime has been 0%. Exceptional team!"</p>
+                        <div class="review-author-info">
+                            <span class="review-author-name">Jean-Pierre L.</span>
+                            <span class="review-author-meta">Retail Outlet Director | France</span>
+                            <span class="review-badge-pill"><i class="fas fa-check-circle"></i> Verified Upwork Client</span>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="review-slide-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-quote">"Overhauled our entire ordering UI, integrated fast checkout modals, and built automated notifications for takeaway orders. Takeaway sales went up by 120% in the first month. High technical capacity."</p>
+                        <div class="review-author-info">
+                            <span class="review-author-name">A. Solejria</span>
+                            <span class="review-author-meta">Founder, The FoodBreak | Sargodha</span>
+                            <span class="review-badge-pill"><i class="fas fa-check-circle"></i> Verified Direct Client</span>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="review-slide-card">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-quote">"Built a lifesaving location mapping database and verified QR registry matching emergency blood requests. The donor matching loop now runs in under 4 minutes. A top-tier development partner."</p>
+                        <div class="review-author-info">
+                            <span class="review-author-name">Sarah M.</span>
+                            <span class="review-author-meta">Operations Coordinator, Blood Bridge | UK</span>
+                            <span class="review-badge-pill"><i class="fas fa-check-circle"></i> Verified Fiverr Client</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Navigation Indicator Dots -->
+                <div class="reviews-dots">
+                    <button class="reviews-dot active" aria-label="Review Slide 1"></button>
+                    <button class="reviews-dot" aria-label="Review Slide 2"></button>
+                    <button class="reviews-dot" aria-label="Review Slide 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO FAQ ACCORDION SECTION -->
+    <section class="faq-section" id="faqs">
+        <div class="container">
+            <div class="section-header reveal" style="text-align:center; max-width:650px; margin:0 auto 3.5rem;">
+                <div class="section-badge" style="background:rgba(6,182,212,0.1); color:#06b6d4;">FAQ Section</div>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-sub" style="color:#64748b; font-size:1rem; line-height:1.7;">Quick answers regarding our terms, code ownership, project execution, and estimates.</p>
+            </div>
+
+            <div class="faq-container">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item reveal">
+                    <button class="faq-header" aria-expanded="false">
+                        <span class="faq-question">Who owns the intellectual property and code rights?</span>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-answer">
+                            You do. 100% of the repository ownership, database structures, deployment configurations, and design assets are legally transferred to your company upon final milestone sign-off.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item reveal delay-1">
+                    <button class="faq-header" aria-expanded="false">
+                        <span class="faq-question">Do you sign Non-Disclosure Agreements (NDAs)?</span>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-answer">
+                            Absolutely. We value proprietary workflows and business secrets. We sign NDAs prior to strategy and discovery consultation sessions to guarantee complete confidentiality of your intellectual property.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="faq-item reveal delay-2">
+                    <button class="faq-header" aria-expanded="false">
+                        <span class="faq-question">How do you handle project payments and estimates?</span>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-answer">
+                            We execute projects based on milestone sprints. Sprints are scoped beforehand and payment is processed upon successful delivery and review of staging demo builds. We provide a transparent scope of work before launch.
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item reveal">
+                    <button class="faq-header" aria-expanded="false">
+                        <span class="faq-question">Can we start with a small MVP (Minimum Viable Product)?</span>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-answer">
+                            Yes! We recommend launching with a Minimum Viable Product (MVP) containing essential features to validate user market interest. This keeps initial development costs and cloud server budgets low.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section section-dark" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-badge section-badge-cyan">Let's Connect</div>
+                <h2 class="section-title" style="color:#fff;">Start Your Project With Hexasolv</h2>
+                <p class="section-sub" style="color:rgba(255,255,255,0.7);">Get a written estimate and consultation within 24 hours.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-5 reveal-left">
+                    <div style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:20px; padding:2.5rem; color:#fff;">
+                        <h4 style="font-family:'Outfit'; font-weight:800; margin-bottom:1.5rem;">Direct Contact Channels</h4>
+                        <div style="margin-bottom:1.5rem; display:flex; gap:1rem; align-items:center;">
+                            <div style="width:42px; height:42px; background:rgba(124,58,237,0.2); border-radius:10px; display:flex; align-items:center; justify-content:center; color:#a78bfa; font-size:1.2rem;"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <div style="font-size:0.8rem; color:#94a3b8;">Email Us</div>
+                                <div style="font-weight:700;">contact@hexasolv.com</div>
+                            </div>
+                        </div>
+                        <div style="margin-bottom:1.5rem; display:flex; gap:1rem; align-items:center;">
+                            <div style="width:42px; height:42px; background:rgba(37,211,102,0.2); border-radius:10px; display:flex; align-items:center; justify-content:center; color:#25D366; font-size:1.2rem;"><i class="fab fa-whatsapp"></i></div>
+                            <div>
+                                <div style="font-size:0.8rem; color:#94a3b8;">WhatsApp / Phone</div>
+                                <div style="font-weight:700;">+92 321 453 0103</div>
+                            </div>
+                        </div>
+                        <div style="display:flex; gap:1rem; align-items:center;">
+                            <div style="width:42px; height:42px; background:rgba(6,182,212,0.2); border-radius:10px; display:flex; align-items:center; justify-content:center; color:#06b6d4; font-size:1.2rem;"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <div style="font-size:0.8rem; color:#94a3b8;">Office Location</div>
+                                <div style="font-weight:700;">University Road, Sargodha, Punjab, Pakistan</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 reveal-right">
+                    <div style="background:#fff; border-radius:20px; padding:2.5rem; color:#0f0a1e;">
+                        <h4 style="font-family:'Outfit'; font-weight:800; margin-bottom:1.5rem;">Send Project Details</h4>
+                        <!-- TO ACTIVATE THIS FORM:
+                             1. Sign up at https://formspree.io with your business email: contact@hexasolv.com
+                             2. Create a new form project in the Formspree dashboard and copy the Form ID.
+                             3. Replace 'YOUR_FORM_ID' in the action URL below with your actual Form ID.
+                             4. This ensures all submissions are securely delivered directly to contact@hexasolv.com. -->
+                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name *" style="padding:0.8rem 1rem; border-radius:10px;" required />
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" name="email" class="form-control" placeholder="Your Email *" style="padding:0.8rem 1rem; border-radius:10px;" required />
+                                </div>
+                                <div class="col-12">
+                                    <select name="service" class="form-select" style="padding:0.8rem 1rem; border-radius:10px;" required>
+                                        <option value="" disabled selected>Select Service Required</option>
+                                        <option value="Web Development (Laravel)">Web Development (Laravel/PHP)</option>
+                                        <option value="MERN Stack Application">MERN Stack Application</option>
+                                        <option value="AI Web Development">AI Web Development</option>
+                                        <option value="WordPress & WooCommerce">WordPress & WooCommerce</option>
+                                        <option value="Mobile App (Flutter/Kotlin)">Mobile App (Flutter/Kotlin)</option>
+                                        <option value="Desktop & POS System (.NET)">Desktop & POS System (.NET)</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" class="form-control" rows="4" placeholder="Tell us about your project requirements..." style="padding:0.8rem 1rem; border-radius:10px;" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100" style="background:linear-gradient(135deg,#7c3aed,#a855f7); border:none; padding:0.9rem;">Submit Project Inquiry 🚀</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+  <!-- ===== FOOTER ===== -->
+  <footer style="background:#07030f; padding:4.5rem 5% 0; color:#e2e8f0; font-family:'Inter',sans-serif;">
+    <div style="max-width:1280px; margin:0 auto; display:grid; grid-template-columns: 1.3fr 1fr 1fr 1.2fr; gap:2.5rem;">
+
+      <!-- Brand -->
+      <div>
+        <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:1.2rem;">
+          <svg width="30" height="30" viewBox="0 0 100 100"><polygon points="50,3 95,25 95,75 50,97 5,75 5,25" fill="url(#footHexGrad)"/><defs><linearGradient id="footHexGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient></defs><text x="50" y="63" font-family="Outfit, sans-serif" font-size="46" font-weight="800" fill="#fff" text-anchor="middle">H</text></svg>
+          <span style="font-family:'Outfit',sans-serif; font-size:1.4rem; font-weight:800; background:linear-gradient(135deg,#7c3aed,#a855f7,#06b6d4); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">Hexasolv</span>
+        </div>
+        <p style="font-size:0.88rem; color:#94a3b8; line-height:1.7; margin-bottom:1.4rem;">Full-stack systems agency — custom software development combined with AI-driven growth marketing, built by a 3-partner team.</p>
+        <div style="font-size:0.85rem; color:#94a3b8; margin-bottom:0.6rem; display:flex; gap:0.6rem;"><i class="fas fa-map-marker-alt" style="margin-top:3px; color:#7c3aed;"></i> University Road, Sargodha, Punjab, Pakistan</div>
+        <div style="font-size:0.85rem; color:#94a3b8; margin-bottom:0.6rem; display:flex; gap:0.6rem; align-items:center;"><i class="fas fa-envelope" style="color:#7c3aed;"></i> contact@hexasolv.com</div>
+        <div style="font-size:0.85rem; color:#94a3b8; margin-bottom:1.4rem; display:flex; gap:0.6rem; align-items:center;"><i class="fas fa-phone" style="color:#7c3aed;"></i> +92 321 453 0103</div>
+        <div style="display:flex; gap:0.7rem;">
+          <a href="#" style="width:34px; height:34px; background:rgba(255,255,255,0.06); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#e2e8f0; text-decoration:none;"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" style="width:34px; height:34px; background:rgba(255,255,255,0.06); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#e2e8f0; text-decoration:none;"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com/in/arslan-ali-59b750338" target="_blank" style="width:34px; height:34px; background:rgba(255,255,255,0.06); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#e2e8f0; text-decoration:none;"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/923214530103" target="_blank" style="width:34px; height:34px; background:rgba(37,211,102,0.15); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#25D366; text-decoration:none;"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Growth & Marketing -->
+      <div>
+        <h4 style="font-family:'Outfit',sans-serif; font-size:0.8rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#fff; margin-bottom:1.3rem;">Growth &amp; Marketing</h4>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.85rem;">
+          <li><a href="services/growth-systems.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Business Growth Systems</a></li>
+          <li><a href="services/lead-nurturing.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Lead Nurturing Systems</a></li>
+          <li><a href="services/ai-automation.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">AI Automation Solutions</a></li>
+          <li><a href="services/personal-branding.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Personal Brand Positioning</a></li>
+          <li><a href="services/shopify-development.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Shopify Store Development</a></li>
+          <li><a href="services/ecommerce-management.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">E-Commerce Management</a></li>
+          <li><a href="services/paid-ads.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Performance Paid Ads</a></li>
+        </ul>
+      </div>
+
+      <!-- Tech & Development + Company -->
+      <div>
+        <h4 style="font-family:'Outfit',sans-serif; font-size:0.8rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#fff; margin-bottom:1.3rem;">Tech &amp; Development</h4>
+        <ul style="list-style:none; padding:0; margin:0 0 1.6rem; display:flex; flex-direction:column; gap:0.85rem;">
+          <li><a href="services/laravel-development.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Laravel Development</a></li>
+          <li><a href="services/mern-stack.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">MERN Stack Development</a></li>
+          <li><a href="services/saas-development.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">SaaS Tools Development</a></li>
+          <li><a href="services/pos-billing.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">POS &amp; Billing Systems</a></li>
+          <li><a href="services/ai-web-apps.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">AI Web Apps</a></li>
+          <li><a href="services/flutter-development.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Flutter App Development</a></li>
+        </ul>
+        <h4 style="font-family:'Outfit',sans-serif; font-size:0.8rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#fff; margin-bottom:1.3rem;">Company</h4>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.85rem;">
+          <li><a href="about.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">About Us</a></li>
+          <li><a href="portfolio.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Portfolio</a></li>
+          <li><a href="blog.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Blog</a></li>
+          <li><a href="contact.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter + CTA -->
+      <div>
+        <h4 style="font-family:'Outfit',sans-serif; font-size:0.8rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#fff; margin-bottom:1.1rem;">Stay In The Loop</h4>
+        <p style="font-size:0.85rem; color:#94a3b8; line-height:1.6; margin-bottom:1rem;">Practical tips on growth systems, AI automation, and software development — straight to your inbox. No spam.</p>
+        <form style="display:flex; gap:0.5rem; margin-bottom:0.6rem;" onsubmit="event.preventDefault();">
+          <input type="email" placeholder="Your email address" style="flex:1; min-width:0; padding:0.7rem 0.9rem; border-radius:8px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.05); color:#fff; font-size:0.85rem;" />
+          <button type="submit" style="background:#06b6d4; border:none; border-radius:8px; width:42px; color:#fff; font-size:1rem; cursor:pointer;"><i class="fas fa-arrow-right"></i></button>
+        </form>
+        <p style="font-size:0.75rem; color:#64748b; margin-bottom:1.6rem;"><i class="fas fa-lock"></i> No spam. Unsubscribe anytime.</p>
+
+        <h4 style="font-family:'Outfit',sans-serif; font-size:0.8rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#fff; margin-bottom:1rem;">Start Your Project</h4>
+        <a href="contact.html" style="display:block; text-align:center; background:linear-gradient(135deg,#7c3aed,#a855f7); color:#fff; text-decoration:none; padding:0.85rem; border-radius:8px; font-family:'Outfit',sans-serif; font-weight:700; font-size:0.9rem; margin-bottom:0.8rem;">Book a Strategy Call →</a>
+        <a href="https://wa.me/923214530103" target="_blank" style="display:block; text-align:center; background:rgba(37,211,102,0.15); color:#25D366; text-decoration:none; padding:0.85rem; border-radius:8px; font-family:'Outfit',sans-serif; font-weight:700; font-size:0.9rem;"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+      </div>
+    </div>
+
+    <div style="max-width:1280px; margin:2.5rem auto 0; padding:1.5rem 0; border-top:1px solid rgba(255,255,255,0.08); display:flex; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+      <p style="font-size:0.82rem; color:#64748b; margin:0;">© 2026 Hexasolv. All rights reserved. | Sargodha, Pakistan</p>
+      <div style="display:flex; gap:1.5rem;">
+        <a href="#" style="color:#64748b; text-decoration:none; font-size:0.82rem;">Privacy Policy</a>
+        <a href="#" style="color:#64748b; text-decoration:none; font-size:0.82rem;">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    @media (max-width: 900px) {
+      footer > div:first-child { grid-template-columns: 1fr 1fr !important; }
+    }
+    @media (max-width: 560px) {
+      footer > div:first-child { grid-template-columns: 1fr !important; }
+    }
+  </style>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/923214530103?text=Hi%20Hexasolv%2C%20I%20would%20like%20to%20discuss%20a%20software%20project." target="_blank" class="floating-wa-btn-Hexasolv" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof AOS !== 'undefined') {
+                AOS.init({
+                    duration: 800,
+                    once: true,
+                    offset: 100
+                });
+            }
+        });
+    </script>
+    <script src="js/theme.js"></script>
+    <script src="js/estimator.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/portfolio-data.js"></script>
+    <script src="js/portfolio-renderer.js"></script>
+    <script src="js/agency-upgrades.js"></script>
+    <script src="js/main.js?v=2"></script>
+<script src="js/chatbot.js"></script>
+</body>
+</html>

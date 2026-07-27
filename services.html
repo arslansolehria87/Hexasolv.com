@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    // Apply theme from localStorage before render
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark');
+    }
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services — Hexasolv | Development &amp; Growth Systems</title>
+  <meta name="description" content="Hexasolv delivers two connected service clusters: Growth &amp; Marketing Systems (Lead Generation, AI Automation, Shopify, Paid Ads) and Tech &amp; Development (Laravel, MERN, AI Web Apps, Mobile, POS)." />
+  <meta property="og:title" content="Our Services — Hexasolv | Development &amp; Growth Systems" />
+  <meta property="og:description" content="World-class digital engineering services built for global scale." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hexasolv.com/services.html" />
+  <meta property="og:image" content="images/logo.png" />
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/chatbot.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo" style="display:flex; align-items:center; gap:0.5rem;">
+      <svg width="28" height="28" viewBox="0 0 100 100" style="flex-shrink:0;"><polygon points="50,3 95,25 95,75 50,97 5,75 5,25" fill="url(#navHexGrad)"/><defs><linearGradient id="navHexGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient></defs><text x="50" y="63" font-family="Outfit, sans-serif" font-size="46" font-weight="800" fill="#fff" text-anchor="middle">H</text></svg>
+      <span class="nav-logo-text">Hexasolv</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+            <li class="nav-item-mega">
+        <a href="services.html" class="nav-mega-trigger active">Services <i class="fas fa-chevron-down" style="font-size:0.65rem; margin-left:3px;"></i></a>
+        <div class="nav-mega-panel">
+          <div class="nav-mega-col">
+            <h4><i class="fas fa-chart-line"></i> Growth &amp; Marketing</h4>
+            <a href="services/growth-systems.html">Business Growth Systems</a>
+            <a href="services/lead-nurturing.html">Lead Nurturing Systems</a>
+            <a href="services/ai-automation.html">AI &amp; n8n Automation</a>
+            <a href="services/personal-branding.html">Personal Brand Positioning</a>
+          </div>
+          <div class="nav-mega-col">
+            <h4><i class="fas fa-bag-shopping"></i> E-Commerce &amp; Ads</h4>
+            <a href="services/shopify-development.html">Shopify Store Development</a>
+            <a href="services/ecommerce-management.html">E-Commerce Management</a>
+            <a href="services/paid-ads.html">Performance Paid Ads</a>
+          </div>
+          <div class="nav-mega-col">
+            <h4><i class="fas fa-code"></i> Tech &amp; Development</h4>
+            <a href="services/laravel-development.html">Laravel Development</a>
+            <a href="services/mern-stack.html">MERN Stack Development</a>
+            <a href="services/saas-development.html">SaaS &amp; ERP Solutions</a>
+            <a href="services/pos-billing.html">POS &amp; CRM Systems</a>
+            <a href="services/ai-web-apps.html">AI Web Apps</a>
+            <a href="services/flutter-development.html">Flutter App Development</a>
+          </div>
+          <div class="nav-mega-col nav-mega-cta">
+            <h4>Not Sure Where to Start?</h4>
+            <p>Tell us your goal and we'll map the right service mix for you.</p>
+            <a href="contact.html" class="nav-mega-cta-btn">Book a Strategy Call</a>
+            <a href="services.html" class="nav-mega-view-all">View All Services →</a>
+          </div>
+        </div>
+      </li>
+
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div style="display:flex; align-items:center; gap:0.8rem;">
+      <button class="theme-toggle-btn" onclick="toggleTheme()" title="Toggle Dark/Light Mode">
+        <span id="themeToggleIcon">🌙</span>
+      </button>
+      <a href="contact.html" class="nav-cta">Book a Strategy Call →</a>
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleMobileNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="page-hero reveal">
+    <span class="section-tag">What We Deliver</span>
+    <h1 class="page-hero-title">Growth Systems &amp; Engineering Services</h1>
+    <p class="page-hero-desc">From lead generation, AI automation, and performance ads to custom web applications, mobile software, and POS systems — we build the growth engine and the tech underneath it.</p>
+  </section>
+
+  <!-- ===== GROWTH & MARKETING SYSTEMS ===== -->
+  <section>
+    <div class="section-wrapper">
+      <div style="text-align:center; max-width:600px; margin:0 auto 1rem;">
+        <span class="section-tag">Cluster A</span>
+        <h2 class="section-title">Growth &amp; Marketing Systems</h2>
+        <p class="section-desc">Predictable lead generation, automation, and paid growth — built as one connected system.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">📈</div>
+          <h3 class="service-title">Business Growth Systems</h3>
+          <p class="service-desc"><strong>Generate, Manage &amp; Convert Leads with High-Converting Architecture.</strong> We design end-to-end growth ecosystems tailored to capture, track, and convert prospective leads into high-paying clients. Our strategic funnels ensure seamless lead routing, improved sales conversions, and predictable business scaling.</p>
+          <div class="service-tags"><span class="tag">Funnels</span><span class="tag">Lead Routing</span><span class="tag">Scaling</span></div>
+        </div>
+
+        <div class="service-card reveal delay-1">
+          <div class="service-icon">🔁</div>
+          <h3 class="service-title">Lead Nurturing Systems</h3>
+          <p class="service-desc"><strong>Automated &amp; Strategic Multi-Channel Lead Acquisition.</strong> Stop losing potential buyers. We build automated lead nurturing frameworks that engage prospects through targeted messaging, email workflows, and structured touchpoints — delivering consistent, pre-qualified, high-quality leads directly to your pipeline.</p>
+          <div class="service-tags"><span class="tag">Email Workflows</span><span class="tag">Nurture Sequences</span></div>
+        </div>
+
+        <div class="service-card reveal delay-2">
+          <div class="service-icon">⚙️</div>
+          <h3 class="service-title">AI &amp; n8n Automation</h3>
+          <p class="service-desc"><strong>Streamline Business Operations &amp; Intelligent Follow-Ups.</strong> Scale your efficiency without increasing headcount. We implement custom n8n workflow automations and AI integrations to auto-pilot repetitive operations, client onboarding, instant auto-responders, and intelligent CRM follow-ups.</p>
+          <div class="service-tags"><span class="tag">n8n Workflows</span><span class="tag">CRM Automation</span><span class="tag">Auto-Responders</span></div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">🏆</div>
+          <h3 class="service-title">Personal Brand Positioning</h3>
+          <p class="service-desc"><strong>Establish Industry Authority, Build Trust &amp; Attract Premium Clients.</strong> Transform your online presence into a client-magnet brand. We craft compelling positioning strategies that showcase your expertise, build undeniable trust, and position you as the premium authority in your niche.</p>
+          <div class="service-tags"><span class="tag">Authority Building</span><span class="tag">Positioning</span></div>
+        </div>
+
+        <div class="service-card reveal delay-1">
+          <div class="service-icon">🛍️</div>
+          <h3 class="service-title">Shopify Store Development</h3>
+          <p class="service-desc"><strong>High-Converting Stores for Local Brands &amp; Global Dropshipping.</strong> Complete custom Shopify design and engineering for maximum sales conversion. Optimized for both domestic e-commerce brands and scalable international dropshipping models with mobile-first responsiveness and fast load times.</p>
+          <div class="service-tags"><span class="tag">Shopify</span><span class="tag">Dropshipping</span></div>
+        </div>
+
+        <div class="service-card reveal delay-2">
+          <div class="service-icon">📦</div>
+          <h3 class="service-title">End-to-End E-Commerce Management</h3>
+          <p class="service-desc"><strong>Complete Operational Management from Product Launch to Fulfillment.</strong> Hassle-free store operations. We manage full e-commerce execution — product listing strategy, inventory coordination, order processing, and streamlined delivery workflows.</p>
+          <div class="service-tags"><span class="tag">Inventory</span><span class="tag">Fulfillment</span></div>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">📣</div>
+          <h3 class="service-title">Performance Paid Ads</h3>
+          <p class="service-desc"><strong>Data-Driven Multi-Platform Advertising for Maximum ROAS.</strong> Targeted, ROI-focused ad campaigns engineered to capture market demand and generate instant buyer intent across major advertising channels.</p>
+          <div class="service-tags"><span class="tag">Meta Ads</span><span class="tag">TikTok Ads</span><span class="tag">Google Ads</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES GRID ===== -->
+  <section>
+    <div class="section-wrapper">
+      <div style="text-align:center; max-width:600px; margin:0 auto 1rem;">
+        <span class="section-tag">Cluster B</span>
+        <h2 class="section-title">Tech &amp; Development</h2>
+        <p class="section-desc">Custom-built software, engineered for scale and performance.</p>
+      </div>
+      <div class="services-grid">
+        <!-- 1 -->
+        <div class="service-card reveal delay-1">
+          <div class="service-icon">🌐</div>
+          <h3 class="service-title">Web Development</h3>
+          <p class="service-desc">Fast, scalable web applications built with industry-leading frameworks like Laravel & PHP. Clean, maintainable code architecture built for enterprise performance.</p>
+          <div class="service-tags"><span class="tag">Laravel</span><span class="tag">PHP</span><span class="tag">Node.js</span><span class="tag">REST APIs</span></div>
+        </div>
+
+        <!-- 2 -->
+        <div class="service-card reveal delay-2">
+          <div class="service-icon">⚡</div>
+          <h3 class="service-title">MERN Stack Applications</h3>
+          <p class="service-desc">Full-stack JavaScript applications powered by MongoDB, Express, React, and Node.js. Modern single-page applications with real-time state management.</p>
+          <div class="service-tags"><span class="tag">MongoDB</span><span class="tag">Express.js</span><span class="tag">React.js</span><span class="tag">Node.js</span></div>
+        </div>
+
+        <!-- 3 -->
+        <div class="service-card reveal">
+          <div class="service-icon">🤖</div>
+          <h3 class="service-title">AI Web Development</h3>
+          <p class="service-desc">Next-generation web applications integrated with OpenAI APIs, custom chatbots, automated customer support funnels, and intelligent lead processing.</p>
+          <div class="service-tags"><span class="tag">AI Integration</span><span class="tag">ChatGPT API</span><span class="tag">Automation</span></div>
+        </div>
+
+        <!-- 4 -->
+        <div class="service-card reveal delay-1">
+          <div class="service-icon">🎯</div>
+          <h3 class="service-title">WordPress & CMS Development</h3>
+          <p class="service-desc">Custom WordPress websites, WooCommerce stores, and tailored plugins. High-converting designs optimized for speed, mobile responsiveness, and SEO ranking.</p>
+          <div class="service-tags"><span class="tag">WordPress</span><span class="tag">WooCommerce</span><span class="tag">Custom Themes</span></div>
+        </div>
+
+        <!-- 5 -->
+        <div class="service-card reveal delay-2">
+          <div class="service-icon">📱</div>
+          <h3 class="service-title">Mobile App Development</h3>
+          <p class="service-desc">Cross-platform and native mobile apps built using Flutter and Kotlin for Android and iOS. Smooth animations, offline synchronization, and intuitive user interfaces.</p>
+          <div class="service-tags"><span class="tag">Flutter</span><span class="tag">Kotlin</span><span class="tag">Android</span><span class="tag">iOS</span></div>
+        </div>
+
+        <!-- 6 -->
+        <div class="service-card reveal">
+          <div class="service-icon">🛒</div>
+          <h3 class="service-title">E-Commerce Platforms</h3>
+          <p class="service-desc">High-converting online shopping platforms with payment gateway integrations, real-time inventory tracking, and automated order processing.</p>
+          <div class="service-tags"><span class="tag">Shopify</span><span class="tag">WooCommerce</span><span class="tag">Stripe/PayPal</span></div>
+        </div>
+
+        <!-- 8 -->
+        <div class="service-card reveal delay-1">
+          <div class="service-icon">🖥️</div>
+          <h3 class="service-title">ERP &amp; POS Dashboards</h3>
+          <p class="service-desc">Custom Enterprise Resource Planning (ERP) engines and Point-of-Sale (POS) systems built with .NET 8, WPF, or Laravel for inventory tracking, citrus factory management, ledger logs, and retail barcode billing.</p>
+          <div class="service-tags"><span class="tag">ERP Systems</span><span class="tag">Laravel / .NET</span><span class="tag">POS Engine</span></div>
+        </div>
+
+        <!-- 9 -->
+        <div class="service-card reveal delay-2">
+          <div class="service-icon">🎨</div>
+          <h3 class="service-title">UI/UX Design Systems</h3>
+          <p class="service-desc">Beautiful, user-centric interface design and interactive Figma prototypes built for high conversion rates and seamless user onboarding.</p>
+          <div class="service-tags"><span class="tag">Figma</span><span class="tag">UI/UX Design</span><span class="tag">Prototyping</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section style="background: var(--bg-secondary); border-top: 1px solid var(--border);">
+    <div class="section-wrapper">
+      <div style="text-align: center; max-width: 550px; margin: 0 auto;">
+        <span class="section-tag">How We Work</span>
+        <h2 class="section-title">Our 5-Step Process</h2>
+        <p class="section-desc">A structured engineering roadmap for consistent on-time project execution.</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="process-num">01</div>
+          <h4 style="font-family: var(--font-main); font-weight: 700; margin-bottom: 0.5rem;">Discovery</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">Analyzing project scope, goals, and technical requirements.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-num">02</div>
+          <h4 style="font-family: var(--font-main); font-weight: 700; margin-bottom: 0.5rem;">Planning</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">Architecting database schemas, API routes, and wireframes.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-num">03</div>
+          <h4 style="font-family: var(--font-main); font-weight: 700; margin-bottom: 0.5rem;">Design</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">Pixel-perfect UI prototypes approved before development.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-num">04</div>
+          <h4 style="font-family: var(--font-main); font-weight: 700; margin-bottom: 0.5rem;">Development</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">Clean sprint coding with weekly progress demos.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-num">05</div>
+          <h4 style="font-family: var(--font-main); font-weight: 700; margin-bottom: 0.5rem;">Launch & Support</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">QA testing, deployment, and 90-day free warranty.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <!-- ===== FOOTER ===== -->
+  <footer style="background:#07030f; padding:4.5rem 5% 0; color:#e2e8f0; font-family:'Inter',sans-serif;">
+    <div style="max-width:1280px; margin:0 auto; display:grid; grid-template-columns: 1.3fr 1fr 1fr 1.2fr; gap:2.5rem;">
+
+      <!-- Brand -->
+      <div>
+        <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:1.2rem;">
+          <svg width="30" height="30" viewBox="0 0 100 100"><polygon points="50,3 95,25 95,75 50,97 5,75 5,25" fill="url(#footHexGrad)"/><defs><linearGradient id="footHexGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient></defs><text x="50" y="63" font-family="Outfit, sans-serif" font-size="46" font-weight="800" fill="#fff" text-anchor="middle">H</text></svg>
+          <span style="font-family:'Outfit',sans-serif; font-size:1.4rem; font-weight:800; background:linear-gradient(135deg,#7c3aed,#a855f7,#06b6d4); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">Hexasolv</span>
+        </div>
+        <p style="font-size:0.88rem; color:#94a3b8; line-height:1.7; margin-bottom:1.4rem;">Full-stack systems agency — custom software development combined with AI-driven growth marketing, built by a 3-partner team.</p>
+        <div style="font-size:0.85rem; color:#94a3b8; margin-bottom:0.6rem; display:flex; gap:0.6rem;"><i class="fas fa-map-marker-alt" style="margin-top:3px; color:#7c3aed;"></i> University Road, Sargodha, Punjab, Pakistan</div>
+        <div style="font-size:0.85rem; color:#94a3b8; margin-bottom:0.6rem; display:flex; gap:0.6rem; align-items:center;"><i class="fas fa-envelope" style="color:#7c3aed;"></i> contact@hexasolv.com</div>
+        <div style="font-size:0.85rem; color:#94a3b8; margin-bottom:1.4rem; display:flex; gap:0.6rem; align-items:center;"><i class="fas fa-phone" style="color:#7c3aed;"></i> +92 321 453 0103</div>
+        <div style="display:flex; gap:0.7rem;">
+          <a href="#" style="width:34px; height:34px; background:rgba(255,255,255,0.06); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#e2e8f0; text-decoration:none;"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" style="width:34px; height:34px; background:rgba(255,255,255,0.06); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#e2e8f0; text-decoration:none;"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com/in/arslan-ali-59b750338" target="_blank" style="width:34px; height:34px; background:rgba(255,255,255,0.06); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#e2e8f0; text-decoration:none;"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/923214530103" target="_blank" style="width:34px; height:34px; background:rgba(37,211,102,0.15); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#25D366; text-decoration:none;"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Growth & Marketing -->
+      <div>
+        <h4 style="font-family:'Outfit',sans-serif; font-size:0.8rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#fff; margin-bottom:1.3rem;">Growth &amp; Marketing</h4>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.85rem;">
+          <li><a href="services/growth-systems.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Business Growth Systems</a></li>
+          <li><a href="services/lead-nurturing.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Lead Nurturing Systems</a></li>
+          <li><a href="services/ai-automation.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">AI &amp; n8n Automation</a></li>
+          <li><a href="services/personal-branding.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Personal Brand Positioning</a></li>
+          <li><a href="services/shopify-development.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Shopify Store Development</a></li>
+          <li><a href="services/ecommerce-management.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">E-Commerce Management</a></li>
+          <li><a href="services/paid-ads.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Performance Paid Ads</a></li>
+        </ul>
+      </div>
+
+      <!-- Tech & Development + Company -->
+      <div>
+        <h4 style="font-family:'Outfit',sans-serif; font-size:0.8rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#fff; margin-bottom:1.3rem;">Tech &amp; Development</h4>
+        <ul style="list-style:none; padding:0; margin:0 0 1.6rem; display:flex; flex-direction:column; gap:0.85rem;">
+          <li><a href="services/laravel-development.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Laravel Development</a></li>
+          <li><a href="services/mern-stack.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">MERN Stack Development</a></li>
+          <li><a href="services/saas-development.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">SaaS &amp; ERP Solutions</a></li>
+          <li><a href="services/pos-billing.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">POS &amp; CRM Systems</a></li>
+          <li><a href="services/ai-web-apps.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">AI Web Apps</a></li>
+          <li><a href="services/flutter-development.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Flutter App Development</a></li>
+        </ul>
+        <h4 style="font-family:'Outfit',sans-serif; font-size:0.8rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#fff; margin-bottom:1.3rem;">Company</h4>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.85rem;">
+          <li><a href="about.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">About Us</a></li>
+          <li><a href="portfolio.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Portfolio</a></li>
+          <li><a href="blog.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Blog</a></li>
+          <li><a href="contact.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter + CTA -->
+      <div>
+        <h4 style="font-family:'Outfit',sans-serif; font-size:0.8rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#fff; margin-bottom:1.1rem;">Stay In The Loop</h4>
+        <p style="font-size:0.85rem; color:#94a3b8; line-height:1.6; margin-bottom:1rem;">Practical tips on growth systems, AI automation, and software development — straight to your inbox. No spam.</p>
+        <form style="display:flex; gap:0.5rem; margin-bottom:0.6rem;" onsubmit="event.preventDefault();">
+          <input type="email" placeholder="Your email address" style="flex:1; min-width:0; padding:0.7rem 0.9rem; border-radius:8px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.05); color:#fff; font-size:0.85rem;" />
+          <button type="submit" style="background:#06b6d4; border:none; border-radius:8px; width:42px; color:#fff; font-size:1rem; cursor:pointer;"><i class="fas fa-arrow-right"></i></button>
+        </form>
+        <p style="font-size:0.75rem; color:#64748b; margin-bottom:1.6rem;"><i class="fas fa-lock"></i> No spam. Unsubscribe anytime.</p>
+
+        <h4 style="font-family:'Outfit',sans-serif; font-size:0.8rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#fff; margin-bottom:1rem;">Start Your Project</h4>
+        <a href="contact.html" style="display:block; text-align:center; background:linear-gradient(135deg,#7c3aed,#a855f7); color:#fff; text-decoration:none; padding:0.85rem; border-radius:8px; font-family:'Outfit',sans-serif; font-weight:700; font-size:0.9rem; margin-bottom:0.8rem;">Book a Strategy Call →</a>
+        <a href="https://wa.me/923214530103" target="_blank" style="display:block; text-align:center; background:rgba(37,211,102,0.15); color:#25D366; text-decoration:none; padding:0.85rem; border-radius:8px; font-family:'Outfit',sans-serif; font-weight:700; font-size:0.9rem;"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+      </div>
+    </div>
+
+    <div style="max-width:1280px; margin:2.5rem auto 0; padding:1.5rem 0; border-top:1px solid rgba(255,255,255,0.08); display:flex; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+      <p style="font-size:0.82rem; color:#64748b; margin:0;">© 2026 Hexasolv. All rights reserved. | Sargodha, Pakistan</p>
+      <div style="display:flex; gap:1.5rem;">
+        <a href="#" style="color:#64748b; text-decoration:none; font-size:0.82rem;">Privacy Policy</a>
+        <a href="#" style="color:#64748b; text-decoration:none; font-size:0.82rem;">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    @media (max-width: 900px) {
+      footer > div:first-child { grid-template-columns: 1fr 1fr !important; }
+    }
+    @media (max-width: 560px) {
+      footer > div:first-child { grid-template-columns: 1fr !important; }
+    }
+  </style>
+
+  <a href="https://wa.me/923214530103?text=Hi%20Hexasolv%2C%20I%20would%20like%20to%20discuss%20a%20software%20project." target="_blank" class="floating-wa-btn" title="Chat on WhatsApp">💬</a>
+
+  <script>
+    function toggleMobileNav() { document.getElementById('mobileNav').classList.toggle('open'); }
+  </script>
+
+  <script src="js/theme.js"></script>
+<script src="js/chatbot.js"></script>
+</body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    // Apply theme from localStorage before render
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark');
+    }
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Hexasolv Software House</title>
+  <meta name="description" content="Learn about Hexasolv - a premier software house delivering enterprise web apps, mobile solutions, POS systems, and AI digital transformation globally." />
+  <meta property="og:title" content="About Us — Hexasolv Software House" />
+  <meta property="og:description" content="Empowering businesses worldwide through cutting-edge technology and engineering excellence." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hexasolv.com/about.html" />
+  <meta property="og:image" content="images/logo.png" />
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/global.css">
+
+  <style>
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3.5rem;
+    }
+
+    .value-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2rem;
+      transition: all 0.3s;
+    }
+
+    .value-card:hover {
+      border-color: var(--accent-1);
+      transform: translateY(-5px);
+    }
+
+    .value-icon { font-size: 2rem; margin-bottom: 1rem; }
+    .value-title { font-family: var(--font-main); font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .value-desc { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3.5rem;
+    }
+
+    .team-card {
+      background: var(--bg-primary);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+      transition: all 0.3s;
+    }
+
+    .team-card:hover { border-color: var(--accent-1); transform: translateY(-5px); }
+    .team-img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.2rem; border: 3px solid rgba(124,58,237,0.2); }
+    .team-name { font-family: var(--font-main); font-size: 1.15rem; font-weight: 800; margin-bottom: 0.3rem; }
+    .team-role { font-size: 0.8rem; color: var(--accent-1); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem; }
+    .team-bio { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.2rem; }
+    .team-socials { display: flex; justify-content: center; gap: 0.8rem; }
+    .team-social-btn { width: 34px; height: 34px; background: rgba(124,58,237,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--accent-1); text-decoration: none; font-size: 0.9rem; }
+
+    @media (max-width: 900px) {
+      .story-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+  <link rel="stylesheet" href="css/chatbot.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo" style="display:flex; align-items:center; gap:0.5rem;">
+      <svg width="28" height="28" viewBox="0 0 100 100" style="flex-shrink:0;"><polygon points="50,3 95,25 95,75 50,97 5,75 5,25" fill="url(#navHexGrad)"/><defs><linearGradient id="navHexGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient></defs><text x="50" y="63" font-family="Outfit, sans-serif" font-size="46" font-weight="800" fill="#fff" text-anchor="middle">H</text></svg>
+      <span class="nav-logo-text">Hexasolv</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About Us</a></li>
+            <li class="nav-item-mega">
+        <a href="services.html" class="nav-mega-trigger">Services <i class="fas fa-chevron-down" style="font-size:0.65rem; margin-left:3px;"></i></a>
+        <div class="nav-mega-panel">
+          <div class="nav-mega-col">
+            <h4><i class="fas fa-chart-line"></i> Growth &amp; Marketing</h4>
+            <a href="services/growth-systems.html">Business Growth Systems</a>
+            <a href="services/lead-nurturing.html">Lead Nurturing Systems</a>
+            <a href="services/ai-automation.html">AI &amp; n8n Automation</a>
+            <a href="services/personal-branding.html">Personal Brand Positioning</a>
+          </div>
+          <div class="nav-mega-col">
+            <h4><i class="fas fa-bag-shopping"></i> E-Commerce &amp; Ads</h4>
+            <a href="services/shopify-development.html">Shopify Store Development</a>
+            <a href="services/ecommerce-management.html">E-Commerce Management</a>
+            <a href="services/paid-ads.html">Performance Paid Ads</a>
+          </div>
+          <div class="nav-mega-col">
+            <h4><i class="fas fa-code"></i> Tech &amp; Development</h4>
+            <a href="services/laravel-development.html">Laravel Development</a>
+            <a href="services/mern-stack.html">MERN Stack Development</a>
+            <a href="services/saas-development.html">SaaS &amp; ERP Solutions</a>
+            <a href="services/pos-billing.html">POS &amp; CRM Systems</a>
+            <a href="services/ai-web-apps.html">AI Web Apps</a>
+            <a href="services/flutter-development.html">Flutter App Development</a>
+          </div>
+          <div class="nav-mega-col nav-mega-cta">
+            <h4>Not Sure Where to Start?</h4>
+            <p>Tell us your goal and we'll map the right service mix for you.</p>
+            <a href="contact.html" class="nav-mega-cta-btn">Book a Strategy Call</a>
+            <a href="services.html" class="nav-mega-view-all">View All Services →</a>
+          </div>
+        </div>
+      </li>
+
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div style="display:flex; align-items:center; gap:0.8rem;">
+      <button class="theme-toggle-btn" onclick="toggleTheme()" title="Toggle Dark/Light Mode">
+        <span id="themeToggleIcon">🌙</span>
+      </button>
+      <a href="contact.html" class="nav-cta">Book a Strategy Call →</a>
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleMobileNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="page-hero reveal">
+    <span class="section-tag">Who We Are</span>
+    <h1 class="page-hero-title">Empowering Global Businesses Through Technology</h1>
+    <p class="page-hero-desc">Hexasolv is a full-stack systems agency — we build the software (web, mobile, POS, AI apps) and the growth engine (lead systems, automation, paid ads) that runs through it.</p>
+  </section>
+
+  <!-- ===== STORY ===== -->
+  <section>
+    <div class="section-wrapper">
+      <div class="story-grid">
+        <div class="reveal-left">
+          <span class="section-tag">Our Story & Mission</span>
+          <h2 class="section-title">Built on Technical Rigor & Client Trust</h2>
+          <p class="section-desc">Founded with a vision to deliver world-class engineering solutions, Hexasolv combines deep technical expertise with modern design principles. From web portals in Pakistan to POS enterprise systems in Europe, we bridge complex technical requirements with clean, scalable execution.</p>
+          <p class="section-desc">We don't just write code — we architect sustainable digital products that drive measurable business revenue, efficiency, and customer satisfaction.</p>
+        </div>
+        <div class="reveal-right">
+          <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: 24px; padding: 2.5rem; text-align: center;">
+            <div style="font-family: var(--font-main); font-size: 3.5rem; font-weight: 900; background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">50+</div>
+            <div style="font-family: var(--font-main); font-weight: 700; font-size: 1.1rem; margin-bottom: 1.5rem;">Successful Projects Delivered Worldwide</div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; text-align: left;">
+              <div style="background: #fff; padding: 1rem; border-radius: 12px; border: 1px solid var(--border);">
+                <div style="font-weight: 800; font-family: var(--font-main); color: var(--accent-1); font-size: 1.2rem;">30+</div>
+                <div style="font-size: 0.78rem; color: var(--text-muted);">Happy Corporate Clients</div>
+              </div>
+              <div style="background: #fff; padding: 1rem; border-radius: 12px; border: 1px solid var(--border);">
+                <div style="font-weight: 800; font-family: var(--font-main); color: var(--accent-1); font-size: 1.2rem;">100%</div>
+                <div style="font-size: 0.78rem; color: var(--text-muted);">IP & Code Transfer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CORE VALUES ===== -->
+  <section style="background: var(--bg-secondary); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="section-wrapper">
+      <div style="text-align: center; max-width: 550px; margin: 0 auto;" class="reveal">
+        <span class="section-tag">Our Philosophy</span>
+        <h2 class="section-title">Core Principles That Guide Us</h2>
+        <p class="section-desc">How we maintain standard-setting quality across every project lifecycle.</p>
+      </div>
+
+      <div class="values-grid">
+        <div class="value-card reveal">
+          <div class="value-icon">⚡</div>
+          <h3 class="value-title">Fast, Zero-Compromise Delivery</h3>
+          <p class="value-desc">We follow agile sprint milestones to ship production code quickly without cutting security or architecture corners.</p>
+        </div>
+        <div class="value-card reveal delay-1">
+          <div class="value-icon">🔒</div>
+          <h3 class="value-title">Enterprise Security Hardening</h3>
+          <p class="value-desc">Security is baked into our code from day one — input sanitization, RBAC, encrypted databases, and strict API protection.</p>
+        </div>
+        <div class="value-card reveal delay-2">
+          <div class="value-icon">🤝</div>
+          <h3 class="value-title">Full Transparency & Ownership</h3>
+          <p class="value-desc">Clients own 100% of the repository and intellectual property. No hidden vendor lock-in or licensing fees.</p>
+        </div>
+        <div class="value-card reveal delay-3">
+          <div class="value-icon">🌐</div>
+          <h3 class="value-title">Global Engineering Standards</h3>
+          <p class="value-desc">We write clean, modular, documented code adhering to international design systems and performance standards.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LEADERSHIP ===== -->
+  <section>
+    <div class="section-wrapper">
+      <div style="text-align: center; max-width: 550px; margin: 0 auto;" class="reveal">
+        <span class="section-tag">Our Team</span>
+        <h2 class="section-title">Engineering Leadership</h2>
+        <p class="section-desc">Meet the core team driving product development at Hexasolv.</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <div class="team-img" style="background:linear-gradient(135deg,#7c3aed,#a855f7); display:flex; align-items:center; justify-content:center; color:#fff; font-family:var(--font-main); font-size:1.6rem; font-weight:800;">MA</div>
+          <h3 class="team-name">Muhammad Arslan</h3>
+          <div class="team-role">Partner &amp; Lead Full-Stack Developer</div>
+          <p class="team-bio">Specialist in Laravel, .NET, MERN Stack, Flutter, and POS architecture.</p>
+          <div class="team-socials">
+            <a href="https://github.com/arslansolehria87" target="_blank" class="team-social-btn">GH</a>
+            <a href="https://linkedin.com/in/arslan-ali-59b750338" target="_blank" class="team-social-btn">IN</a>
+            <a href="https://wa.me/923214530103" target="_blank" class="team-social-btn">WA</a>
+          </div>
+        </div>
+
+        <!-- TODO: replace placeholder name/role/bio/socials with real 2nd partner details -->
+        <div class="team-card reveal delay-1">
+          <div class="team-img" style="background:linear-gradient(135deg,#06b6d4,#3b82f6); display:flex; align-items:center; justify-content:center; color:#fff; font-family:var(--font-main); font-size:1.6rem; font-weight:800;">P2</div>
+          <h3 class="team-name">Partner Name</h3>
+          <div class="team-role">Partner &amp; [Role]</div>
+          <p class="team-bio">Bio to be added — expertise and focus area at Hexasolv.</p>
+          <div class="team-socials">
+            <a href="contact.html" class="team-social-btn">IN</a>
+            <a href="contact.html" class="team-social-btn">GH</a>
+            <a href="https://wa.me/923214530103" target="_blank" class="team-social-btn">WA</a>
+          </div>
+        </div>
+
+        <!-- TODO: replace placeholder name/role/bio/socials with real 3rd partner details -->
+        <div class="team-card reveal delay-2">
+          <div class="team-img" style="background:linear-gradient(135deg,#a855f7,#ec4899); display:flex; align-items:center; justify-content:center; color:#fff; font-family:var(--font-main); font-size:1.6rem; font-weight:800;">P3</div>
+          <h3 class="team-name">Partner Name</h3>
+          <div class="team-role">Partner &amp; [Role]</div>
+          <p class="team-bio">Bio to be added — expertise and focus area at Hexasolv.</p>
+          <div class="team-socials">
+            <a href="contact.html" class="team-social-btn">IN</a>
+            <a href="contact.html" class="team-social-btn">GH</a>
+            <a href="https://wa.me/923214530103" target="_blank" class="team-social-btn">WA</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <!-- ===== FOOTER ===== -->
+  <footer style="background:#07030f; padding:4.5rem 5% 0; color:#e2e8f0; font-family:'Inter',sans-serif;">
+    <div style="max-width:1280px; margin:0 auto; display:grid; grid-template-columns: 1.3fr 1fr 1fr 1.2fr; gap:2.5rem;">
+
+      <!-- Brand -->
+      <div>
+        <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:1.2rem;">
+          <svg width="30" height="30" viewBox="0 0 100 100"><polygon points="50,3 95,25 95,75 50,97 5,75 5,25" fill="url(#footHexGrad)"/><defs><linearGradient id="footHexGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient></defs><text x="50" y="63" font-family="Outfit, sans-serif" font-size="46" font-weight="800" fill="#fff" text-anchor="middle">H</text></svg>
+          <span style="font-family:'Outfit',sans-serif; font-size:1.4rem; font-weight:800; background:linear-gradient(135deg,#7c3aed,#a855f7,#06b6d4); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">Hexasolv</span>
+        </div>
+        <p style="font-size:0.88rem; color:#94a3b8; line-height:1.7; margin-bottom:1.4rem;">Full-stack systems agency — custom software development combined with AI-driven growth marketing, built by a 3-partner team.</p>
+        <div style="font-size:0.85rem; color:#94a3b8; margin-bottom:0.6rem; display:flex; gap:0.6rem;"><i class="fas fa-map-marker-alt" style="margin-top:3px; color:#7c3aed;"></i> University Road, Sargodha, Punjab, Pakistan</div>
+        <div style="font-size:0.85rem; color:#94a3b8; margin-bottom:0.6rem; display:flex; gap:0.6rem; align-items:center;"><i class="fas fa-envelope" style="color:#7c3aed;"></i> contact@hexasolv.com</div>
+        <div style="font-size:0.85rem; color:#94a3b8; margin-bottom:1.4rem; display:flex; gap:0.6rem; align-items:center;"><i class="fas fa-phone" style="color:#7c3aed;"></i> +92 321 453 0103</div>
+        <div style="display:flex; gap:0.7rem;">
+          <a href="#" style="width:34px; height:34px; background:rgba(255,255,255,0.06); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#e2e8f0; text-decoration:none;"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" style="width:34px; height:34px; background:rgba(255,255,255,0.06); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#e2e8f0; text-decoration:none;"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com/in/arslan-ali-59b750338" target="_blank" style="width:34px; height:34px; background:rgba(255,255,255,0.06); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#e2e8f0; text-decoration:none;"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/923214530103" target="_blank" style="width:34px; height:34px; background:rgba(37,211,102,0.15); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#25D366; text-decoration:none;"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Growth & Marketing -->
+      <div>
+        <h4 style="font-family:'Outfit',sans-serif; font-size:0.8rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#fff; margin-bottom:1.3rem;">Growth &amp; Marketing</h4>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.85rem;">
+          <li><a href="services/growth-systems.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Business Growth Systems</a></li>
+          <li><a href="services/lead-nurturing.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Lead Nurturing Systems</a></li>
+          <li><a href="services/ai-automation.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">AI &amp; n8n Automation</a></li>
+          <li><a href="services/personal-branding.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Personal Brand Positioning</a></li>
+          <li><a href="services/shopify-development.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Shopify Store Development</a></li>
+          <li><a href="services/ecommerce-management.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">E-Commerce Management</a></li>
+          <li><a href="services/paid-ads.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Performance Paid Ads</a></li>
+        </ul>
+      </div>
+
+      <!-- Tech & Development + Company -->
+      <div>
+        <h4 style="font-family:'Outfit',sans-serif; font-size:0.8rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#fff; margin-bottom:1.3rem;">Tech &amp; Development</h4>
+        <ul style="list-style:none; padding:0; margin:0 0 1.6rem; display:flex; flex-direction:column; gap:0.85rem;">
+          <li><a href="services/laravel-development.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Laravel Development</a></li>
+          <li><a href="services/mern-stack.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">MERN Stack Development</a></li>
+          <li><a href="services/saas-development.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">SaaS &amp; ERP Solutions</a></li>
+          <li><a href="services/pos-billing.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">POS &amp; CRM Systems</a></li>
+          <li><a href="services/ai-web-apps.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">AI Web Apps</a></li>
+          <li><a href="services/flutter-development.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Flutter App Development</a></li>
+        </ul>
+        <h4 style="font-family:'Outfit',sans-serif; font-size:0.8rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#fff; margin-bottom:1.3rem;">Company</h4>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.85rem;">
+          <li><a href="about.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">About Us</a></li>
+          <li><a href="portfolio.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Portfolio</a></li>
+          <li><a href="blog.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Blog</a></li>
+          <li><a href="contact.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter + CTA -->
+      <div>
+        <h4 style="font-family:'Outfit',sans-serif; font-size:0.8rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#fff; margin-bottom:1.1rem;">Stay In The Loop</h4>
+        <p style="font-size:0.85rem; color:#94a3b8; line-height:1.6; margin-bottom:1rem;">Practical tips on growth systems, AI automation, and software development — straight to your inbox. No spam.</p>
+        <form style="display:flex; gap:0.5rem; margin-bottom:0.6rem;" onsubmit="event.preventDefault();">
+          <input type="email" placeholder="Your email address" style="flex:1; min-width:0; padding:0.7rem 0.9rem; border-radius:8px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.05); color:#fff; font-size:0.85rem;" />
+          <button type="submit" style="background:#06b6d4; border:none; border-radius:8px; width:42px; color:#fff; font-size:1rem; cursor:pointer;"><i class="fas fa-arrow-right"></i></button>
+        </form>
+        <p style="font-size:0.75rem; color:#64748b; margin-bottom:1.6rem;"><i class="fas fa-lock"></i> No spam. Unsubscribe anytime.</p>
+
+        <h4 style="font-family:'Outfit',sans-serif; font-size:0.8rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#fff; margin-bottom:1rem;">Start Your Project</h4>
+        <a href="contact.html" style="display:block; text-align:center; background:linear-gradient(135deg,#7c3aed,#a855f7); color:#fff; text-decoration:none; padding:0.85rem; border-radius:8px; font-family:'Outfit',sans-serif; font-weight:700; font-size:0.9rem; margin-bottom:0.8rem;">Book a Strategy Call →</a>
+        <a href="https://wa.me/923214530103" target="_blank" style="display:block; text-align:center; background:rgba(37,211,102,0.15); color:#25D366; text-decoration:none; padding:0.85rem; border-radius:8px; font-family:'Outfit',sans-serif; font-weight:700; font-size:0.9rem;"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+      </div>
+    </div>
+
+    <div style="max-width:1280px; margin:2.5rem auto 0; padding:1.5rem 0; border-top:1px solid rgba(255,255,255,0.08); display:flex; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+      <p style="font-size:0.82rem; color:#64748b; margin:0;">© 2026 Hexasolv. All rights reserved. | Sargodha, Pakistan</p>
+      <div style="display:flex; gap:1.5rem;">
+        <a href="#" style="color:#64748b; text-decoration:none; font-size:0.82rem;">Privacy Policy</a>
+        <a href="#" style="color:#64748b; text-decoration:none; font-size:0.82rem;">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    @media (max-width: 900px) {
+      footer > div:first-child { grid-template-columns: 1fr 1fr !important; }
+    }
+    @media (max-width: 560px) {
+      footer > div:first-child { grid-template-columns: 1fr !important; }
+    }
+  </style>
+
+  <a href="https://wa.me/923214530103?text=Hi%20Hexasolv%2C%20I%20would%20like%20to%20discuss%20a%20software%20project." target="_blank" class="floating-wa-btn" title="Chat on WhatsApp">💬</a>
+
+  <script>
+    function toggleMobileNav() { document.getElementById('mobileNav').classList.toggle('open'); }
+  </script>
+
+  <script src="js/theme.js"></script>
+<script src="js/chatbot.js"></script>
+</body>
+</html>
