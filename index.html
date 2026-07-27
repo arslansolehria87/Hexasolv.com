@@ -1496,5 +1496,22 @@
     <script src="js/agency-upgrades.js"></script>
     <script src="js/main.js?v=2"></script>
 <script src="js/chatbot.js"></script>
+<style>
+  /* Footer ke neeche ki white space khatam karne ke liye */
+  footer {
+    margin-bottom: 0 !important;
+    position: relative !important;
+  }
+  footer::after {
+    content: "" !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 100vh !important;
+    background-color: #07030f !important;
+    z-index: -1 !important;
+  }
+</style>
 </body>
 </html>
