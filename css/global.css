@@ -49,6 +49,13 @@ body {
   overflow-x: hidden;
   line-height: 1.6;
   transition: var(--transition-theme);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
 }
 
 /* ── Navigation Bar ────────────────────────────────────────── */
