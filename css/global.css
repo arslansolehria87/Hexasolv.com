@@ -491,17 +491,18 @@ footer {
 /* ── Video Showcase Grid & Card Styles ────────────────────────── */
 .video-showcase-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
-@media (max-width: 1200px) {
-  .video-showcase-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.video-showcase-grid .video-thumb-container {
+  height: 280px;
 }
 @media (max-width: 768px) {
   .video-showcase-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .video-showcase-grid .video-thumb-container {
+    height: 220px;
   }
 }
 .video-showcase-card {

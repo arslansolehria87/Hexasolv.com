@@ -5037,19 +5037,24 @@ html.dark .site-header.scrolled {
 }
 
 /* ── Dedicated Video Showcases Styles ── */
-.video-showcase-grid {
+.video-showcase-grid,
+#featuredVideosGrid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
-@media (max-width: 992px) {
-    .video-showcase-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.video-showcase-grid .video-thumb-container,
+#featuredVideosGrid .video-thumb-container {
+    height: 280px;
 }
 @media (max-width: 768px) {
-    .video-showcase-grid {
+    .video-showcase-grid,
+    #featuredVideosGrid {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .video-showcase-grid .video-thumb-container,
+    #featuredVideosGrid .video-thumb-container {
+        height: 220px;
     }
 }
 .video-showcase-card {
