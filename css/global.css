@@ -700,3 +700,20 @@ html.dark .video-showcase-card {
   border-color: transparent;
   box-shadow: 0 8px 20px rgba(124, 58, 237, 0.25);
 }
+/* Target only the whitespace under the footer without touching body or text colors */
+footer {
+    margin-bottom: 0 !important;
+    position: relative;
+}
+
+/* Pseudo-element to fill any extra screen gap below the footer with the footer's dark color */
+footer::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #07030f;
+    z-index: -1;
+}
