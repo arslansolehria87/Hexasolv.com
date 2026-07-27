@@ -693,23 +693,3 @@ html.dark .video-showcase-card {
   border-color: transparent;
   box-shadow: 0 8px 20px rgba(124, 58, 237, 0.25);
 }
-
-/* ── Permanent Footer Bottom Whitespace Elimination ── */
-html {
-  background-color: #07030f !important;
-}
-footer {
-  position: relative;
-  background: #07030f !important;
-}
-footer::after {
-  content: '';
-  position: absolute;
-  top: 98%;
-  left: -10vw;
-  right: -10vw;
-  height: 2000px;
-  background-color: #07030f !important;
-  pointer-events: none;
-  z-index: -1;
-}
