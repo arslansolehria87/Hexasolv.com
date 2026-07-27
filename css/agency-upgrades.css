@@ -375,3 +375,16 @@ html.dark .faq-item.active {
     padding: 0 1.4rem 1.2rem;
   }
 }
+/* Body aur HTML ke scroll/background whitespace issue ko fix karne ke liye */
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #07030f !important; /* Footer ka same dark color background par apply hoga */
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Footer ke neeche se har kisam ke margin overflow ko khatam karne ke liye */
+footer {
+  margin-bottom: 0 !important;
+}
