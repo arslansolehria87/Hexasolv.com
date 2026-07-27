@@ -204,10 +204,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const widgetHTML = `
             <div class="hexasolv-chatbot-container" id="hexasolvChatbot">
-                <!-- Floating Toggle Bubble -->
-                <button class="chatbot-toggle-btn" id="chatbotToggle" aria-label="Open Chatbot">
-                    <span class="chat-icon-msg">💬</span>
+                <!-- Floating Toggle Bubble (AI Robot Icon) -->
+                <button class="chatbot-toggle-btn" id="chatbotToggle" aria-label="Open Hexasolv AI Assistant">
+                    <span class="chat-icon-msg" style="display:flex; align-items:center; justify-content:center;"><i class="fas fa-robot" style="font-size:1.5rem; color:#ffffff;"></i></span>
                     <span class="chat-icon-close"><i class="fas fa-times"></i></span>
+                    <span class="chatbot-ai-badge" style="position:absolute; top:-3px; right:-3px; background:linear-gradient(135deg,#06b6d4,#7c3aed); color:#ffffff; font-size:9px; font-weight:800; padding:2px 6px; border-radius:50px; border:1.5px solid #ffffff; box-shadow:0 0 10px rgba(6,182,212,0.8); letter-spacing:0.5px; font-family:'Outfit',sans-serif;">AI</span>
                 </button>
 
                 <!-- Expanded Panel -->
