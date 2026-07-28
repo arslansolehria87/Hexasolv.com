@@ -801,12 +801,31 @@
             </div>
 
             <!-- Custom 3-Column Grid -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2rem;" id="featuredPortfolioContainer">
+            <div class="video-showcase-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;" id="featuredPortfolioContainer">
                 <!-- Injected dynamically by portfolio-renderer.js -->
             </div>
 
             <div class="section-cta-center" style="margin-top:3.5rem; text-align:center;">
                 <a href="portfolio.html" class="btn btn-primary btn-lg" style="background:linear-gradient(135deg,#7c3aed,#a855f7); border:none; padding:1rem 2.5rem; border-radius:50px; font-family:'Outfit'; font-weight:700;">View All 8 Projects & Case Studies <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: DEDICATED PROJECT VIDEO SHOWCASES SECTION (3 FEATURED VIDEOS) -->
+    <section class="section" id="project-video-demos" style="padding-top:4rem; padding-bottom:5rem; background:linear-gradient(180deg, #f8f7ff 0%, #ffffff 100%); border-top:1px solid rgba(124,58,237,0.1);">
+        <div class="container">
+            <div class="section-header reveal" style="text-align:center; max-width:650px; margin:0 auto 3rem;">
+                <div class="section-badge" style="background:rgba(6,182,212,0.12); color:#06b6d4; font-family:'Outfit'; font-weight:700; text-transform:uppercase; letter-spacing:2px; font-size:0.75rem; padding:0.4rem 1rem; border-radius:50px; display:inline-block; margin-bottom:1rem;"><i class="fas fa-play-circle"></i> Video Demos</div>
+                <h2 class="section-title" style="font-family:'Outfit'; font-size:2.5rem; font-weight:800; line-height:1.2; margin-bottom:1rem;">Watch Live Project<br><span class="text-gradient" style="background: linear-gradient(135deg, #06b6d4, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Video Walkthroughs</span></h2>
+                <p class="section-sub" style="color:#64748b; font-size:0.98rem; line-height:1.7;">Watch video walkthroughs of live client platforms engineered across Shopify, WordPress, and Wix Studio.</p>
+            </div>
+
+            <div class="video-showcase-grid" id="featuredVideosGrid">
+                <!-- Injected dynamically by portfolio-renderer.js (3 featured video boxes) -->
+            </div>
+
+            <div style="margin-top:3rem; text-align:center;">
+                <a href="portfolio.html#video-portfolio" class="btn btn-outline-primary" style="border:2px solid #7c3aed; color:#7c3aed; padding:0.8rem 2rem; border-radius:50px; font-family:'Outfit'; font-weight:700; text-decoration:none; display:inline-flex; align-items:center; gap:0.5rem;">Browse All 13 Project Videos <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
@@ -1112,12 +1131,15 @@
             </div>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; justify-items: center; align-items: stretch;">
+                <!-- Team Member 1: Arslan Solehria -->
                 <div class="reveal" style="width: 100%;">
                     <div style="height: 100%; background:#fff; border:1px solid rgba(124,58,237,0.2); border-radius:24px; padding:2.5rem 2rem; text-align:center; box-shadow:0 15px 35px rgba(124,58,237,0.08);">
-                        <div style="width:110px; height:110px; border-radius:50%; margin:0 auto 1.2rem; border:3px solid #7c3aed; background:linear-gradient(135deg,#7c3aed,#a855f7); display:flex; align-items:center; justify-content:center; color:#fff; font-family:'Outfit'; font-size:2rem; font-weight:800;">MA</div>
-                        <h3 style="font-family:'Outfit'; font-size:1.3rem; font-weight:800; margin-bottom:0.2rem;">Muhammad Arslan</h3>
-                        <div style="font-size:0.8rem; font-weight:700; color:#7c3aed; text-transform:uppercase; letter-spacing:1px; margin-bottom:1rem;">Partner &amp; Lead Full-Stack Developer</div>
-                        <p style="font-size:0.88rem; color:#4b5563; line-height:1.6; margin-bottom:1.5rem;">Production engineer skilled in Laravel, .NET 8, MERN Stack, Flutter, and POS architecture.</p>
+                        <div style="width:120px; height:120px; border-radius:50%; margin:0 auto 1.2rem; border:3px solid #7c3aed; overflow:hidden; box-shadow:0 8px 25px rgba(124,58,237,0.25);">
+                            <img src="images/arslan.jpeg" alt="Arslan Solehria" style="width:100%; height:100%; object-fit:cover; display:block;" />
+                        </div>
+                        <h3 style="font-family:'Outfit'; font-size:1.3rem; font-weight:800; margin-bottom:0.2rem; color:#0f0a1e;">Arslan Solehria</h3>
+                        <div style="font-size:0.78rem; font-weight:700; color:#7c3aed; text-transform:uppercase; letter-spacing:1px; margin-bottom:1rem;">Lead Full Stack Developer</div>
+                        <p style="font-size:0.88rem; color:#4b5563; line-height:1.6; margin-bottom:1.5rem;">Production engineer skilled in Laravel, .NET 8, MERN Stack, Flutter, and POS software architecture.</p>
                         <div style="display:flex; justify-content:center; gap:0.8rem;">
                             <a href="https://github.com/arslansolehria87" target="_blank" style="width:36px; height:36px; background:rgba(124,58,237,0.1); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#7c3aed;"><i class="fab fa-github"></i></a>
                             <a href="https://linkedin.com/in/arslan-ali-59b750338" target="_blank" style="width:36px; height:36px; background:rgba(124,58,237,0.1); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#7c3aed;"><i class="fab fa-linkedin-in"></i></a>
@@ -1126,32 +1148,34 @@
                     </div>
                 </div>
 
-                <!-- TODO: replace placeholder name/role/bio with real partner details -->
+                <!-- Team Member 2: Umer Farooq -->
                 <div class="reveal delay-1" style="width: 100%;">
                     <div style="height: 100%; background:#fff; border:1px solid rgba(124,58,237,0.2); border-radius:24px; padding:2.5rem 2rem; text-align:center; box-shadow:0 15px 35px rgba(124,58,237,0.08);">
-                        <div style="width:110px; height:110px; border-radius:50%; margin:0 auto 1.2rem; border:3px solid #06b6d4; background:linear-gradient(135deg,#06b6d4,#3b82f6); display:flex; align-items:center; justify-content:center; color:#fff; font-family:'Outfit'; font-size:2rem; font-weight:800;">P2</div>
-                        <h3 style="font-family:'Outfit'; font-size:1.3rem; font-weight:800; margin-bottom:0.2rem;">Partner Name</h3>
-                        <div style="font-size:0.8rem; font-weight:700; color:#06b6d4; text-transform:uppercase; letter-spacing:1px; margin-bottom:1rem;">Partner &amp; [Role]</div>
-                        <p style="font-size:0.88rem; color:#4b5563; line-height:1.6; margin-bottom:1.5rem;">Short bio to be added — expertise and focus area at Hexasolv.</p>
+                        <div style="width:120px; height:120px; border-radius:50%; margin:0 auto 1.2rem; border:3px solid #06b6d4; overflow:hidden; box-shadow:0 8px 25px rgba(6,182,212,0.25);">
+                            <img src="images/umer.png" alt="Umer Farooq" style="width:100%; height:100%; object-fit:cover; display:block;" />
+                        </div>
+                        <h3 style="font-family:'Outfit'; font-size:1.3rem; font-weight:800; margin-bottom:0.2rem; color:#0f0a1e;">Umer Farooq</h3>
+                        <div style="font-size:0.78rem; font-weight:700; color:#06b6d4; text-transform:uppercase; letter-spacing:1px; margin-bottom:1rem;">Performance Marketer &amp; AI Marketing Automation Builder</div>
+                        <p style="font-size:0.88rem; color:#4b5563; line-height:1.6; margin-bottom:1.5rem;">Expert in AI marketing automation, paid performance acquisition, growth funnels, and conversion rate optimization.</p>
                         <div style="display:flex; justify-content:center; gap:0.8rem;">
-                            <a href="#" style="width:36px; height:36px; background:rgba(6,182,212,0.1); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#06b6d4;"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" style="width:36px; height:36px; background:rgba(6,182,212,0.1); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#06b6d4;"><i class="fab fa-github"></i></a>
-                            <a href="#" style="width:36px; height:36px; background:rgba(37,211,102,0.1); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#25D366;"><i class="fab fa-whatsapp"></i></a>
+                            <a href="contact.html" style="width:36px; height:36px; background:rgba(6,182,212,0.1); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#06b6d4;"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://wa.me/923214530103" target="_blank" style="width:36px; height:36px; background:rgba(37,211,102,0.1); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#25D366;"><i class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <!-- TODO: replace placeholder name/role/bio with real partner details -->
+                <!-- Team Member 3: Subhan Shoukat -->
                 <div class="reveal delay-2" style="width: 100%;">
                     <div style="height: 100%; background:#fff; border:1px solid rgba(124,58,237,0.2); border-radius:24px; padding:2.5rem 2rem; text-align:center; box-shadow:0 15px 35px rgba(124,58,237,0.08);">
-                        <div style="width:110px; height:110px; border-radius:50%; margin:0 auto 1.2rem; border:3px solid #a855f7; background:linear-gradient(135deg,#a855f7,#ec4899); display:flex; align-items:center; justify-content:center; color:#fff; font-family:'Outfit'; font-size:2rem; font-weight:800;">P3</div>
-                        <h3 style="font-family:'Outfit'; font-size:1.3rem; font-weight:800; margin-bottom:0.2rem;">Partner Name</h3>
-                        <div style="font-size:0.8rem; font-weight:700; color:#a855f7; text-transform:uppercase; letter-spacing:1px; margin-bottom:1rem;">Partner &amp; [Role]</div>
-                        <p style="font-size:0.88rem; color:#4b5563; line-height:1.6; margin-bottom:1.5rem;">Short bio to be added — expertise and focus area at Hexasolv.</p>
+                        <div style="width:120px; height:120px; border-radius:50%; margin:0 auto 1.2rem; border:3px solid #a855f7; overflow:hidden; box-shadow:0 8px 25px rgba(168,85,247,0.25);">
+                            <img src="images/subhan.png" alt="Subhan Shoukat" style="width:100%; height:100%; object-fit:cover; display:block;" />
+                        </div>
+                        <h3 style="font-family:'Outfit'; font-size:1.3rem; font-weight:800; margin-bottom:0.2rem; color:#0f0a1e;">Subhan Shoukat</h3>
+                        <div style="font-size:0.78rem; font-weight:700; color:#a855f7; text-transform:uppercase; letter-spacing:1px; margin-bottom:1rem;">Social Media Manager &amp; Content Strategist</div>
+                        <p style="font-size:0.88rem; color:#4b5563; line-height:1.6; margin-bottom:1.5rem;">Creative brand strategist overseeing social media growth, content strategy, campaign visuals, and audience engagement.</p>
                         <div style="display:flex; justify-content:center; gap:0.8rem;">
-                            <a href="#" style="width:36px; height:36px; background:rgba(168,85,247,0.1); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#a855f7;"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" style="width:36px; height:36px; background:rgba(168,85,247,0.1); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#a855f7;"><i class="fab fa-github"></i></a>
-                            <a href="#" style="width:36px; height:36px; background:rgba(37,211,102,0.1); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#25D366;"><i class="fab fa-whatsapp"></i></a>
+                            <a href="contact.html" style="width:36px; height:36px; background:rgba(168,85,247,0.1); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#a855f7;"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://wa.me/923214530103" target="_blank" style="width:36px; height:36px; background:rgba(37,211,102,0.1); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#25D366;"><i class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>
@@ -1356,9 +1380,8 @@
         </div>
     </section>
 
-    <!-- ===== FOOTER ===== -->
   <!-- ===== FOOTER ===== -->
-  <footer style="background:#07030f; padding:4rem 5% 1.5rem; color:#e2e8f0; font-family:'Inter',sans-serif; margin-top:0; margin-bottom:0;">
+  <footer style="background:#07030f; padding:4.5rem 5% 4rem; color:#e2e8f0; font-family:'Inter',sans-serif; margin:0; position:relative; z-index:10;">
     <div style="max-width:1280px; margin:0 auto; display:grid; grid-template-columns: 1.3fr 1fr 1fr 1.2fr; gap:2.5rem;">
 
       <!-- Brand -->
@@ -1429,7 +1452,7 @@
       </div>
     </div>
 
-    <div style="max-width:1280px; margin:2rem auto 0; padding:1.2rem 0 0.5rem; border-top:1px solid rgba(255,255,255,0.08); display:flex; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+    <div style="max-width:1280px; margin:2.5rem auto 0; padding:1.5rem 0 3.5rem; border-top:1px solid rgba(255,255,255,0.08); display:flex; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
       <p style="font-size:0.82rem; color:#64748b; margin:0;">© 2026 Hexasolv. All rights reserved. | Sargodha, Pakistan</p>
       <div style="display:flex; gap:1.5rem;">
         <a href="#" style="color:#64748b; text-decoration:none; font-size:0.82rem;">Privacy Policy</a>
@@ -1473,27 +1496,5 @@
     <script src="js/agency-upgrades.js"></script>
     <script src="js/main.js?v=2"></script>
 <script src="js/chatbot.js"></script>
-<style>
-  /* Extra scroll aur unwanted space khatam karne ke liye */
-  html, body {
-    overflow-x: hidden !important;
-  }
-  
-  /* Footer aur uske contents ke extra margins clear karne ke liye */
-  footer {
-    margin-bottom: 0 !important;
-    padding-bottom: 1.5rem !important;
-  }
-  
-  footer * {
-    margin-bottom: 0;
-  }
-  
-  /* Footer ke aakhri copyright block ka margin fix */
-  footer > div:last-child {
-    margin-bottom: 0 !important;
-    padding-bottom: 1rem !important;
-  }
-</style>
 </body>
 </html>
