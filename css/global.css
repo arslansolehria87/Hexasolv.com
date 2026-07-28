@@ -49,6 +49,13 @@ body {
   overflow-x: hidden;
   line-height: 1.6;
   transition: var(--transition-theme);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
 }
 
 /* ── Navigation Bar ────────────────────────────────────────── */
@@ -491,17 +498,18 @@ footer {
 /* ── Video Showcase Grid & Card Styles ────────────────────────── */
 .video-showcase-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
-@media (max-width: 1200px) {
-  .video-showcase-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.video-showcase-grid .video-thumb-container {
+  height: 280px;
 }
 @media (max-width: 768px) {
   .video-showcase-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .video-showcase-grid .video-thumb-container {
+    height: 220px;
   }
 }
 .video-showcase-card {
@@ -544,18 +552,7 @@ html.dark .video-showcase-card {
   transform: scale(1.08);
 }
 .video-play-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(7, 3, 15, 0.5);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  transition: background 0.3s ease;
-}
-.video-showcase-card:hover .video-play-overlay {
-  background: rgba(7, 3, 15, 0.7);
+  display: none !important;
 }
 .play-button-icon {
   width: 52px;
@@ -702,4 +699,21 @@ html.dark .video-showcase-card {
   color: #ffffff;
   border-color: transparent;
   box-shadow: 0 8px 20px rgba(124, 58, 237, 0.25);
+}
+/* Target only the whitespace under the footer without touching body or text colors */
+footer {
+    margin-bottom: 0 !important;
+    position: relative;
+}
+
+/* Pseudo-element to fill any extra screen gap below the footer with the footer's dark color */
+footer::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #07030f;
+    z-index: -1;
 }

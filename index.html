@@ -1358,7 +1358,7 @@
 
     <!-- ===== FOOTER ===== -->
   <!-- ===== FOOTER ===== -->
-  <footer style="background:#07030f; padding:4.5rem 5% 0; color:#e2e8f0; font-family:'Inter',sans-serif;">
+  <footer style="background:#07030f; padding:4rem 5% 1.5rem; color:#e2e8f0; font-family:'Inter',sans-serif; margin-top:0; margin-bottom:0;">
     <div style="max-width:1280px; margin:0 auto; display:grid; grid-template-columns: 1.3fr 1fr 1fr 1.2fr; gap:2.5rem;">
 
       <!-- Brand -->
@@ -1429,7 +1429,7 @@
       </div>
     </div>
 
-    <div style="max-width:1280px; margin:2.5rem auto 0; padding:1.5rem 0; border-top:1px solid rgba(255,255,255,0.08); display:flex; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+    <div style="max-width:1280px; margin:2rem auto 0; padding:1.2rem 0 0.5rem; border-top:1px solid rgba(255,255,255,0.08); display:flex; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
       <p style="font-size:0.82rem; color:#64748b; margin:0;">© 2026 Hexasolv. All rights reserved. | Sargodha, Pakistan</p>
       <div style="display:flex; gap:1.5rem;">
         <a href="#" style="color:#64748b; text-decoration:none; font-size:0.82rem;">Privacy Policy</a>
@@ -1473,5 +1473,27 @@
     <script src="js/agency-upgrades.js"></script>
     <script src="js/main.js?v=2"></script>
 <script src="js/chatbot.js"></script>
+<style>
+  /* Extra scroll aur unwanted space khatam karne ke liye */
+  html, body {
+    overflow-x: hidden !important;
+  }
+  
+  /* Footer aur uske contents ke extra margins clear karne ke liye */
+  footer {
+    margin-bottom: 0 !important;
+    padding-bottom: 1.5rem !important;
+  }
+  
+  footer * {
+    margin-bottom: 0;
+  }
+  
+  /* Footer ke aakhri copyright block ka margin fix */
+  footer > div:last-child {
+    margin-bottom: 0 !important;
+    padding-bottom: 1rem !important;
+  }
+</style>
 </body>
 </html>
