@@ -32,35 +32,29 @@
     .filter-btn { font-family: var(--font-main); font-size: 0.85rem; font-weight: 600; padding: 0.5rem 1.25rem; border-radius: 50px; background: var(--bg-card); border: 1px solid var(--border); color: var(--text-secondary); cursor: pointer; transition: all 0.3s; }
     .filter-btn.active, .filter-btn:hover { background: var(--gradient-1); color: #fff; border-color: transparent; box-shadow: 0 0 20px rgba(124,58,237,0.3); }
 
-    .portfolio-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+    .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2rem; }
     .portfolio-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; transition: all 0.4s ease; display: flex; flex-direction: column; }
     .portfolio-card:hover { border-color: var(--accent-1); transform: translateY(-8px); box-shadow: 0 20px 50px rgba(124,58,237,0.15); }
-    .portfolio-img-box { height: 260px; background: rgba(124,58,237,0.08); position: relative; overflow: hidden; }
+    .portfolio-img-box { height: 200px; background: rgba(124,58,237,0.08); position: relative; overflow: hidden; }
     .portfolio-img-box img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
     .portfolio-card:hover .portfolio-img-box img { transform: scale(1.08); }
     .portfolio-badge { position: absolute; top: 1rem; right: 1rem; background: rgba(3,1,10,0.8); backdrop-filter: blur(10px); border: 1px solid rgba(124,58,237,0.3); color: #a78bfa; font-size: 0.7rem; font-weight: 600; padding: 0.3rem 0.8rem; border-radius: 50px; }
     .portfolio-body { padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1; }
     .portfolio-category { font-size: 0.75rem; color: var(--accent-2); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.4rem; }
-    .portfolio-title { font-family: var(--font-main); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.6rem; }
-    .portfolio-desc { font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.2rem; flex-grow: 1; }
+    .portfolio-title { font-family: var(--font-main); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.6rem; }
+    .portfolio-desc { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.2rem; flex-grow: 1; }
     .portfolio-techs { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.2rem; }
     .portfolio-link { display: inline-flex; align-items: center; gap: 0.4rem; font-family: var(--font-main); font-size: 0.85rem; font-weight: 600; color: var(--accent-1); text-decoration: none; }
 
-    .cs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin-top: 3.5rem; }
+    .cs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-top: 3.5rem; }
     .cs-card { background: var(--bg-primary); border: 1px solid var(--border); border-radius: 20px; padding: 2.2rem; transition: all 0.4s ease; display: flex; flex-direction: column; }
     .cs-card:hover { border-color: var(--accent-1); transform: translateY(-6px); box-shadow: 0 15px 35px rgba(124,58,237,0.12); }
     .cs-stat-badge { display: inline-block; font-family: var(--font-main); font-size: 1.8rem; font-weight: 900; background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.5rem; }
     .cs-title { font-family: var(--font-main); font-size: 1.15rem; font-weight: 800; margin-bottom: 0.6rem; }
     .cs-desc { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.2rem; flex-grow: 1; }
-
-    .video-showcase-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
-    #video-portfolio .video-thumb-container { height: 280px !important; }
-    @media (max-width: 768px) { 
-      .portfolio-grid, .cs-grid, .video-showcase-grid { grid-template-columns: repeat(1, 1fr); } 
-      #video-portfolio .video-thumb-container { height: 220px !important; }
-    }
   </style>
   <link rel="stylesheet" href="css/chatbot.css">
+  <script src="js/analytics.js"></script>
 </head>
 <body>
 
@@ -151,28 +145,6 @@
 
       <div class="portfolio-grid" id="portfolioGridContainer">
         <!-- Rendered dynamically by portfolio-renderer.js -->
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== NEW: DEDICATED PROJECT VIDEO WALKTHROUGHS SECTION (13 VIDEOS) ===== -->
-  <section id="video-portfolio" style="background: var(--bg-primary); border-top: 1px solid var(--border); padding: 5rem 0;">
-    <div class="section-wrapper">
-      <div style="text-align:center; max-width: 650px; margin: 0 auto 2rem;">
-        <span class="section-tag"><i class="fas fa-video"></i> Video Demos</span>
-        <h2 class="section-title">Client Project Video Walkthroughs</h2>
-        <p class="section-desc">Watch video walkthroughs of 13 custom projects built across Shopify (4), WordPress (7), and Wix Studio (2).</p>
-      </div>
-
-      <div class="video-filter-btns reveal">
-        <button class="video-filter-btn active" data-video-filter="all"><i class="fas fa-layer-group"></i> All Videos (13)</button>
-        <button class="video-filter-btn" data-video-filter="shopify"><i class="fab fa-shopify"></i> Shopify Stores (4)</button>
-        <button class="video-filter-btn" data-video-filter="wordpress"><i class="fab fa-wordpress"></i> WordPress Sites (7)</button>
-        <button class="video-filter-btn" data-video-filter="wix"><i class="fas fa-globe"></i> Wix Websites (2)</button>
-      </div>
-
-      <div class="video-showcase-grid" id="videoPortfolioGrid">
-        <!-- Rendered dynamically by portfolio-renderer.js (13 video cards) -->
       </div>
     </div>
   </section>
