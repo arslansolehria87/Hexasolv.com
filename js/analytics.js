@@ -1,6 +1,6 @@
 // Google Analytics 4 (GA4) Centralized Integration
 // Replace 'YOUR_GA4_ID_HERE' with your actual Measurement ID (e.g., G-XXXXXXXXXX)
-const GA_MEASUREMENT_ID = 'YOUR_GA4_ID_HERE';
+const GA_MEASUREMENT_ID = 'G-FCQGEDFJG1';
 
 if (GA_MEASUREMENT_ID && GA_MEASUREMENT_ID !== 'YOUR_GA4_ID_HERE') {
     // Dynamically insert the Google Tag Manager script
