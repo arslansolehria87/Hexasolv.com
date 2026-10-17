@@ -347,6 +347,19 @@
     .nav-mega-cta p { font-size: 0.8rem; color: var(--text-secondary, #4b5563); margin-bottom: 1rem; }
     .nav-mega-cta-btn { display: block; text-align: center; background: linear-gradient(135deg,#7c3aed,#a855f7); color: #fff !important; padding: 0.65rem; border-radius: 8px; font-weight: 700; font-size: 0.82rem; margin-bottom: 0.7rem; }
     .nav-mega-view-all { font-size: 0.8rem; font-weight: 700; text-align: center; }
+    html { background-color: #07030f !important; overscroll-behavior-y: none; }
+    body { min-height: 100vh; display: flex; flex-direction: column; }
+    footer { margin-top: auto !important; margin-bottom: 0 !important; position: relative; }
+    footer::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      height: 100vh;
+      background-color: #07030f;
+      z-index: -1;
+    }
 </style>
   <link rel="stylesheet" href="css/chatbot.css">
   <script src="js/analytics.js"></script>
@@ -1453,7 +1466,7 @@
       </div>
     </div>
 
-    <div style="max-width:1280px; margin:2.5rem auto 0; padding:1.5rem 0; border-top:1px solid rgba(255,255,255,0.08); display:flex; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+    <div style="max-width:1280px; margin:2.5rem auto 0; padding:1.2rem 0; border-top:1px solid rgba(255,255,255,0.08); display:flex; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
       <p style="font-size:0.82rem; color:#64748b; margin:0;">© 2026 Hexasolv. All rights reserved. | Sargodha, Pakistan</p>
       <div style="display:flex; gap:1.5rem;">
         <a href="#" style="color:#64748b; text-decoration:none; font-size:0.82rem;">Privacy Policy</a>
