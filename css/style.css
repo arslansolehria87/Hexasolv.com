@@ -500,13 +500,42 @@ p { color: var(--text-secondary); line-height: 1.75; }
 .site-logo {
     display: flex;
     align-items: center;
-    gap: var(--space-3);
+    gap: 0.6rem;
     flex-shrink: 0;
+    text-decoration: none;
 }
 
 .site-logo img {
-    height: 40px;
+    height: 32px;
     width: auto;
+}
+
+.nav-logo-mark {
+    height: 32px;
+    width: auto;
+    flex-shrink: 0;
+    display: block;
+}
+
+.nav-logo-text-img {
+    height: 22px;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo-dark-mode {
+    display: inline-block !important;
+}
+.logo-light-mode {
+    display: none !important;
+}
+
+html:not(.dark) .logo-dark-mode {
+    display: none !important;
+}
+html:not(.dark) .logo-light-mode {
+    display: inline-block !important;
 }
 
 .logo-text {

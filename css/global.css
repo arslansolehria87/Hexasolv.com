@@ -78,11 +78,38 @@ nav {
 
 .nav-logo {
   font-family: var(--font-main);
-  font-size: 1.6rem;
-  font-weight: 800;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
+  gap: 0.6rem;
+}
+
+.nav-logo-mark {
+  height: 32px;
+  width: auto;
+  flex-shrink: 0;
+  display: block;
+}
+
+.nav-logo-text-img {
+  height: 22px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo-dark-mode {
+  display: inline-block !important;
+}
+.logo-light-mode {
+  display: none !important;
+}
+
+html:not(.dark) .logo-dark-mode {
+  display: none !important;
+}
+html:not(.dark) .logo-light-mode {
+  display: inline-block !important;
 }
 
 .nav-logo-text {
