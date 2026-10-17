@@ -20,7 +20,7 @@
 }
 
 .svc-breadcrumb a:hover {
-    color: #01b4d8;
+    color: #5813BC;
 }
 
 .svc-breadcrumb i {
@@ -130,7 +130,7 @@
 }
 
 .svc-trust-item i {
-    color: #01b4d8;
+    color: #5813BC;
     font-size: 13px;
 }
 
@@ -165,7 +165,7 @@
 .svc-stat-val {
     font-size: 2.2rem;
     font-weight: 800;
-    color: #01b4d8;
+    color: #5813BC;
     font-family: var(--font-display);
     line-height: 1;
     margin-bottom: 6px;
@@ -261,14 +261,14 @@
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(135deg, #0A1E42, #01b4d8);
+    background: linear-gradient(135deg, #121214, #5813BC);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.25s ease;
 }
 
 .svc-card:hover {
-    border-color: #01b4d8;
+    border-color: #5813BC;
     box-shadow: 0 12px 40px rgba(1, 180, 216, 0.12);
     transform: translateY(-4px);
     text-decoration: none;
@@ -279,7 +279,7 @@
 }
 
 .svc-card-featured {
-    background: linear-gradient(140deg, #0A1E42 0%, #1a3a7a 100%);
+    background: linear-gradient(140deg, #121214 0%, #1a3a7a 100%);
     border-color: transparent;
 }
 
@@ -296,7 +296,7 @@
 }
 
 .svc-card-featured .svc-card-cta {
-    color: #01b4d8;
+    color: #5813BC;
 }
 
 .svc-card-top {
@@ -321,9 +321,9 @@
 .svc-card-badge {
     font-size: 11px;
     font-weight: 700;
-    background: rgba(255, 107, 53, 0.1);
-    color: #FF6B35;
-    border: 1px solid rgba(255, 107, 53, 0.2);
+    background: rgba(172, 34, 203, 0.1);
+    color: #AC22CB;
+    border: 1px solid rgba(172, 34, 203, 0.2);
     border-radius: 50px;
     padding: 3px 10px;
     white-space: nowrap;
@@ -362,7 +362,7 @@
 }
 
 .svc-card-features li i {
-    color: #01b4d8;
+    color: #5813BC;
     font-size: 10px;
     flex-shrink: 0;
 }
@@ -413,7 +413,7 @@
     width: 44px;
     height: 44px;
     border-radius: 12px;
-    background: linear-gradient(135deg, #0A1E42, #01b4d8);
+    background: linear-gradient(135deg, #121214, #5813BC);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -447,7 +447,7 @@
 .svc-guarantee-icon {
     width: 52px;
     height: 52px;
-    background: linear-gradient(135deg, #0A1E42, #01b4d8);
+    background: linear-gradient(135deg, #121214, #5813BC);
     border-radius: 14px;
     display: flex;
     align-items: center;
@@ -517,7 +517,7 @@
     font-size: 11px;
     font-weight: 700;
     background: rgba(1, 180, 216, 0.1);
-    color: #01b4d8;
+    color: #5813BC;
     border: 1px solid rgba(1, 180, 216, 0.2);
     border-radius: 50px;
     padding: 3px 10px;
@@ -552,7 +552,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #01b4d8;
+    color: #5813BC;
     font-size: 22px;
     margin: 0 auto 14px;
 }
@@ -593,7 +593,7 @@
 .svc-process-num {
     width: 44px;
     height: 44px;
-    background: linear-gradient(135deg, #0A1E42, #01b4d8);
+    background: linear-gradient(135deg, #121214, #5813BC);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -617,14 +617,14 @@
 }
 
 .svc-process-card:hover {
-    border-color: #01b4d8;
+    border-color: #5813BC;
     box-shadow: 0 8px 32px rgba(1, 180, 216, 0.1);
     transform: translateY(-3px);
 }
 
 .svc-process-icon {
     font-size: 24px;
-    color: #01b4d8;
+    color: #5813BC;
     margin-bottom: 12px;
 }
 
@@ -644,7 +644,7 @@
 
 .svc-process-time {
     font-size: 11px;
-    color: #01b4d8;
+    color: #5813BC;
     font-weight: 600;
     background: rgba(1, 180, 216, 0.08);
     border: 1px solid rgba(1, 180, 216, 0.2);
@@ -672,7 +672,7 @@
 }
 
 .svc-faq-item.open {
-    border-color: #01b4d8;
+    border-color: #5813BC;
     box-shadow: 0 4px 20px rgba(1, 180, 216, 0.08);
 }
 
@@ -694,7 +694,7 @@
 }
 
 .svc-faq-item.open .svc-faq-q {
-    color: #01b4d8;
+    color: #5813BC;
 }
 
 .svc-faq-icon {
@@ -705,7 +705,7 @@
 }
 
 .svc-faq-item.open .svc-faq-icon {
-    color: #01b4d8;
+    color: #5813BC;
 }
 
 .svc-faq-a {
@@ -836,7 +836,7 @@
     background: #fff;
     border-radius: 18px;
     padding: 24px;
-    box-shadow: 0 16px 48px rgba(10, 30, 66, 0.18);
+    box-shadow: 0 16px 48px rgba(88, 19, 188, 0.18);
     margin-bottom: 12px;
 }
 
@@ -851,7 +851,7 @@
 
 .svc-sidebar-head i {
     font-size: 24px;
-    color: #01b4d8;
+    color: #5813BC;
 }
 
 .svc-form-group {
@@ -913,7 +913,7 @@
 }
 
 .svc-deliverable-card:hover {
-    border-color: #01b4d8;
+    border-color: #5813BC;
     box-shadow: 0 8px 32px rgba(1, 180, 216, 0.1);
     transform: translateY(-3px);
 }
@@ -969,7 +969,7 @@
 }
 
 .svc-benefit-item:hover {
-    border-color: #01b4d8;
+    border-color: #5813BC;
     box-shadow: 0 4px 20px rgba(1, 180, 216, 0.08);
 }
 
@@ -1017,7 +1017,7 @@
 }
 
 .svc-related-card:hover {
-    border-color: #01b4d8;
+    border-color: #5813BC;
     box-shadow: 0 8px 28px rgba(1, 180, 216, 0.1);
     transform: translateY(-3px);
 }
@@ -1052,7 +1052,7 @@
 .svc-related-cta {
     font-size: 13px;
     font-weight: 700;
-    color: #01b4d8;
+    color: #5813BC;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -1341,7 +1341,7 @@
     content: '\f058';
     font-family: 'Font Awesome 6 Free';
     font-weight: 900;
-    color: #01b4d8;
+    color: #5813BC;
     font-size: 13px;
     flex-shrink: 0;
     margin-top: 2px;
@@ -1592,7 +1592,7 @@
 }
 
 .svc-process-timeline-head i {
-    color: #01b4d8;
+    color: #5813BC;
 }
 
 .svc-timeline-item {
@@ -1653,7 +1653,7 @@
 .svc-timeline-dur {
     font-size: 11px;
     font-weight: 600;
-    color: #01b4d8;
+    color: #5813BC;
     background: rgba(1, 180, 216, 0.08);
     border: 1px solid rgba(1, 180, 216, 0.2);
     border-radius: 50px;
@@ -1685,7 +1685,7 @@
 }
 
 .svc-benefit-card:hover {
-    border-color: #01b4d8;
+    border-color: #5813BC;
     box-shadow: 0 6px 24px rgba(1, 180, 216, 0.1);
     transform: translateY(-2px);
 }
@@ -1695,7 +1695,7 @@
     height: 48px;
     border-radius: 12px;
     background: rgba(1, 180, 216, 0.1);
-    color: var(--icon-color, #01b4d8);
+    color: var(--icon-color, #5813BC);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1745,7 +1745,7 @@
 }
 
 .svc-feature-card:hover {
-    border-color: #01b4d8;
+    border-color: #5813BC;
     box-shadow: 0 8px 32px rgba(1, 180, 216, 0.1);
     transform: translateY(-3px);
 }
@@ -1880,7 +1880,7 @@
 }
 
 .svc-ai-platforms-head i {
-    color: #01b4d8;
+    color: #5813BC;
     font-size: 14px;
 }
 
@@ -1932,7 +1932,7 @@
 
 .svc-deliverables-aside-head i {
     font-size: 18px;
-    color: #01b4d8;
+    color: #5813BC;
 }
 
 .svc-deliverables-aside-head h3 {
@@ -1986,7 +1986,7 @@
 }
 
 .svc-use-case-card:hover {
-    border-color: #01b4d8;
+    border-color: #5813BC;
     box-shadow: 0 4px 20px rgba(1, 180, 216, 0.08);
     transform: translateY(-2px);
 }
@@ -2023,7 +2023,7 @@
     align-items: center;
     gap: 7px;
     background: rgba(1, 180, 216, 0.15);
-    color: #01b4d8;
+    color: #5813BC;
     font-size: 12px;
     font-weight: 700;
     border-radius: 50px;
@@ -2078,30 +2078,14 @@
 .service-card:hover {
   border-color: var(--accent-1);
   transform: translateY(-6px);
-  box-shadow: 0 15px 35px rgba(124, 58, 237, 0.12);
-}
-
-.service-card.service-card-featured {
-  background: linear-gradient(135deg, #0A1E42 0%, #1a3a7a 100%) !important;
-  border-color: transparent !important;
-}
-
-.service-card.service-card-featured .service-card-title,
-.service-card.service-card-featured .service-title,
-.service-card.service-card-featured .service-card-desc,
-.service-card.service-card-featured .service-desc {
-  color: rgba(255, 255, 255, 0.95) !important;
-}
-
-.service-card.service-card-featured .service-card-cta {
-  color: #00B4D8 !important;
+  box-shadow: 0 15px 35px rgba(88, 19, 188, 0.12);
 }
 
 .service-icon {
   width: 56px;
   height: 56px;
-  background: rgba(124, 58, 237, 0.1);
-  border: 1px solid rgba(124, 58, 237, 0.2);
+  background: rgba(88, 19, 188, 0.1);
+  border: 1px solid rgba(88, 19, 188, 0.2);
   border-radius: 14px;
   display: flex;
   align-items: center;
@@ -2136,8 +2120,8 @@
   font-weight: 600;
   padding: 0.25rem 0.75rem;
   border-radius: 50px;
-  background: rgba(124, 58, 237, 0.1);
-  border: 1px solid rgba(124, 58, 237, 0.2);
+  background: rgba(88, 19, 188, 0.1);
+  border: 1px solid rgba(88, 19, 188, 0.2);
   color: var(--accent-1);
   font-family: var(--font-main);
 }

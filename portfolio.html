@@ -30,15 +30,15 @@
   <style>
     .portfolio-filter-btns { display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap; margin-top: 2rem; margin-bottom: 3rem; }
     .filter-btn { font-family: var(--font-main); font-size: 0.85rem; font-weight: 600; padding: 0.5rem 1.25rem; border-radius: 50px; background: var(--bg-card); border: 1px solid var(--border); color: var(--text-secondary); cursor: pointer; transition: all 0.3s; }
-    .filter-btn.active, .filter-btn:hover { background: var(--gradient-1); color: #fff; border-color: transparent; box-shadow: 0 0 20px rgba(124,58,237,0.3); }
+    .filter-btn.active, .filter-btn:hover { background: var(--gradient-1); color: #fff; border-color: transparent; box-shadow: 0 0 20px rgba(88,19,188,0.3); }
 
     .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2rem; }
     .portfolio-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; transition: all 0.4s ease; display: flex; flex-direction: column; }
-    .portfolio-card:hover { border-color: var(--accent-1); transform: translateY(-8px); box-shadow: 0 20px 50px rgba(124,58,237,0.15); }
-    .portfolio-img-box { height: 200px; background: rgba(124,58,237,0.08); position: relative; overflow: hidden; }
+    .portfolio-card:hover { border-color: var(--accent-1); transform: translateY(-8px); box-shadow: 0 20px 50px rgba(88,19,188,0.15); }
+    .portfolio-img-box { height: 200px; background: rgba(88,19,188,0.08); position: relative; overflow: hidden; }
     .portfolio-img-box img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
     .portfolio-card:hover .portfolio-img-box img { transform: scale(1.08); }
-    .portfolio-badge { position: absolute; top: 1rem; right: 1rem; background: rgba(3,1,10,0.8); backdrop-filter: blur(10px); border: 1px solid rgba(124,58,237,0.3); color: #a78bfa; font-size: 0.7rem; font-weight: 600; padding: 0.3rem 0.8rem; border-radius: 50px; }
+    .portfolio-badge { position: absolute; top: 1rem; right: 1rem; background: rgba(3,1,10,0.8); backdrop-filter: blur(10px); border: 1px solid rgba(88,19,188,0.3); color: #a78bfa; font-size: 0.7rem; font-weight: 600; padding: 0.3rem 0.8rem; border-radius: 50px; }
     .portfolio-body { padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1; }
     .portfolio-category { font-size: 0.75rem; color: var(--accent-2); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.4rem; }
     .portfolio-title { font-family: var(--font-main); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.6rem; }
@@ -48,7 +48,7 @@
 
     .cs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-top: 3.5rem; }
     .cs-card { background: var(--bg-primary); border: 1px solid var(--border); border-radius: 20px; padding: 2.2rem; transition: all 0.4s ease; display: flex; flex-direction: column; }
-    .cs-card:hover { border-color: var(--accent-1); transform: translateY(-6px); box-shadow: 0 15px 35px rgba(124,58,237,0.12); }
+    .cs-card:hover { border-color: var(--accent-1); transform: translateY(-6px); box-shadow: 0 15px 35px rgba(88,19,188,0.12); }
     .cs-stat-badge { display: inline-block; font-family: var(--font-main); font-size: 1.8rem; font-weight: 900; background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.5rem; }
     .cs-title { font-family: var(--font-main); font-size: 1.15rem; font-weight: 800; margin-bottom: 0.6rem; }
     .cs-desc { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.2rem; flex-grow: 1; }
@@ -61,7 +61,7 @@
   <!-- ===== NAVBAR ===== -->
   <nav id="navbar">
     <a href="index.html" class="nav-logo" style="display:flex; align-items:center; gap:0.5rem;">
-      <svg width="28" height="28" viewBox="0 0 100 100" style="flex-shrink:0;"><polygon points="50,3 95,25 95,75 50,97 5,75 5,25" fill="url(#navHexGrad)"/><defs><linearGradient id="navHexGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient></defs><text x="50" y="63" font-family="Outfit, sans-serif" font-size="46" font-weight="800" fill="#fff" text-anchor="middle">H</text></svg>
+      <svg width="28" height="28" viewBox="0 0 100 100" style="flex-shrink:0;"><polygon points="50,3 95,25 95,75 50,97 5,75 5,25" fill="url(#navHexGrad)"/><defs><linearGradient id="navHexGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#5813BC"/><stop offset="100%" stop-color="#5813BC"/></linearGradient></defs><text x="50" y="63" font-family="Outfit, sans-serif" font-size="46" font-weight="800" fill="#fff" text-anchor="middle">H</text></svg>
       <span class="nav-logo-text">Hexasolv</span>
     </a>
     <ul class="nav-links">
@@ -166,19 +166,19 @@
 
   <!-- ===== FOOTER ===== -->
   <!-- ===== FOOTER ===== -->
-  <footer style="background:#07030f; padding:4.5rem 5% 0; color:#e2e8f0; font-family:'Inter',sans-serif;">
+  <footer style="background:#0a0a0c; padding:4.5rem 5% 0; color:#e2e8f0; font-family:'Inter',sans-serif;">
     <div style="max-width:1280px; margin:0 auto; display:grid; grid-template-columns: 1.3fr 1fr 1fr 1.2fr; gap:2.5rem;">
 
       <!-- Brand -->
       <div>
         <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:1.2rem;">
-          <svg width="30" height="30" viewBox="0 0 100 100"><polygon points="50,3 95,25 95,75 50,97 5,75 5,25" fill="url(#footHexGrad)"/><defs><linearGradient id="footHexGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#06b6d4"/></linearGradient></defs><text x="50" y="63" font-family="Outfit, sans-serif" font-size="46" font-weight="800" fill="#fff" text-anchor="middle">H</text></svg>
-          <span style="font-family:'Outfit',sans-serif; font-size:1.4rem; font-weight:800; background:linear-gradient(135deg,#7c3aed,#a855f7,#06b6d4); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">Hexasolv</span>
+          <svg width="30" height="30" viewBox="0 0 100 100"><polygon points="50,3 95,25 95,75 50,97 5,75 5,25" fill="url(#footHexGrad)"/><defs><linearGradient id="footHexGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#5813BC"/><stop offset="100%" stop-color="#5813BC"/></linearGradient></defs><text x="50" y="63" font-family="Outfit, sans-serif" font-size="46" font-weight="800" fill="#fff" text-anchor="middle">H</text></svg>
+          <span style="font-family:'Outfit',sans-serif; font-size:1.4rem; font-weight:800; background:linear-gradient(135deg,#5813BC,#AC22CB,#5813BC); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">Hexasolv</span>
         </div>
         <p style="font-size:0.88rem; color:#94a3b8; line-height:1.7; margin-bottom:1.4rem;">Full-stack systems agency — custom software development combined with AI-driven growth marketing, built by a 3-partner team.</p>
-        <div style="font-size:0.85rem; color:#94a3b8; margin-bottom:0.6rem; display:flex; gap:0.6rem;"><i class="fas fa-map-marker-alt" style="margin-top:3px; color:#7c3aed;"></i> University Road, Sargodha, Punjab, Pakistan</div>
-        <div style="font-size:0.85rem; color:#94a3b8; margin-bottom:0.6rem; display:flex; gap:0.6rem; align-items:center;"><i class="fas fa-envelope" style="color:#7c3aed;"></i> contact@hexasolv.com</div>
-        <div style="font-size:0.85rem; color:#94a3b8; margin-bottom:1.4rem; display:flex; gap:0.6rem; align-items:center;"><i class="fas fa-phone" style="color:#7c3aed;"></i> +92 321 453 0103</div>
+        <div style="font-size:0.85rem; color:#94a3b8; margin-bottom:0.6rem; display:flex; gap:0.6rem;"><i class="fas fa-map-marker-alt" style="margin-top:3px; color:#5813BC;"></i> University Road, Sargodha, Punjab, Pakistan</div>
+        <div style="font-size:0.85rem; color:#94a3b8; margin-bottom:0.6rem; display:flex; gap:0.6rem; align-items:center;"><i class="fas fa-envelope" style="color:#5813BC;"></i> contact@hexasolv.com</div>
+        <div style="font-size:0.85rem; color:#94a3b8; margin-bottom:1.4rem; display:flex; gap:0.6rem; align-items:center;"><i class="fas fa-phone" style="color:#5813BC;"></i> +92 321 453 0103</div>
         <div style="display:flex; gap:0.7rem;">
           <a href="#" style="width:34px; height:34px; background:rgba(255,255,255,0.06); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#e2e8f0; text-decoration:none;"><i class="fab fa-facebook-f"></i></a>
           <a href="#" style="width:34px; height:34px; background:rgba(255,255,255,0.06); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#e2e8f0; text-decoration:none;"><i class="fab fa-instagram"></i></a>
@@ -227,12 +227,12 @@
         <p style="font-size:0.85rem; color:#94a3b8; line-height:1.6; margin-bottom:1rem;">Practical tips on growth systems, AI automation, and software development — straight to your inbox. No spam.</p>
         <form style="display:flex; gap:0.5rem; margin-bottom:0.6rem;" onsubmit="event.preventDefault();">
           <input type="email" placeholder="Your email address" style="flex:1; min-width:0; padding:0.7rem 0.9rem; border-radius:8px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.05); color:#fff; font-size:0.85rem;" />
-          <button type="submit" style="background:#06b6d4; border:none; border-radius:8px; width:42px; color:#fff; font-size:1rem; cursor:pointer;"><i class="fas fa-arrow-right"></i></button>
+          <button type="submit" style="background:#5813BC; border:none; border-radius:8px; width:42px; color:#fff; font-size:1rem; cursor:pointer;"><i class="fas fa-arrow-right"></i></button>
         </form>
         <p style="font-size:0.75rem; color:#64748b; margin-bottom:1.6rem;"><i class="fas fa-lock"></i> No spam. Unsubscribe anytime.</p>
 
         <h4 style="font-family:'Outfit',sans-serif; font-size:0.8rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#fff; margin-bottom:1rem;">Start Your Project</h4>
-        <a href="contact.html" style="display:block; text-align:center; background:linear-gradient(135deg,#7c3aed,#a855f7); color:#fff; text-decoration:none; padding:0.85rem; border-radius:8px; font-family:'Outfit',sans-serif; font-weight:700; font-size:0.9rem; margin-bottom:0.8rem;">Book a Strategy Call →</a>
+        <a href="contact.html" style="display:block; text-align:center; background:linear-gradient(135deg,#5813BC,#AC22CB); color:#fff; text-decoration:none; padding:0.85rem; border-radius:8px; font-family:'Outfit',sans-serif; font-weight:700; font-size:0.9rem; margin-bottom:0.8rem;">Book a Strategy Call →</a>
         <a href="https://wa.me/923214530103" target="_blank" style="display:block; text-align:center; background:rgba(37,211,102,0.15); color:#25D366; text-decoration:none; padding:0.85rem; border-radius:8px; font-family:'Outfit',sans-serif; font-weight:700; font-size:0.9rem;"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
       </div>
     </div>

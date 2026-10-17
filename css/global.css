@@ -12,17 +12,17 @@
   /* Default Light Mode Theme Variables */
   --bg-primary: #ffffff;
   --bg-secondary: #f8f7ff;
-  --bg-card: rgba(124, 58, 237, 0.04);
-  --accent-1: #7c3aed;
-  --accent-2: #a855f7;
-  --accent-3: #06b6d4;
+  --bg-card: rgba(88, 19, 188, 0.04);
+  --accent-1: #5813BC;
+  --accent-2: #AC22CB;
+  --accent-3: #5813BC;
   --text-primary: #0f0a1e;
   --text-secondary: #4b5563;
   --text-muted: #9ca3af;
-  --border: rgba(124, 58, 237, 0.12);
-  --border-hover: rgba(124, 58, 237, 0.4);
-  --gradient-1: linear-gradient(135deg, #7c3aed, #a855f7, #06b6d4);
-  --gradient-2: linear-gradient(135deg, #06b6d4, #7c3aed);
+  --border: rgba(88, 19, 188, 0.12);
+  --border-hover: rgba(88, 19, 188, 0.4);
+  --gradient-1: linear-gradient(135deg, #5813BC, #673B92, #AC22CB);
+  --gradient-2: linear-gradient(135deg, #5813BC, #AC22CB);
   --font-main: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
   --transition-theme: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
@@ -31,7 +31,7 @@
 /* Dark Mode Theme Variables (Applied when class 'dark' is on HTML root) */
 html.dark {
   --bg-primary: #03010a;
-  --bg-secondary: #07030f;
+  --bg-secondary: #0a0a0c;
   --bg-card: rgba(255, 255, 255, 0.04);
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
@@ -121,13 +121,13 @@ nav {
   color: #fff !important;
   border-radius: 50px;
   text-decoration: none;
-  box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+  box-shadow: 0 0 20px rgba(88, 19, 188, 0.3);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .nav-cta:hover {
   transform: translateY(-1px);
-  box-shadow: 0 5px 25px rgba(124, 58, 237, 0.4);
+  box-shadow: 0 5px 25px rgba(88, 19, 188, 0.4);
 }
 
 .theme-toggle-btn {
@@ -218,7 +218,7 @@ nav {
 }
 
 .nav-mega-cta {
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.06), rgba(6, 182, 212, 0.06));
+  background: linear-gradient(135deg, rgba(88, 19, 188, 0.06), rgba(88, 19, 188, 0.06));
   border-radius: 12px;
   padding: 1.2rem;
 }
@@ -232,7 +232,7 @@ nav {
 .nav-mega-cta-btn {
   display: block;
   text-align: center;
-  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  background: linear-gradient(135deg, #5813BC, #AC22CB);
   color: #fff !important;
   padding: 0.65rem;
   border-radius: 8px;
@@ -526,12 +526,12 @@ footer {
 }
 html.dark .video-showcase-card {
   background: var(--bg-secondary, #0d0722);
-  border-color: var(--border, rgba(124, 58, 237, 0.2));
+  border-color: var(--border, rgba(88, 19, 188, 0.2));
 }
 .video-showcase-card:hover {
   transform: translateY(-8px);
-  border-color: var(--accent-1, #7c3aed);
-  box-shadow: 0 20px 45px rgba(124, 58, 237, 0.18);
+  border-color: var(--accent-1, #5813BC);
+  box-shadow: 0 20px 45px rgba(88, 19, 188, 0.18);
 }
 .video-thumb-container {
   position: relative;
@@ -558,14 +558,14 @@ html.dark .video-showcase-card {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #7c3aed, #00B4D8);
+  background: linear-gradient(135deg, #5813BC, #AC22CB);
   color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
   padding-left: 3px;
-  box-shadow: 0 8px 25px rgba(124, 58, 237, 0.5);
+  box-shadow: 0 8px 25px rgba(88, 19, 188, 0.5);
   transition: transform 0.3s ease;
 }
 .video-showcase-card:hover .play-button-icon {
@@ -604,7 +604,7 @@ html.dark .video-showcase-card {
   font-weight: 700;
   padding: 4px 12px;
   border-radius: 50px;
-  border: 1px solid rgba(124, 58, 237, 0.3);
+  border: 1px solid rgba(88, 19, 188, 0.3);
   z-index: 2;
 }
 .video-platform-badge.shopify { color: #96bf48; border-color: rgba(150, 191, 72, 0.4); }
@@ -620,7 +620,7 @@ html.dark .video-showcase-card {
 .video-category-label {
   font-size: 11px;
   font-weight: 800;
-  color: var(--accent-1, #7c3aed);
+  color: var(--accent-1, #5813BC);
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 0.4rem;
@@ -650,16 +650,16 @@ html.dark .video-showcase-card {
   font-weight: 700;
   padding: 3px 10px;
   border-radius: 50px;
-  background: rgba(124, 58, 237, 0.08);
-  color: var(--accent-1, #7c3aed);
-  border: 1px solid rgba(124, 58, 237, 0.15);
+  background: rgba(88, 19, 188, 0.08);
+  color: var(--accent-1, #5813BC);
+  border: 1px solid rgba(88, 19, 188, 0.15);
 }
 .video-card-action {
   margin-top: auto;
   font-family: var(--font-main, 'Outfit', sans-serif);
   font-size: 0.88rem;
   font-weight: 700;
-  color: var(--accent-1, #7c3aed);
+  color: var(--accent-1, #5813BC);
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
@@ -679,8 +679,8 @@ html.dark .video-showcase-card {
   margin-bottom: 3rem;
 }
 .video-filter-btn {
-  background: var(--bg-card, rgba(124, 58, 237, 0.04));
-  border: 1px solid var(--border, rgba(124, 58, 237, 0.12));
+  background: var(--bg-card, rgba(88, 19, 188, 0.04));
+  border: 1px solid var(--border, rgba(88, 19, 188, 0.12));
   color: var(--text-secondary, #64748b);
   padding: 0.6rem 1.4rem;
   border-radius: 50px;
@@ -695,10 +695,10 @@ html.dark .video-showcase-card {
 }
 .video-filter-btn:hover,
 .video-filter-btn.active {
-  background: var(--gradient-1, linear-gradient(135deg, #7c3aed, #a855f7));
+  background: var(--gradient-1, linear-gradient(135deg, #5813BC, #AC22CB));
   color: #ffffff;
   border-color: transparent;
-  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.25);
+  box-shadow: 0 8px 20px rgba(88, 19, 188, 0.25);
 }
 /* Target only the whitespace under the footer without touching body or text colors */
 footer {
@@ -714,6 +714,6 @@ footer::after {
     left: 0;
     right: 0;
     height: 100vh;
-    background-color: #07030f;
+    background-color: #0a0a0c;
     z-index: -1;
 }

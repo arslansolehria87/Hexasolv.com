@@ -12,7 +12,7 @@
   border: 1px solid var(--border);
   border-radius: 24px;
   padding: 2.5rem;
-  box-shadow: 0 15px 35px rgba(124, 58, 237, 0.05);
+  box-shadow: 0 15px 35px rgba(88, 19, 188, 0.05);
   max-width: 900px;
   margin: 0 auto;
   overflow: hidden;
@@ -44,7 +44,7 @@
 .estimator-progress-bar-fill {
   height: 100%;
   width: 25%;
-  background: linear-gradient(90deg, #7c3aed, #06b6d4);
+  background: linear-gradient(90deg, #5813BC, #5813BC);
   border-radius: 10px;
   transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -109,12 +109,12 @@
 
 .estimator-option-card.selected {
   border-color: var(--accent-1);
-  background: rgba(124, 58, 237, 0.04);
-  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.08);
+  background: rgba(88, 19, 188, 0.04);
+  box-shadow: 0 10px 25px rgba(88, 19, 188, 0.08);
 }
 
 html.dark .estimator-option-card.selected {
-  background: rgba(124, 58, 237, 0.1);
+  background: rgba(88, 19, 188, 0.1);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
@@ -205,7 +205,7 @@ html.dark .estimator-option-card.selected {
   font-family: var(--font-main);
   font-size: 1.6rem;
   font-weight: 900;
-  background: linear-gradient(135deg, #7c3aed, #06b6d4);
+  background: linear-gradient(135deg, #5813BC, #5813BC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -242,14 +242,14 @@ html.dark .estimator-option-card.selected {
 }
 
 .btn-estimator-primary {
-  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  background: linear-gradient(135deg, #5813BC, #AC22CB);
   color: #fff;
-  box-shadow: 0 5px 15px rgba(124, 58, 237, 0.25);
+  box-shadow: 0 5px 15px rgba(88, 19, 188, 0.25);
 }
 
 .btn-estimator-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.4);
+  box-shadow: 0 8px 20px rgba(88, 19, 188, 0.4);
 }
 
 .btn-estimator-primary:disabled {

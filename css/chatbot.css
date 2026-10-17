@@ -7,14 +7,14 @@
   --chat-text-secondary: #475569;
   --chat-assistant-bubble: #f1f5f9;
   --chat-assistant-text: #0f172a;
-  --chat-user-bubble: #7c3aed;
+  --chat-user-bubble: #5813BC;
   --chat-user-text: #ffffff;
   --chat-option-bg: #ffffff;
   --chat-option-border: #e2e8f0;
   --chat-option-hover: #f8fafc;
   --chat-option-text: #0f172a;
-  --chat-header-bg: linear-gradient(135deg, #7c3aed, #a855f7);
-  --chat-shadow: 0 15px 40px rgba(124, 58, 237, 0.15);
+  --chat-header-bg: linear-gradient(135deg, #5813BC, #AC22CB);
+  --chat-shadow: 0 15px 40px rgba(88, 19, 188, 0.15);
 }
 
 /* Dark Mode Overrides */
@@ -45,14 +45,14 @@ html.dark {
 .chatbot-toggle-btn {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, #7c3aed, #06b6d4);
+  background: linear-gradient(135deg, #5813BC, #5813BC);
   color: #fff !important;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.6rem;
-  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.35);
+  box-shadow: 0 10px 30px rgba(88, 19, 188, 0.35);
   border: none;
   cursor: pointer;
   outline: none;
@@ -62,7 +62,7 @@ html.dark {
 
 .chatbot-toggle-btn:hover {
   transform: scale(1.08) rotate(5deg);
-  box-shadow: 0 12px 35px rgba(124, 58, 237, 0.5);
+  box-shadow: 0 12px 35px rgba(88, 19, 188, 0.5);
 }
 
 .chatbot-toggle-btn .chat-icon-close {
