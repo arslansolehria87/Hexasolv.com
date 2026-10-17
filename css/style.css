@@ -5318,7 +5318,7 @@ footer::after {
     top: 100%;
     left: 0;
     right: 0;
-    height: 100vh;
+    height: 0;
     background-color: #0a0a0c;
     z-index: -1;
 }
