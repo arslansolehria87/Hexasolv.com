@@ -66,82 +66,99 @@ html.dark .trust-badge-card:hover {
   color: var(--text-muted);
 }
 
-/* 2. SDLC Workflows Stepper */
+/* 2. SDLC Workflows Stepper (8-Step Workflow Cards) */
 .sdlc-section {
-  padding: 5.5rem 0;
-  background: var(--bg-primary);
-}
-
-.sdlc-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1rem;
-}
-
-.sdlc-card {
+  padding: 6rem 0;
+  background: #080312;
   position: relative;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 2.2rem 1.6rem;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   overflow: hidden;
 }
 
-.sdlc-card::before {
-  content: attr(data-step);
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-family: var(--font-main);
-  font-size: 3.5rem;
-  font-weight: 900;
-  color: rgba(88, 19, 188, 0.04);
-  line-height: 1;
-  transition: color 0.3s;
-  user-select: none;
+.workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
-html.dark .sdlc-card::before {
-  color: rgba(255, 255, 255, 0.02);
+.workflow-card {
+  position: relative;
+  background: #110a22;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2.2rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+  box-sizing: border-box;
 }
 
-.sdlc-card:hover {
-  transform: translateY(-6px);
-  border-color: var(--accent-1);
-  box-shadow: 0 12px 30px rgba(88, 19, 188, 0.08);
+.workflow-card.featured {
+  border-color: rgba(172, 34, 203, 0.7);
+  box-shadow: 0 0 25px rgba(172, 34, 203, 0.25);
 }
 
-.sdlc-card:hover::before {
-  color: rgba(88, 19, 188, 0.09);
+.workflow-card:hover {
+  transform: translateY(-8px);
+  border-color: #AC22CB;
+  background: #150d2c;
+  box-shadow: 0 16px 35px rgba(88, 19, 188, 0.35), 0 0 25px rgba(172, 34, 203, 0.35);
 }
 
-html.dark .sdlc-card:hover {
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-}
-
-.sdlc-icon {
-  font-size: 2rem;
-  background: linear-gradient(135deg, #5813BC, #5813BC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 1.2rem;
+.workflow-badge {
   display: inline-block;
-}
-
-.sdlc-title {
-  font-family: var(--font-main);
-  font-size: 1.05rem;
+  background: linear-gradient(135deg, #7928CA, #B800FF);
+  color: #ffffff;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.95rem;
   font-weight: 800;
-  color: var(--text-primary);
-  margin-bottom: 0.5rem;
+  padding: 0.35rem 1.15rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(172, 34, 203, 0.5);
+  margin-bottom: 1.3rem;
+  letter-spacing: 0.5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.sdlc-desc {
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  line-height: 1.5;
+.workflow-card:hover .workflow-badge {
+  transform: scale(1.06);
+  box-shadow: 0 6px 24px rgba(172, 34, 203, 0.85);
+}
+
+.workflow-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 0.65rem 0;
+  letter-spacing: -0.01em;
+}
+
+.workflow-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .workflow-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .workflow-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .workflow-card {
+    padding: 1.8rem 1.5rem;
+  }
 }
 
 /* 3. SEO FAQ Accordion */
