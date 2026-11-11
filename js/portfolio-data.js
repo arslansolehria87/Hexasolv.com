@@ -10,7 +10,7 @@ const PORTFOLIO_DATA = [
     title: "Libas-e-Khas Sargodha",
     category: "Custom E-Commerce & Retail",
     dataCategory: "fullstack",
-    badge: "Live Client (Sargodha)",
+    badge: "📌 Pinned Project",
     description: "Production retail apparel platform for City Road Sargodha featuring responsive clothing catalog, custom order routing, and active daily customer purchases.",
     image: "images/project-libasekhas.webp",
     fallbackImage: "https://libasekhassargodha.com/assets/images/hero-images/hero-image-1.webp",
@@ -23,7 +23,7 @@ const PORTFOLIO_DATA = [
     title: "Bin Sarah Musk Store",
     category: "WordPress & Luxury E-Commerce",
     dataCategory: "cms",
-    badge: "Live Client (Rebuild)",
+    badge: "📌 Pinned Project",
     description: "Complete WordPress & WooCommerce architecture rebuild for a luxury perfume brand featuring speed optimization, seamless checkout, and live order processing.",
     image: "images/project-binsarahmusk.webp",
     fallbackImage: "https://binsarahmusk.com/wp-content/uploads/2026/10/Luxury-Black-Gold-Perfume-Showcase.png",
@@ -32,11 +32,24 @@ const PORTFOLIO_DATA = [
     target: "_blank"
   },
   {
+    id: "foodbreak",
+    title: "The FoodBreak",
+    category: "WordPress & E-Commerce",
+    dataCategory: "cms",
+    badge: "📌 Pinned Project",
+    description: "High-traffic restaurant portal featuring online takeaway food ordering, responsive menus, and custom WooCommerce setup.",
+    image: "https://arslan-professional-portfolio.netlify.app/images/project-foodbreak.webp",
+    fallbackImage: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&auto=format&fit=crop&q=80",
+    techs: ["WordPress", "WooCommerce", "Custom Theme"],
+    link: "https://thefoodbreaksgd.com/",
+    target: "_blank"
+  },
+  {
     id: "blood-bridge",
     title: "Blood Bridge Pro",
     category: "Full-Stack Web App",
     dataCategory: "fullstack",
-    badge: "Live System",
+    badge: "📌 Pinned Project",
     description: "Production blood donation network featuring donor lookup, QR verification, AI chatbot, SMTP alerts, and donor dashboard.",
     image: "https://arslan-professional-portfolio.netlify.app/images/project-blood-bridge.webp",
     fallbackImage: "https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=600&auto=format&fit=crop&q=80",
@@ -69,19 +82,6 @@ const PORTFOLIO_DATA = [
     techs: [".NET 8 / WPF", "C#", "SQLite"],
     link: "contact.html",
     target: "_self"
-  },
-  {
-    id: "foodbreak",
-    title: "The FoodBreak",
-    category: "WordPress & E-Commerce",
-    dataCategory: "cms",
-    badge: "Live Business",
-    description: "High-traffic restaurant portal featuring online takeaway food ordering, responsive menus, and custom WooCommerce setup.",
-    image: "https://arslan-professional-portfolio.netlify.app/images/project-foodbreak.webp",
-    fallbackImage: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&auto=format&fit=crop&q=80",
-    techs: ["WordPress", "WooCommerce", "Custom Theme"],
-    link: "https://thefoodbreaksgd.com/",
-    target: "_blank"
   },
   {
     id: "toolkit",
