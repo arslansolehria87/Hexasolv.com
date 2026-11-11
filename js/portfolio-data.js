@@ -58,6 +58,45 @@ const PORTFOLIO_DATA = [
     target: "_blank"
   },
   {
+    id: "trustomart",
+    title: "Trustomart Store",
+    category: "Shopify & Multi-Category Retail",
+    dataCategory: "cms",
+    badge: "Live Client",
+    description: "Multi-category Shopify retail store featuring curated lifestyle and trending collections, automated order fulfillment pipeline, and frictionless mobile checkout.",
+    image: "images/project-trustomart.webp",
+    fallbackImage: "https://trustomart.store/cdn/shop/files/IMG_2019.png?v=1789896772&width=1086",
+    techs: ["Shopify", "Liquid", "E-Commerce", "Checkout Funnel"],
+    link: "https://trustomart.store/",
+    target: "_blank"
+  },
+  {
+    id: "pakbuy",
+    title: "PakBuy Store",
+    category: "Shopify E-Commerce Marketplace",
+    dataCategory: "cms",
+    badge: "Live Client",
+    description: "High-conversion Shopify e-commerce store engineered with Rosyz architecture, dynamic product filtering, flash-sale promotions, and integrated payment gateway.",
+    image: "images/project-pakbuy.webp",
+    fallbackImage: "https://pakbuy.store/cdn/shop/files/banner_3_2.png?v=1785936201&width=1080",
+    techs: ["Shopify", "Rosyz Theme", "Payment Gateway", "Speed Optimized"],
+    link: "https://pakbuy.store/",
+    target: "_blank"
+  },
+  {
+    id: "digi10x",
+    title: "Digi 10x Growth",
+    category: "Performance Marketing & React Web App",
+    dataCategory: "fullstack",
+    badge: "Live Platform",
+    description: "Modern React & Vite single-page agency application designed for revenue scaling, featuring high-converting lead funnels, Meta/TikTok campaign showcases, and interactive booking forms.",
+    image: "images/project-digi10x.webp",
+    fallbackImage: "https://digi10xgrowth.netlify.app/assets/umer2-W5t04IIP.png",
+    techs: ["React", "Vite", "Tailwind CSS", "Lead Funnels"],
+    link: "https://digi10xgrowth.netlify.app/",
+    target: "_blank"
+  },
+  {
     id: "vyapar",
     title: "Vyapar POS System",
     category: "POS & Enterprise",

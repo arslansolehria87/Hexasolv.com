@@ -19,7 +19,7 @@ function renderPortfolio() {
     // 1. Render Homepage Featured Portfolio
     if (featuredContainer && typeof PORTFOLIO_DATA !== 'undefined') {
         featuredContainer.innerHTML = '';
-        const featuredItems = PORTFOLIO_DATA.slice(0, 6);
+        const featuredItems = PORTFOLIO_DATA.slice(0, 9);
         featuredItems.forEach((item, index) => {
             const delayClass = index % 3 > 0 ? ` delay-${index % 3}` : '';
             const cardHTML = `
