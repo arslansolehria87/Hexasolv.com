@@ -24,9 +24,9 @@ function renderPortfolio() {
             const delayClass = index % 3 > 0 ? ` delay-${index % 3}` : '';
             const cardHTML = `
                 <div class="portfolio-project-card reveal${delayClass}">
-                    <div style="position:relative; overflow:hidden; height:220px;">
+                    <div class="portfolio-project-thumb" style="position:relative; overflow:hidden; height:240px;">
                         <img src="${item.image}" alt="${item.title}" class="portfolio-card-img" style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease;" onerror="this.src='${item.fallbackImage}'" />
-                        <span style="position:absolute; top:12px; right:12px; background:rgba(15,10,30,0.85); backdrop-filter:blur(10px); color:#a78bfa; font-size:11px; font-weight:700; padding:4px 12px; border-radius:50px; border:1px solid rgba(124,58,237,0.3);">${item.badge}</span>
+                        <span class="portfolio-project-badge" style="position:absolute; top:12px; right:12px; background:rgba(15,10,30,0.88); backdrop-filter:blur(10px); color:#a78bfa; font-size:11px; font-weight:700; padding:5px 12px; border-radius:50px; border:1px solid rgba(124,58,237,0.35); box-shadow:0 4px 15px rgba(0,0,0,0.3);">${item.badge}</span>
                     </div>
                     <div class="portfolio-card-body" style="padding:1.8rem; display:flex; flex-direction:column; flex-grow:1;">
                         <div style="font-size:11px; font-weight:800; color:#7c3aed; text-transform:uppercase; letter-spacing:1px; margin-bottom:0.4rem;">${item.category}</div>
