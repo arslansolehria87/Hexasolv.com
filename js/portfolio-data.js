@@ -6,6 +6,32 @@
 
 const PORTFOLIO_DATA = [
   {
+    id: "libas-e-khas",
+    title: "Libas-e-Khas Sargodha",
+    category: "Custom E-Commerce & Retail",
+    dataCategory: "fullstack",
+    badge: "Live Client (Sargodha)",
+    description: "Production retail apparel platform for City Road Sargodha featuring responsive clothing catalog, custom order routing, and active daily customer purchases.",
+    image: "images/project-libasekhas.webp",
+    fallbackImage: "https://libasekhassargodha.com/assets/images/hero-images/hero-image-1.webp",
+    techs: ["PHP", "Bootstrap 5", "E-Commerce", "MySQL"],
+    link: "https://libasekhassargodha.com/",
+    target: "_blank"
+  },
+  {
+    id: "bin-sarah-musk",
+    title: "Bin Sarah Musk Store",
+    category: "WordPress & Luxury E-Commerce",
+    dataCategory: "cms",
+    badge: "Live Client (Rebuild)",
+    description: "Complete WordPress & WooCommerce architecture rebuild for a luxury perfume brand featuring speed optimization, seamless checkout, and live order processing.",
+    image: "images/project-binsarahmusk.webp",
+    fallbackImage: "https://binsarahmusk.com/wp-content/uploads/2026/10/Luxury-Black-Gold-Perfume-Showcase.png",
+    techs: ["WordPress", "WooCommerce", "Speed Optimization", "Payment Gateway"],
+    link: "https://binsarahmusk.com/",
+    target: "_blank"
+  },
+  {
     id: "blood-bridge",
     title: "Blood Bridge Pro",
     category: "Full-Stack Web App",
