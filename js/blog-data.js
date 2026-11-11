@@ -13,7 +13,8 @@ const BLOG_DATA = [
     image: "images/blog-1775817120-88c0953b.png",
     author: "Hexasolv Team",
     date: "July 2026",
-    link: "#"
+    readTime: "7 min read",
+    link: "blog/ai-cuts-work.html"
   },
   {
     id: "laravel-vs-mern",
@@ -23,7 +24,8 @@ const BLOG_DATA = [
     image: "images/blog-1775817353-e5493752.png",
     author: "Hexasolv Team",
     date: "July 2026",
-    link: "#"
+    readTime: "8 min read",
+    link: "blog/laravel-vs-mern.html"
   },
   {
     id: "leak-free-leads",
@@ -33,6 +35,7 @@ const BLOG_DATA = [
     image: "images/blog-1775817405-cb3b0f17.png",
     author: "Hexasolv Team",
     date: "July 2026",
-    link: "#"
+    readTime: "9 min read",
+    link: "blog/leak-free-leads.html"
   }
 ];

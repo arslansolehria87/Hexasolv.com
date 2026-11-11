@@ -39,6 +39,26 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Blog Articles -->
+  <url>
+    <loc>https://www.hexasolv.com/blog/ai-cuts-work.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hexasolv.com/blog/laravel-vs-mern.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hexasolv.com/blog/leak-free-leads.html</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Legal Pages -->
   <url>
     <loc>https://www.hexasolv.com/privacy-policy.html</loc>
