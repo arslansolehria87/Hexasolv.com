@@ -1,0 +1,451 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+  <script>
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark');
+    }
+  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Primary Meta -->
+    <title>Privacy Policy | Hexasolv — Custom Software & AI Solutions</title>
+    <meta name="description" content="Hexasolv's Privacy Policy explains how we collect, use, and protect your personal information when you visit hexasolv.com or use our services.">
+    <meta name="author" content="Hexasolv">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.hexasolv.com/privacy-policy.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Privacy Policy | Hexasolv">
+    <meta property="og:description" content="Learn how Hexasolv collects, uses, and protects your personal information.">
+    <meta property="og:url" content="https://www.hexasolv.com/privacy-policy.html">
+    <meta property="og:site_name" content="Hexasolv">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css" crossorigin="anonymous">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css?v=2">
+    <link rel="stylesheet" href="css/global.css">
+
+    <style>
+      :root {
+        --pp-bg: #ffffff;
+        --pp-text: #1e293b;
+        --pp-muted: #64748b;
+        --pp-border: #e2e8f0;
+        --pp-accent: #5813BC;
+        --pp-heading: #0f172a;
+      }
+      .dark {
+        --pp-bg: #080312;
+        --pp-text: #e2e8f0;
+        --pp-muted: #94a3b8;
+        --pp-border: rgba(255,255,255,0.08);
+        --pp-heading: #f8fafc;
+      }
+
+      body { background: var(--pp-bg); color: var(--pp-text); font-family: 'Inter', 'Plus Jakarta Sans', sans-serif; }
+
+      .pp-hero {
+        background: linear-gradient(135deg, #5813BC 0%, #AC22CB 100%);
+        padding: 5rem 5% 4rem;
+        text-align: center;
+        color: #fff;
+      }
+      .pp-hero h1 {
+        font-family: 'Outfit', sans-serif;
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: 800;
+        margin-bottom: 0.8rem;
+      }
+      .pp-hero p {
+        font-size: 1rem;
+        opacity: 0.85;
+        max-width: 540px;
+        margin: 0 auto;
+      }
+      .pp-badge {
+        display: inline-block;
+        background: rgba(255,255,255,0.15);
+        border: 1px solid rgba(255,255,255,0.3);
+        border-radius: 50px;
+        padding: 0.35rem 1.1rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        margin-bottom: 1.5rem;
+      }
+
+      .pp-container {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 4rem 5%;
+      }
+      .pp-last-updated {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.85rem;
+        color: var(--pp-muted);
+        margin-bottom: 3rem;
+        padding: 0.8rem 1.2rem;
+        background: rgba(88, 19, 188, 0.06);
+        border-left: 3px solid #5813BC;
+        border-radius: 0 8px 8px 0;
+      }
+      .pp-section {
+        margin-bottom: 2.8rem;
+        padding-bottom: 2.8rem;
+        border-bottom: 1px solid var(--pp-border);
+      }
+      .pp-section:last-of-type { border-bottom: none; }
+
+      .pp-section h2 {
+        font-family: 'Outfit', sans-serif;
+        font-size: 1.35rem;
+        font-weight: 700;
+        color: var(--pp-heading);
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+      }
+      .pp-section h2 .pp-num {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        background: linear-gradient(135deg, #5813BC, #AC22CB);
+        border-radius: 8px;
+        font-size: 0.8rem;
+        font-weight: 800;
+        color: #fff;
+        flex-shrink: 0;
+      }
+      .pp-section p {
+        font-size: 0.95rem;
+        line-height: 1.8;
+        color: var(--pp-text);
+        margin-bottom: 0.9rem;
+      }
+      .pp-section ul {
+        padding-left: 1.2rem;
+        margin-bottom: 0.9rem;
+      }
+      .pp-section ul li {
+        font-size: 0.95rem;
+        line-height: 1.8;
+        color: var(--pp-text);
+        margin-bottom: 0.4rem;
+      }
+      .pp-section ul li::marker { color: #5813BC; }
+
+      .pp-contact-card {
+        background: linear-gradient(135deg, rgba(88,19,188,0.08), rgba(172,34,203,0.08));
+        border: 1px solid rgba(88,19,188,0.2);
+        border-radius: 16px;
+        padding: 2rem;
+        text-align: center;
+        margin-top: 3rem;
+      }
+      .pp-contact-card h3 {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: var(--pp-heading);
+        margin-bottom: 0.6rem;
+      }
+      .pp-contact-card p { font-size: 0.9rem; color: var(--pp-muted); margin-bottom: 1.2rem; }
+      .pp-contact-card a {
+        display: inline-block;
+        background: linear-gradient(135deg, #5813BC, #AC22CB);
+        color: #fff;
+        text-decoration: none;
+        padding: 0.75rem 2rem;
+        border-radius: 8px;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 700;
+        font-size: 0.9rem;
+        transition: opacity 0.2s;
+      }
+      .pp-contact-card a:hover { opacity: 0.85; }
+    </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- ===== HERO ===== -->
+  <section class="pp-hero">
+    <div class="pp-badge">📄 Legal Document</div>
+    <h1>Privacy Policy</h1>
+    <p>We respect your privacy and are committed to protecting your personal information. Read how we handle your data.</p>
+  </section>
+
+  <!-- ===== CONTENT ===== -->
+  <div class="pp-container">
+
+    <div class="pp-last-updated">
+      <i class="fas fa-calendar-alt" style="color:#5813BC;"></i>
+      <strong>Last Updated:</strong> November 11, 2026 &nbsp;|&nbsp;
+      <i class="fas fa-globe" style="color:#5813BC;"></i>
+      Effective for: <strong>https://www.hexasolv.com</strong>
+    </div>
+
+    <!-- Section 1 -->
+    <div class="pp-section">
+      <h2><span class="pp-num">1</span> Introduction</h2>
+      <p>Welcome to <strong>Hexasolv</strong> ("we," "our," or "us"). Hexasolv is a full-stack software development and digital growth agency based in Sargodha, Punjab, Pakistan. We operate the website <strong>https://www.hexasolv.com</strong> (the "Site").</p>
+      <p>This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or contact us for services. Please read this policy carefully. If you disagree with its terms, please discontinue use of our Site.</p>
+      <p>We reserve the right to make changes to this Privacy Policy at any time. We will notify you of any changes by updating the "Last Updated" date above. Your continued use of the Site after any changes constitutes your acceptance of the new Privacy Policy.</p>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="pp-section">
+      <h2><span class="pp-num">2</span> Information We Collect</h2>
+      <p>We may collect information about you in a variety of ways. The information we may collect includes:</p>
+      <p><strong>Personal Data You Provide:</strong></p>
+      <ul>
+        <li>Name and email address (when you fill out our contact form or newsletter subscription)</li>
+        <li>Phone number (when you contact us via WhatsApp or the contact form)</li>
+        <li>Project details and business information you share when requesting a quote or consultation</li>
+        <li>Messages and correspondence you send to us</li>
+      </ul>
+      <p><strong>Automatically Collected Data:</strong></p>
+      <ul>
+        <li>IP address and browser type</li>
+        <li>Pages visited and time spent on our Site</li>
+        <li>Referring URLs and search terms used to find our Site</li>
+        <li>Device information (operating system, screen resolution)</li>
+        <li>Cookies and similar tracking technologies (see Section 6)</li>
+      </ul>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="pp-section">
+      <h2><span class="pp-num">3</span> How We Use Your Information</h2>
+      <p>We use the information we collect for the following purposes:</p>
+      <ul>
+        <li>To respond to your inquiries and provide project consultations</li>
+        <li>To send you requested quotes, proposals, and service information</li>
+        <li>To send newsletters and marketing emails (only if you have opted in)</li>
+        <li>To improve our website content, user experience, and services</li>
+        <li>To analyze website traffic and usage patterns using analytics tools</li>
+        <li>To comply with legal obligations and protect our legal rights</li>
+        <li>To detect, prevent, and address technical issues or fraudulent activities</li>
+      </ul>
+      <p>We will <strong>never</strong> sell, rent, or trade your personal information to third parties for their marketing purposes without your explicit consent.</p>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="pp-section">
+      <h2><span class="pp-num">4</span> Third-Party Services & Disclosure</h2>
+      <p>We may share your information with trusted third parties only as necessary to operate our Site and deliver our services:</p>
+      <ul>
+        <li><strong>Google Analytics:</strong> We use Google Analytics to understand how visitors interact with our Site. Google may collect your IP address and usage data. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:#5813BC;">Google's Privacy Policy</a>.</li>
+        <li><strong>Google AdSense:</strong> We may display advertisements served by Google AdSense. Google uses cookies to serve ads based on your prior visits to our Site and other websites. You can opt out of personalized advertising at <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener" style="color:#5813BC;">Google Ads Settings</a>.</li>
+        <li><strong>Vercel (Hosting):</strong> Our website is hosted on Vercel's infrastructure. Vercel may process request logs including IP addresses. See <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener" style="color:#5813BC;">Vercel's Privacy Policy</a>.</li>
+        <li><strong>WhatsApp / Meta:</strong> When you contact us via WhatsApp, Meta's data practices apply. See <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener" style="color:#5813BC;">WhatsApp's Privacy Policy</a>.</li>
+        <li><strong>Email Service Providers:</strong> If you subscribe to our newsletter, your email may be stored with our email service provider.</li>
+      </ul>
+      <p>We may also disclose your information if required to do so by law or if we believe such action is necessary to comply with a legal obligation, protect our rights, or prevent harm.</p>
+    </div>
+
+    <!-- Section 5 -->
+    <div class="pp-section">
+      <h2><span class="pp-num">5</span> Google AdSense & Advertising</h2>
+      <p>We participate in the Google AdSense program. Google AdSense uses cookies and web beacons to serve ads on our Site based on your interests. This allows Google and its partners to show you ads that may be relevant to your interests on our Site and other websites.</p>
+      <p>Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to our site and/or other sites on the Internet. You may opt out of personalized advertising by visiting:</p>
+      <ul>
+        <li><a href="https://www.google.com/settings/ads" target="_blank" rel="noopener" style="color:#5813BC;">Google Ads Settings</a></li>
+        <li><a href="http://www.aboutads.info/choices/" target="_blank" rel="noopener" style="color:#5813BC;">Digital Advertising Alliance Opt-Out</a></li>
+        <li><a href="https://optout.networkadvertising.org/" target="_blank" rel="noopener" style="color:#5813BC;">Network Advertising Initiative Opt-Out</a></li>
+      </ul>
+      <p>Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to our website or other websites. Google's use of advertising cookies enables it and its partners to serve ads to users based on their visit to our sites and/or other sites on the Internet.</p>
+    </div>
+
+    <!-- Section 6 -->
+    <div class="pp-section">
+      <h2><span class="pp-num">6</span> Cookies & Tracking Technologies</h2>
+      <p>Our Site uses cookies and similar tracking technologies to enhance your browsing experience. Cookies are small data files stored on your browser or device.</p>
+      <p><strong>Types of cookies we use:</strong></p>
+      <ul>
+        <li><strong>Essential Cookies:</strong> Required for the Site to function properly (e.g., theme preference: light/dark mode).</li>
+        <li><strong>Analytics Cookies:</strong> Used by Google Analytics to collect anonymous data about Site traffic and usage.</li>
+        <li><strong>Advertising Cookies:</strong> Used by Google AdSense to serve relevant advertisements.</li>
+      </ul>
+      <p>You can control cookies through your browser settings. However, disabling cookies may affect some functionality of our Site. Most browsers allow you to refuse cookies or delete existing ones. See your browser's help documentation for instructions.</p>
+    </div>
+
+    <!-- Section 7 -->
+    <div class="pp-section">
+      <h2><span class="pp-num">7</span> Data Security</h2>
+      <p>We implement reasonable administrative, technical, and physical security measures to protect your personal information from unauthorized access, use, alteration, or disclosure.</p>
+      <p>Our website is served over HTTPS (SSL/TLS encryption). All data transmitted between your browser and our servers is encrypted. However, no method of transmission over the Internet or electronic storage is 100% secure. While we strive to protect your data, we cannot guarantee its absolute security.</p>
+      <p>We retain your personal information only as long as necessary to fulfill the purposes described in this Privacy Policy, unless a longer retention period is required by law.</p>
+    </div>
+
+    <!-- Section 8 -->
+    <div class="pp-section">
+      <h2><span class="pp-num">8</span> Children's Privacy</h2>
+      <p>Our Site is not directed at children under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately at <a href="mailto:contact@hexasolv.com" style="color:#5813BC;">contact@hexasolv.com</a>.</p>
+      <p>If we discover that we have inadvertently collected information from a child under 13, we will promptly delete such information from our records.</p>
+    </div>
+
+    <!-- Section 9 -->
+    <div class="pp-section">
+      <h2><span class="pp-num">9</span> Your Privacy Rights</h2>
+      <p>Depending on your location, you may have the following rights regarding your personal information:</p>
+      <ul>
+        <li><strong>Right to Access:</strong> Request a copy of the personal data we hold about you.</li>
+        <li><strong>Right to Rectification:</strong> Request correction of inaccurate or incomplete personal data.</li>
+        <li><strong>Right to Erasure:</strong> Request deletion of your personal data ("right to be forgotten").</li>
+        <li><strong>Right to Object:</strong> Object to our processing of your personal data for direct marketing.</li>
+        <li><strong>Right to Withdraw Consent:</strong> Withdraw your consent at any time where we rely on consent to process your data.</li>
+        <li><strong>Right to Opt-Out of Ads:</strong> Opt out of personalized advertising as described in Section 5.</li>
+      </ul>
+      <p>To exercise any of these rights, please contact us at <a href="mailto:contact@hexasolv.com" style="color:#5813BC;">contact@hexasolv.com</a>. We will respond to your request within 30 days.</p>
+    </div>
+
+    <!-- Section 10 -->
+    <div class="pp-section">
+      <h2><span class="pp-num">10</span> Links to External Sites</h2>
+      <p>Our Site may contain links to third-party websites (e.g., our social media profiles, LinkedIn, WhatsApp). We are not responsible for the privacy practices or the content of those sites. We encourage you to review the privacy policies of any external sites you visit.</p>
+    </div>
+
+    <!-- Section 11 -->
+    <div class="pp-section">
+      <h2><span class="pp-num">11</span> Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will update the "Last Updated" date at the top of this page when we make changes.</p>
+      <p>We encourage you to review this Privacy Policy periodically to stay informed about how we protect your information. Your continued use of the Site after any changes constitutes your acceptance of the updated policy.</p>
+    </div>
+
+    <!-- Contact Card -->
+    <div class="pp-contact-card">
+      <h3>Questions About This Policy?</h3>
+      <p>If you have any questions, concerns, or requests regarding this Privacy Policy, we're here to help.</p>
+      <p style="font-size:0.88rem; color:var(--pp-muted); margin-bottom:0.4rem;">
+        <i class="fas fa-envelope" style="color:#5813BC; margin-right:6px;"></i>
+        <a href="mailto:contact@hexasolv.com" style="color:#5813BC; text-decoration:none;">contact@hexasolv.com</a>
+      </p>
+      <p style="font-size:0.88rem; color:var(--pp-muted); margin-bottom:1.4rem;">
+        <i class="fas fa-map-marker-alt" style="color:#5813BC; margin-right:6px;"></i>
+        University Road, Sargodha, Punjab, Pakistan
+      </p>
+      <a href="contact.html">Contact Us →</a>
+    </div>
+
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer style="background:#0a0a0c; padding:4.5rem 5% 0; color:#e2e8f0; font-family:'Inter',sans-serif; margin:0; position:relative; z-index:10;">
+    <div style="max-width:1280px; margin:0 auto; display:grid; grid-template-columns: 1.3fr 1fr 1fr 1.2fr; gap:2.5rem;">
+
+      <!-- Brand -->
+      <div>
+        <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:1.2rem;">
+          <img src="images/logo-mark.png" alt="Hexasolv Logo" style="height:30px; width:auto; flex-shrink:0;">
+          <img src="images/logo-text-light.png" alt="Hexasolv" style="height:21px; width:auto;">
+        </div>
+        <p style="font-size:0.88rem; color:#94a3b8; line-height:1.7; margin-bottom:1.4rem;">Full-stack systems agency — custom software development combined with AI-driven growth marketing, built by a 3-partner team.</p>
+        <div style="font-size:0.85rem; color:#94a3b8; margin-bottom:0.6rem; display:flex; gap:0.6rem;"><i class="fas fa-map-marker-alt" style="margin-top:3px; color:#5813BC;"></i> University Road, Sargodha, Punjab, Pakistan</div>
+        <div style="font-size:0.85rem; color:#94a3b8; margin-bottom:0.6rem; display:flex; gap:0.6rem; align-items:center;"><i class="fas fa-envelope" style="color:#5813BC;"></i> contact@hexasolv.com</div>
+        <div style="font-size:0.85rem; color:#94a3b8; margin-bottom:1.4rem; display:flex; gap:0.6rem; align-items:center;"><i class="fas fa-phone" style="color:#5813BC;"></i> <a href="tel:+923214530103" style="color:#94a3b8; text-decoration:none;">+92 321 453 0103</a> | <a href="tel:+923016087871" style="color:#94a3b8; text-decoration:none;">+92 301 6087871</a></div>
+        <div style="display:flex; gap:0.7rem;">
+          <a href="#" style="width:34px; height:34px; background:rgba(255,255,255,0.06); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#e2e8f0; text-decoration:none;"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" style="width:34px; height:34px; background:rgba(255,255,255,0.06); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#e2e8f0; text-decoration:none;"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com/in/arslan-ali-59b750338" target="_blank" style="width:34px; height:34px; background:rgba(255,255,255,0.06); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#e2e8f0; text-decoration:none;"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/923214530103" target="_blank" style="width:34px; height:34px; background:rgba(37,211,102,0.15); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#25D366; text-decoration:none;"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Growth & Marketing -->
+      <div>
+        <h4 style="font-family:'Outfit',sans-serif; font-size:0.8rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#fff; margin-bottom:1.3rem;">Growth &amp; Marketing</h4>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.85rem;">
+          <li><a href="services/growth-systems.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Business Growth Systems</a></li>
+          <li><a href="services/lead-nurturing.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Lead Nurturing Systems</a></li>
+          <li><a href="services/ai-automation.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">AI Automation Solutions</a></li>
+          <li><a href="services/personal-branding.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Personal Brand Positioning</a></li>
+          <li><a href="services/shopify-development.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Shopify Store Development</a></li>
+          <li><a href="services/ecommerce-management.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">E-Commerce Management</a></li>
+          <li><a href="services/paid-ads.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Performance Paid Ads</a></li>
+        </ul>
+      </div>
+
+      <!-- Tech & Development + Company -->
+      <div>
+        <h4 style="font-family:'Outfit',sans-serif; font-size:0.8rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#fff; margin-bottom:1.3rem;">Tech &amp; Development</h4>
+        <ul style="list-style:none; padding:0; margin:0 0 1.6rem; display:flex; flex-direction:column; gap:0.85rem;">
+          <li><a href="services/laravel-development.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Laravel Development</a></li>
+          <li><a href="services/mern-stack.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">MERN Stack Development</a></li>
+          <li><a href="services/saas-development.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">SaaS Tools Development</a></li>
+          <li><a href="services/pos-billing.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">POS &amp; Billing Systems</a></li>
+          <li><a href="services/ai-web-apps.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">AI Web Apps</a></li>
+          <li><a href="services/flutter-development.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Flutter App Development</a></li>
+        </ul>
+        <h4 style="font-family:'Outfit',sans-serif; font-size:0.8rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#fff; margin-bottom:1.3rem;">Company</h4>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.85rem;">
+          <li><a href="about.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">About Us</a></li>
+          <li><a href="portfolio.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Portfolio</a></li>
+          <li><a href="blog.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Blog</a></li>
+          <li><a href="contact.html" style="color:#94a3b8; text-decoration:none; font-size:0.87rem;">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter + CTA -->
+      <div>
+        <h4 style="font-family:'Outfit',sans-serif; font-size:0.8rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#fff; margin-bottom:1.1rem;">Stay In The Loop</h4>
+        <p style="font-size:0.85rem; color:#94a3b8; line-height:1.6; margin-bottom:1rem;">Practical tips on growth systems, AI automation, and software development — straight to your inbox. No spam.</p>
+        <form style="display:flex; gap:0.5rem; margin-bottom:0.6rem;" onsubmit="event.preventDefault();">
+          <input type="email" placeholder="Your email address" style="flex:1; min-width:0; padding:0.7rem 0.9rem; border-radius:8px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.05); color:#fff; font-size:0.85rem;" />
+          <button type="submit" style="background:#5813BC; border:none; border-radius:8px; width:42px; color:#fff; font-size:1rem; cursor:pointer;"><i class="fas fa-arrow-right"></i></button>
+        </form>
+        <p style="font-size:0.75rem; color:#64748b; margin-bottom:1.6rem;"><i class="fas fa-lock"></i> No spam. Unsubscribe anytime.</p>
+
+        <h4 style="font-family:'Outfit',sans-serif; font-size:0.8rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:#fff; margin-bottom:1rem;">Start Your Project</h4>
+        <a href="contact.html" style="display:block; text-align:center; background:linear-gradient(135deg,#5813BC,#AC22CB); color:#fff; text-decoration:none; padding:0.85rem; border-radius:8px; font-family:'Outfit',sans-serif; font-weight:700; font-size:0.9rem; margin-bottom:0.8rem;">Book a Strategy Call →</a>
+        <a href="https://wa.me/923214530103" target="_blank" style="display:block; text-align:center; background:rgba(37,211,102,0.15); color:#25D366; text-decoration:none; padding:0.85rem; border-radius:8px; font-family:'Outfit',sans-serif; font-weight:700; font-size:0.9rem;"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+      </div>
+    </div>
+
+    <div style="max-width:1280px; margin:2.5rem auto 0; padding:1.2rem 0; border-top:1px solid rgba(255,255,255,0.08); display:flex; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+      <p style="font-size:0.82rem; color:#64748b; margin:0;">© 2026 Hexasolv. All rights reserved. | Sargodha, Pakistan</p>
+      <div style="display:flex; gap:1.5rem;">
+        <a href="privacy-policy.html" style="color:#AC22CB; text-decoration:none; font-size:0.82rem; font-weight:600;">Privacy Policy</a>
+        <a href="terms-of-service.html" style="color:#64748b; text-decoration:none; font-size:0.82rem;">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    @media (max-width: 900px) { footer > div:first-child { grid-template-columns: 1fr 1fr !important; } }
+    @media (max-width: 560px) { footer > div:first-child { grid-template-columns: 1fr !important; } }
+  </style>
+
+  <!-- JS -->
+  <script src="js/main.js" defer></script>
+  <script src="js/theme.js" defer></script>
+</body>
+</html>
