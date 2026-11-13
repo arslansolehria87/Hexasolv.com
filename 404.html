@@ -1,0 +1,151 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+  <script>
+    if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark');
+    }
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>404 - Page Not Found | Hexasolv</title>
+  <meta name="description" content="The page you are looking for does not exist or has been moved. Explore Hexasolv custom software engineering and growth insights.">
+  <meta name="robots" content="noindex, follow">
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/global.css">
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1494273729085816" crossorigin="anonymous"></script>
+
+  <style>
+    :root { --bg: #080312; --text: #e2e8f0; --muted: #94a3b8; --border: rgba(255,255,255,0.08); --accent: #5813BC; --accent2: #AC22CB; }
+    body { background: var(--bg); color: var(--text); font-family: 'Plus Jakarta Sans', sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
+    .error-wrapper {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6rem 5%;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .error-glow {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(172,34,203,0.18) 0%, transparent 70%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+    .error-code {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(6rem, 15vw, 11rem);
+      font-weight: 900;
+      line-height: 1;
+      background: linear-gradient(135deg, #AC22CB 0%, #5813BC 50%, #3b82f6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+      letter-spacing: -2px;
+    }
+    .error-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(1.5rem, 3.5vw, 2.3rem);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+    .error-desc {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 540px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.7;
+    }
+    .error-actions {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+    .btn-grad {
+      background: linear-gradient(135deg, #5813BC, #AC22CB);
+      color: #fff;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      padding: 0.85rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 20px rgba(88,19,188,0.4);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-grad:hover { transform: translateY(-2px); color: #fff; box-shadow: 0 6px 25px rgba(172,34,203,0.5); }
+    .btn-outline {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: #fff;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      padding: 0.85rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .btn-outline:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.3); color: #fff; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav style="background:rgba(8,3,18,0.95); backdrop-filter:blur(10px); border-bottom:1px solid rgba(255,255,255,0.06); padding:1rem 5%; display:flex; justify-content:space-between; align-items:center;">
+    <a href="index.html" style="display:flex; align-items:center; gap:0.6rem; text-decoration:none;">
+      <img src="images/logo-mark.png" alt="Hexasolv" style="height:32px;">
+      <img src="images/logo-text-light.png" alt="Hexasolv" style="height:22px;">
+    </a>
+    <div style="display:flex; align-items:center; gap:1.5rem;">
+      <a href="services.html" style="color:#94a3b8; text-decoration:none; font-size:0.9rem;">Services</a>
+      <a href="portfolio.html" style="color:#94a3b8; text-decoration:none; font-size:0.9rem;">Portfolio</a>
+      <a href="blog.html" style="color:#94a3b8; text-decoration:none; font-size:0.9rem;">Blog</a>
+      <a href="contact.html" style="background:linear-gradient(135deg,#5813BC,#AC22CB); color:#fff; text-decoration:none; padding:0.5rem 1.2rem; border-radius:8px; font-size:0.85rem; font-weight:700;">Contact →</a>
+    </div>
+  </nav>
+
+  <!-- ERROR SECTION -->
+  <div class="error-wrapper">
+    <div class="error-glow"></div>
+    <div style="position:relative; z-index:1;">
+      <div class="error-code">404</div>
+      <h1 class="error-title">Looking for Something That Isn't Here?</h1>
+      <p class="error-desc">
+        The link you followed may be broken, or the page may have been relocated. Our engineering systems, client case studies, and technical blog are right where they belong.
+      </p>
+      <div class="error-actions">
+        <a href="index.html" class="btn-grad"><i class="fas fa-home" style="margin-right:6px;"></i> Return to Homepage</a>
+        <a href="blog.html" class="btn-outline"><i class="fas fa-book-open" style="margin-right:6px;"></i> Read Our Blog (9 Articles)</a>
+        <a href="services.html" class="btn-outline"><i class="fas fa-cubes" style="margin-right:6px;"></i> Explore Services</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer style="background:#0a0a0c; padding:2.5rem 5%; color:#64748b; font-size:0.82rem; text-align:center; border-top:1px solid rgba(255,255,255,0.06);">
+    <p>© 2026 Hexasolv. All rights reserved. | Sargodha, Pakistan · contact@hexasolv.com</p>
+  </footer>
+
+  <script src="js/analytics.js"></script>
+  <script src="js/protect.js"></script>
+</body>
+</html>

@@ -22,3 +22,11 @@ if (GA_MEASUREMENT_ID && GA_MEASUREMENT_ID !== 'YOUR_GA4_ID_HERE') {
 } else {
     console.log('[Hexasolv SEO] Google Analytics ID is missing or set to placeholder.');
 }
+
+// Load GDPR & AdSense Cookie Consent Banner
+(function() {
+    const cs = document.createElement('script');
+    cs.src = '/js/cookie-consent.js';
+    cs.defer = true;
+    document.head.appendChild(cs);
+})();
