@@ -37,6 +37,9 @@
     .blog-card-title { font-family: var(--font-main); font-size: 1.15rem; font-weight: 800; margin-bottom: 0.6rem; line-height: 1.4; color: var(--text-primary); }
     .blog-card-desc { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem; }
     .blog-card-meta { font-size: 0.78rem; color: var(--text-muted); font-family: var(--font-main); font-weight: 600; }
+    .blog-filter-btns { display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem; margin-bottom: 2rem; }
+    .blog-filter-btn { font-family: var(--font-main); font-size: 0.85rem; font-weight: 600; padding: 0.5rem 1.25rem; border-radius: 50px; background: var(--bg-card); border: 1px solid var(--border); color: var(--text-secondary); cursor: pointer; transition: all 0.3s; }
+    .blog-filter-btn.active, .blog-filter-btn:hover { background: linear-gradient(135deg, #5813BC, #AC22CB); color: #fff; border-color: transparent; box-shadow: 0 0 20px rgba(88,19,188,0.3); }
   </style>
   <link rel="stylesheet" href="css/chatbot.css">
   <script src="js/analytics.js"></script>
@@ -124,7 +127,15 @@
 
   <section>
     <div class="section-wrapper">
-      <div class="blog-grid" id="blogGridContainer">
+      <div class="blog-filter-btns reveal">
+        <button class="blog-filter-btn active" data-filter="all">All Articles</button>
+        <button class="blog-filter-btn" data-filter="engineering">Engineering &amp; Web</button>
+        <button class="blog-filter-btn" data-filter="ecommerce">E-Commerce &amp; Retail</button>
+        <button class="blog-filter-btn" data-filter="ai">AI &amp; Automation</button>
+        <button class="blog-filter-btn" data-filter="growth">Growth &amp; Marketing</button>
+      </div>
+
+      <div class="blog-grid" id="blogGridContainer" style="margin-top: 1.5rem;">
         <!-- Rendered dynamically by blog-renderer.js -->
       </div>
     </div>
